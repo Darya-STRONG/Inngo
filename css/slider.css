@@ -3,16 +3,21 @@
   padding-top:24rem;
   padding-bottom: 231rem;
   display: block;
+  margin-top: -200rem;
+  position: relative;
+  bottom: -243rem;
 }
 .popular-hotels__text {
   display: flex;
   flex-direction: column;
   row-gap: 8rem;
   align-items: center;
+  padding-top: 20rem;
 }
 .popular-hotels__title {
   font-weight: 600;
   font-size: 40rem;
+  padding-bottom: 20rem;
 }
 .strip-longer {
   width: 202rem;

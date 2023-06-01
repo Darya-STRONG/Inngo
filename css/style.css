@@ -25,11 +25,14 @@ body {
   font-size: 14rem;
   font-weight: 400;
   color: #FFFFFF;
+  line-height: 0;
+}
+
+.section-with-background {
   background-image: url('../images/banner.png');
+  background-size: cover;  
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 2026rem;
-  padding-top: 28.5rem;
+  min-width: 1440rem;
 }
 
 a{
@@ -42,6 +45,13 @@ a{
   width: 1440rem;
   margin: 0rem auto;
   padding: 0px 82rem;
+  padding-top: 28.5rem;
+}
+
+.wrapper {
+  background-image: url('../images/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {
@@ -66,5 +76,6 @@ a{
   text-align: center;
   font-size: 32px;
   font-weight: 400;
+  line-height: 70rem;
 }
 

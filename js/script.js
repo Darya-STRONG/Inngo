@@ -2,9 +2,9 @@ $(document).ready(function(){
   $('.slider').slick({
     arrows:true,
     dots:false,
-    speed:1000,
-    sliderToShow:3,
-    slidesToScroll:2,
+    speed:500,
+    sliderToShow: 4,
+    slidesToScroll: 1,
     infinite: true,
     waitForAnimate:true,
     variableWidth: true,  
