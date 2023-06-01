@@ -7,7 +7,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>VigTour</title>
-
+  <script>
+    function standartWidth(width) {
+      $('html').css('font-size', `${1 * $(window).width() / width}px`);
+    }
+    
+    if ($(window).width() >= 992) {
+      standartWidth(1440);
+    } else {
+      standartWidth(360);
+    }
+    </script>
+    
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>

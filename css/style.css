@@ -4,6 +4,12 @@
 @import url('./slider.css');
 @import url('./media.css');
 
+@media (max-width: 991.99px){
+  html {
+    font-size: 1px
+  }
+}
+
 *,
 *::after,
 *::before{
@@ -15,9 +21,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
-  font-size: 1px; 
+  font-size: 1px;
 }
 
 body {
@@ -27,6 +32,7 @@ body {
   color: #FFFFFF;
   line-height: 0;
 }
+
 
 .section-with-background {
   background-image: url('../images/banner.png');

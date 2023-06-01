@@ -10,3 +10,23 @@ $(document).ready(function(){
     variableWidth: true,  
   });
 });
+
+if ($(window).width() >= 992) {
+  standartWidth(1440);
+  $(window).resize(function () {
+    if ($(window).width() >= 992) {
+      standartWidth(1440);
+    } else {
+      standartWidth(360);
+    }
+  });
+} else {
+  standartWidth(360);
+  $(window).resize(function () {
+    if ($(window).width() >= 992) {
+      standartWidth(1440);
+    } else {
+      standartWidth(360);
+    }
+  });
+};
