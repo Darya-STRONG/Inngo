@@ -1,0 +1,92 @@
+.nav {
+  display: flex;
+  padding: 5rem;
+  font-size: 16rem;
+  align-items: center;
+  column-gap: 64rem;
+}
+
+.nav__list {
+  display: flex;
+  column-gap: 27rem;
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  column-gap: 6rem;
+}
+.nav__left {
+  flex-shrink: 0;
+}
+.nav__right {
+  flex-shrink: 0;
+}
+
+.point {
+  width: 5rem;
+  height: 5rem;
+  background: linear-gradient(206.39deg, #FF7A00 18.43%, #FF7A00 18.44%, #FF7102 85.35%);
+  border-radius: 1.6rem;
+}
+
+.strip {
+  width: 70rem;
+  height: 2rem;
+  background: #FFFFFF;
+  box-shadow: 0rem 3rem 4rem rgba(0, 0, 0, 0.32);
+  border-radius: 10rem;
+}
+
+.nav__bottom {
+  display: flex;
+  column-gap: 16rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1.4px solid #FFFFFF;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(18px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  width: 48rem;
+  height: 48rem;
+  border-radius: 50%;
+}
+
+.button {
+  padding-top: 55rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-orange {
+  width: 171rem;
+  height: 48rem;
+  background: linear-gradient(148.22deg, #FF7A00 27.03%, #FF7A00 27.03%, #D65A00 93.23%);
+  box-shadow: 0px 3.18152px 10.3399px rgba(0, 0, 255, 0.11);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  border: 1.4px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 18rem;
+}
+.tel {
+  font-size:16rem;
+}
+
+
+
+
+
+
+
+
+

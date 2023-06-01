@@ -1,0 +1,101 @@
+.background{
+  max-width: 1064rem;
+  height: 96rem;
+  padding: 24rem;
+
+  background: rgba(255, 255, 255, 0.32);
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 7rem;
+  margin: 0 auto;
+  margin-top: 131rem;
+  display: flex;
+  column-gap: 24px;
+  border: 1px solid #FFFFFF ;
+}
+.margin {
+  margin: 131rem 0rem 0rem 0rem;
+}
+
+.flight-selection__wrapper {
+  display: flex;
+  background: #FFFFFF;
+  border: 1.4px solid #E6E6E6;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(18px);
+  border-radius: 8px;
+  color:#7B7B7B;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14rem;
+  line-height: 26rem;
+}
+.flight-selection {
+  position: relative;
+}
+.flight-selection__container{
+  flex-grow: 1;
+}
+.flight-selection__wrapper > :not(:nth-child(4)) {
+  padding-right: 100rem;
+}
+.flight-selection__wrapper > :nth-child(4) {
+  padding-right: 50rem;
+}
+.flight-selection-all_wrapper{
+  justify-content: center;
+  display: flex;
+  gap: 48rem;
+  justify-content: flex-end;
+}
+.flight-selection__item{
+  display: flex;
+  column-gap: 17rem;
+  border-right: 1.4rem solid  #E6E6E6;
+  align-items: center;
+  padding: 0 20rem;
+}
+.flight-selection__text-over {
+  font-size: 8rem;
+  line-height: 16rem;
+}
+.flight-selection__text {
+  display: block;
+  line-height: 26rem;
+}
+.special {
+  display: flex;
+  column-gap: 50rem;
+}
+.button__search {
+  background: linear-gradient(179.64deg, #00A6DB 19.91%, #0065C1 99.92%);
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border-color: #FFFFFF;
+  width: 48rem;
+  height: 48rem;
+  padding-top: 5rem;
+}
+
+.rrr {
+  display: flex;
+}
+.side__buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  gap: 24rem;
+}
+.button__whatsapp{
+  background: linear-gradient(148.22deg, #FF7A00 27.03%, #FF7A00 27.03%, #D65A00 93.23%);
+  box-shadow: 0px 4rem 20rem 5rem rgba(249, 115, 6, 0.943);
+  width: 64rem;
+  height: 64rem;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+}
+.button__whatsapp img{
+  height: 50rem;
+  padding-top: 10rem;
+}
