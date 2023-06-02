@@ -4,14 +4,14 @@
   padding: 24rem;
 
   background: rgba(255, 255, 255, 0.32);
-  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(8px);
+  box-shadow: 0rem 4rem 18rem rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8rem);
   border-radius: 7rem;
   margin: 0 auto;
   margin-top: 131rem;
   display: flex;
-  column-gap: 24px;
-  border: 1px solid #FFFFFF ;
+  column-gap: 24rem;
+  border: 1rem solid #FFFFFF ;
 }
 .margin {
   margin: 131rem 0rem 0rem 0rem;
@@ -20,10 +20,10 @@
 .flight-selection__wrapper {
   display: flex;
   background: #FFFFFF;
-  border: 1.4px solid #E6E6E6;
-  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(18px);
-  border-radius: 8px;
+  border: 1.4rem solid #E6E6E6;
+  box-shadow: 0rem 4rem 18rem rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(18rem);
+  border-radius: 8rem;
   color:#7B7B7B;
   justify-content: space-between;
   font-weight: 400;
@@ -69,8 +69,8 @@
 }
 .button__search {
   background: linear-gradient(179.64deg, #00A6DB 19.91%, #0065C1 99.92%);
-  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
+  box-shadow: 0rem 4rem 14rem rgba(0, 0, 0, 0.25);
+  border-radius: 8rem;
   border-color: #FFFFFF;
   width: 48rem;
   height: 48rem;
@@ -85,11 +85,11 @@
 }
 .button__whatsapp{
   background: linear-gradient(148.22deg, #FF7A00 27.03%, #FF7A00 27.03%, #D65A00 93.23%);
-  box-shadow: 0px 4rem 20rem 5rem rgba(249, 115, 6, 0.943);
+  box-shadow: 0rem 4rem 20rem 5rem rgba(249, 115, 6, 0.943);
   width: 64rem;
   height: 64rem;
   border-radius: 50%;
-  border: 1px solid #FFFFFF;
+  border: 1rem solid #FFFFFF;
 }
 .button__whatsapp img{
   height: 50rem;
@@ -100,7 +100,8 @@
   background-image: url('../images/map.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  height: 727rem; 
+  height: 500rem; 
+  background-position: center;
 }
 .work-process {
   position: relative;
@@ -120,9 +121,9 @@
   background-clip: text;
   text-fill-color: transparent;
 
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0rem 4rem 4rem rgba(0, 0, 0, 0.25);
   font-weight: 600;
-  font-size: 40px;
+  font-size: 40rem;
   line-height: 104.5%;
 }
 .work-process__title {
@@ -133,43 +134,178 @@
   gap: 8rem;
 }
 .snake {
-  left: -35rem;
+  left: 88rem;
   position: relative;
-  padding-top: 63rem;
-  width: 1350rem;
+  padding-top: -1rem;
+  width: 1064rem;
 }
 .earth-1 {
   position: absolute;
-  left: 22%;
-  top: 50%;
+  left: 414rem;
+  top: 52%;
 }
 .earth-2 {
   position: absolute;
   left: 43%;
   top: 50%;
-  width: 62rem;
-  height: 62rem;
+  width: 52rem;
+  height: 52rem;
 }
 .earth-3 {
   position: absolute;
-  left: 65%;
-  top: 53%;
+  right: 545rem;
+  top: 293rem;
   width: 50rem;
   height: 50rem;
 }
 .earth-4 {
   position: absolute;
-  left: 88%;
-  top: 40%;
+  right: 267rem;
+  top: 221rem;
   width: 62rem;
   height: 61rem;
 }
-/* .plane-gray {
+.plane-gray {
   position: absolute;
-  left: 90%;
-  top: 40%;
-  width: 25rem;
+  right: 177rem;
+  top: 211rem;
+  width: 30rem;
   height: 25rem;
-} */
+}
+.dot {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  position: absolute;
+}
+.dot-1 {
+  position: absolute;
+  left: 275rem;
+  top: 262rem;
+}
+.dot-2 {
+  position: absolute;
+  left: 758rem;
+  top: 296rem;
+}
+.dot-3 {
+  position: absolute;
+  left: 539rem;
+  top: 292rem;
+}
+.dot-4 {
+  position: absolute;
+  left: 1039rem;
+  top: 249rem;
+}
+.dot-blue {
+  background: linear-gradient(253.26deg, #00A6DB 13.62%, #0065C1 92.82%);
+}
+.dot-orange {
+  background: linear-gradient(206.39deg, #FF7A00 18.43%, #FF7A00 18.44%, #FF7102 85.35%);
+}
+.inscription-mark {
+  position: absolute;
+  left: 1166rem;
+  top: 277rem;
+}
+.mark {
+  width: 52rem;
+  height: 65rem;
+  background: linear-gradient(253.26deg, #00A6DB 13.62%, #0065C1 92.82%);
+  border-radius: 50%;
 
+}
+.mark span{
+  background: linear-gradient(253.26deg, #00A6DB 13.62%, #0065C1 92.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  border: 1rem solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.drop {
+  width: 60rem;
+  height: 60rem;
+  background-color: blue;
+  border-radius: 50% 50% 5% 50%;
+  position: relative;
+  transform: rotate(45deg);
+
+}
+
+.drop:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  transform: scale(0.7);
+}
+
+.drop span {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color:  #0065C1;
+  font-size: 20rem;
+  font-weight: 700;
+  transform: rotate(-45deg);
+
+}
+.drop-orange {
+  background: linear-gradient(206.39deg, #FF7A00 18.43%, #FF7A00 18.44%, #FF7102 85.35%);
+}
+.drop-blue {
+  background: linear-gradient(253.26deg, #00A6DB 13.62%, #0065C1 92.82%);
+}
+.mark-1 {
+  left: 273rem;
+  top: 163rem;
+}
+.mark-2 {
+  left: 535rem;
+  top: 340rem;
+}
+.mark-3 {
+  left: 758rem;
+  top: 184rem;
+}
+.mark-4 {
+  left: 1022rem;
+  top: 308rem;
+}
+.inscription {
+  white-space: normal;
+}
+.inscription-mark {
+  color: #525252;
+  gap: 24rem;
+  display: flex;
+  align-items: center;
+}
+
+.inscription__title {
+  color: #525252;
+  font-weight: 700;
+  font-size: 25rem;
+  line-height: 104.5%;
+  flex-shrink: 0;
+}
+.inscription__text {
+  font-weight: 400;
+  font-size: 14rem;
+  color: #525252;
+  max-width: 190rem;
+  max-height: 60rem;
+  line-height: 104.5%;
+  text-align: justify;
+  text-indent: 16rem;
+  text-transform: capitalize;
+  padding-top: 9rem;
+}
 
