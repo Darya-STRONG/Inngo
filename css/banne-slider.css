@@ -1,0 +1,59 @@
+.header-slider{
+  margin-top: 0;
+  padding-top: 3.625rem;
+  border-bottom: 0.25rem solid #C2C2C2;
+  overflow: hidden;
+  position: relative;
+  background-image: url('../images/slider-banner/turkey.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
+  padding-top: 159rem;
+}
+
+.slider-header-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-header-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1.4px solid #FFFFFF;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(18px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  width: 48rem;
+  height: 48rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.header-slider__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 166rem;
+  line-height: 82%;
+
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(182deg, rgba(255, 255, 255, 0.88) 58.88%, rgba(255, 255, 255, 0) 91.13%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 4.94172px 40.89px rgba(0, 0, 0, 0.24);
+  padding-top: 79rem;
+}
+.header-slider__subtitle {
+  opacity: 0.8;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.32);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 70rem;
+}
+
+.arrows {
+  position: fixed;
+}

@@ -13,8 +13,43 @@
   column-gap: 24rem;
   border: 1rem solid #FFFFFF ;
 }
-.margin {
-  margin: 131rem 0rem 0rem 0rem;
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1.4px solid #FFFFFF;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(18px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  width: 48rem;
+  height: 48rem;
+  border-radius: 50%;
+  z-index: 9999;
+}
+
+.button {
+  padding-top: 55rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-orange {
+  width: 171rem;
+  height: 48rem;
+  background: linear-gradient(148.22deg, #FF7A00 27.03%, #FF7A00 27.03%, #D65A00 93.23%);
+  box-shadow: 0px 3.18152px 10.3399px rgba(0, 0, 255, 0.11);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  border: 1.4px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 18rem;
+}
+.tel {
+  font-size:16rem;
 }
 
 .flight-selection__wrapper {
@@ -106,7 +141,9 @@
 .work-process {
   position: relative;
   top: -133rem;
-  top: -212rem;
+  top: -167rem;
+  z-index: 1;
+  background-color: #fff;
 }
 .clouds img{
   width: 100%;
@@ -167,8 +204,8 @@
 }
 .plane-gray {
   position: absolute;
-  right: 177rem;
-  top: 211rem;
+  right: 168rem;
+  top: 229rem;
   width: 30rem;
   height: 25rem;
 }

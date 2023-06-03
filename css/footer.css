@@ -6,9 +6,8 @@
   line-height: 106%;
   color: #FFFFFF;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 50rem;
 }
 .block__flex p{
   width:300rem;
@@ -39,7 +38,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 7rem;
+  gap: 9rem;
   font-weight: 600;
   font-size: 18rem;
   text-transform: capitalize;
@@ -65,4 +64,9 @@
   font-weight: 500;
   font-size: 14rem;
   line-height: 106%;
+}
+.nav__bottom {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
 }
