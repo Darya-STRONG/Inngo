@@ -4,12 +4,24 @@
   border-bottom: 0.25rem solid #C2C2C2;
   overflow: hidden;
   position: relative;
-  background-image: url('../images/slider-banner/turkey.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   transition: 0.3s;
   padding-top: 159rem;
+}
+
+.slide-1 {
+  background-image: url('../images/slider-banner/turkey.png');
+
+}
+.slide-2 {
+  background-image: url('../images/slider-banner/canada.png');
+
+}
+.slide-3 {
+  background-image: url('../images/slider-banner/georgia.png');
+
 }
 
 .slider-header-btn {
@@ -57,3 +69,29 @@
 .arrows {
   position: fixed;
 }
+.slider-banner {
+  position: relative;
+}
+.slider-banner .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 9999;
+  font-size: 0;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1.4px solid #FFFFFF;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(18px);
+  border-radius:50%;
+  position: fixed;
+}
+.slider-banner .slick-prev {
+  left: 65rem;
+  background: url('../images/arrows/arrowLeft.svg') center no-repeat;
+}
+.slider-banner .slick-next {
+  right: 75rem;
+  background: url('../images/arrows/arrowRight.svg') center no-repeat;
+}
+
