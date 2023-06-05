@@ -23,6 +23,7 @@
   display: flex;
   align-items: center;
   column-gap: 6rem;
+  position: relative;
 }
 .point {
   width: 5rem;
@@ -75,6 +76,37 @@
 }
 .nav__right {
   flex-shrink: 0;
+}
+
+
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 24px;
+  list-style: disc;
+  margin: 0;
+  border: 1px solid #ccc;
+  background: rgba(94, 94, 94, 0.2);
+  box-shadow: 0px 2.66917px 12.0113px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(27.34px);
+  border-radius: 4.67105px;
+
+  color: #FFFFFF;
+  flex-grow: 0;
+  gap: 10rem;
+  top: 12rem;
+  left: 12rem;
+}
+
+.dropdown-menu li {
+  padding-bottom: 20rem;
+}
+
+.nav__item:hover .dropdown-menu {
+  display: block;
 }
 
 

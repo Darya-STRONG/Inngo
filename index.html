@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VigTour</title>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script>
     function standartWidth(width) {
       $('html').css('font-size', `${1 * $(window).width() / width}px`);
@@ -38,9 +39,24 @@
             <div class="header__nav_sticky-top">
               <div class="nav__left">
                 <ul class="nav__list">
-                  <li class="nav__item">
+                  <!-- <li class="nav__item">
                     <a href="#" class="nav__link">Kraje</a>
                     <span>▾</span>
+                  </li> -->
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Kraje</a>
+                    <span class="dropdown-icon">▾</span>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Maldives</a></li>
+                      <li><a href="#">Egypt</a></li>
+                      <li><a href="#">France</a></li>
+                      <li><a href="#">Indonesia</a></li>
+                      <li><a href="#">Greece</a></li>
+                      <li><a href="#">Montenegro</a></li>
+                      <li><a href="#">Spain</a></li>
+                      <li><a href="#">Thailand</a></li>
+                      <li><a href="#">Italy</a></li>
+                    </ul>
                   </li>
                   <li class="nav__item">
                     <a href="#" class="nav__link">Hotele</a>
@@ -100,18 +116,95 @@
       </div>
     </div>
   </header>
-  <div class="slider-banner"> 
+  
+  <div class="burger-menu__button">
+    <span></span>
+    <span></span>
+    <span class="stick-shortest"></span>
+  </div>
+  <div class="burger-menu">
+    <nav class="burger-menu__header">
+      <ul class="burger-menu__header__list">
+        <img src="./images/smallLogo.png" alt="logo">
+        <li class="burger-menu__header__item">
+          <a class="burger-menu__header__link" href="#">USD</a>
+          <span>▾</span>
+        </li>
+        <li class="burger-menu__header__item">
+          <img src="./images/icon/login.svg" alt="user">
+          <a class="burger-menu__header__link login" href="#" >Login</a>
+        </li>
+      </ul>
+      <div class="burger-menu__close">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="header__nav_sticky-bottom">
+        <span>Folov US</span>
+        <span class="strip"></span>
+        <ul class="nav__list">
+          <li  class="nav__item" class="email">
+            <img src="./images/icon/facebook.svg" alt=facebook"">
+          </li>
+          <li class="nav__item">
+            <img src="./images/icon/facebook.svg" alt=facebook"">
+          </li>
+          <li class="nav__item">
+            <img src="./images/icon/Instagram.svg" alt="Instagram">
+          </li>
+        </ul>
+      </div>
+      <span class="strip strip-long"></span>
+    </nav>
+    <nav class="burger-menu__nav">
+      <ul class="burger-menu__list">
+        <li class="burger-menu__item">
+          <a href="#" class="burger-menu__item">Kraje</a>
+          <span class="burger-menu__dropdown-icon">▾</span>
+          <ul class="burger-menu__dropdown-menu">
+            <li><a href="#">Maldives</a></li>
+            <li><a href="#">Egypt</a></li>
+            <li><a href="#">France</a></li>
+            <li><a href="#">Indonesia</a></li>
+            <li><a href="#">Greece</a></li>
+            <li><a href="#">Montenegro</a></li>
+            <li><a href="#">Spain</a></li>
+            <li><a href="#">Thailand</a></li>
+            <li><a href="#">Italy</a></li>
+          </ul>
+        </li>
+        <li class="burger-menu__item">
+          <a href="#" class="burger-menu__link">Hotele</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="#" class="burger-menu__link">Katalog</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="#" class="burger-menu__link">Ubezpieczenia</a>
+        </li>
+        <li class="burger-menu__item">
+          <a href="#" class="burger-menu__link">Gdzie kupić?</a>
+        </li>
+          <li class="burger-menu__item phone">
+            <img src="./images/icon/WhatsApp.svg" alt="WhatsApp">
+            <span class="burger-menu__point"></span>
+            <a class="tel" href="tel:+38 (044) 303 9 303">+38 (044) 303 9 303</a>
+          </li>
+          <li class="burger-menu__item email">
+            <img src="./images/icon/mail.svg" alt="mail">
+            <span class="burger-menu__point"></span>
+            <a href="mailto:info@viq.com">info@viq.com</a>
+          </li>
+      </ul>
+      <span class="strip strip-long"></span>
+    </nav>
+
+  </div>
+  
+    <div class="slider-banner"> 
     <section class="header-slider slide-1">
       <h1 class="header-slider__title">Turkey</h1>
       <h2 class="header-slider__subtitle">Time for opportunity</h2>
-      <!-- <div class="arrows container">
-        <button class="arrow arrow-right">
-          <img src="./images/arrows/arrowRight.svg" alt="arrowRight">
-        </button>
-        <button class="arrow arrow-left">
-          <img src="./images/arrows/arrowLeft.svg" alt="arrowLeft">
-        </button>
-      </div> -->
       <div class="button">
         <button class="button-orange">More detalies</button>
       </div>
@@ -858,7 +951,6 @@
     </section>
   </div>
 
-
   <section class="work-process container">
     <div class="work-process__content">
       <div class="work-process__title">
@@ -1024,7 +1116,6 @@
     <p>&copy; 2023 Your Company. All rights reserved.</p>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/script.js"></script>
 </body>
