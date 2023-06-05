@@ -108,6 +108,9 @@
 .nav__item:hover .dropdown-menu {
   display: block;
 }
+.mobile__logo {
+  display: none;
+}
 
 
 

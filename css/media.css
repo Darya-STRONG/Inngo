@@ -1,7 +1,15 @@
 @media (max-width: 991.99px) {
-  html {
-    font-size: 1px;
+  .header-slider {
+    overflow: visible;
   }
+  .slick-list {
+    overflow: visible;
+  }
+  .overflow {
+    overflow: hidden;
+  }
+  
+
   .container {
     max-width: 100%;
     padding: 0 1.0625rem;
@@ -197,7 +205,16 @@
     border-radius: 1.6px;
     flex-shrink: 0;
   }
-
+  .mobile__logo {
+    display: inline;
+    position: absolute;
+    margin: 0 auto;
+    width: 102.35rem;
+    height: 65rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+  }
 
 
 }
