@@ -46,7 +46,8 @@ a{
 }
 
 .container{
-  width: 1440rem;
+  /* width: 1440rem; */
+  width: 100%;
   margin: 0rem auto;
   padding: 0px 82rem;
   padding-top: 28.5rem;

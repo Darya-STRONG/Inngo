@@ -8,7 +8,7 @@
   backdrop-filter: blur(8rem);
   border-radius: 7rem;
   margin: 0 auto;
-  margin-top: 131rem;
+  /* margin-top: 131rem; */
   display: flex;
   column-gap: 24rem;
   border: 1rem solid #FFFFFF ;
@@ -47,6 +47,7 @@
   border: 1.4px solid #FFFFFF;
   color: #FFFFFF;
   font-size: 18rem;
+  margin-bottom: 140rem;
 }
 .tel {
   font-size:16rem;
@@ -82,6 +83,7 @@
   display: flex;
   gap: 48rem;
   justify-content: flex-end;
+  padding-bottom: 67rem;
 }
 .flight-selection__item{
   display: flex;
@@ -267,7 +269,7 @@
   width: 60rem;
   height: 60rem;
   background-color: blue;
-  border-radius: 50% 50% 5% 50%;
+  border-radius: 50% 50% 1% 50%;
   position: relative;
   transform: rotate(45deg);
 
@@ -344,5 +346,11 @@
   text-indent: 16rem;
   text-transform: capitalize;
   padding-top: 9rem;
+}
+.form__girl-mobile {
+  display: none;
+}
+.button__search img{
+  width: 32rem;
 }
 

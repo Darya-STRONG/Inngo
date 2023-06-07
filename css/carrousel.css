@@ -10,14 +10,14 @@
 .popular-hotels__text {
   display: flex;
   flex-direction: column;
-  row-gap: 8rem;
+  row-gap: 18rem;
   align-items: center;
   padding-top: 20rem;
 }
 .popular-hotels__title {
   font-weight: 600;
   font-size: 40rem;
-  padding-bottom: 20rem;
+  /* padding-bottom: 20rem; */
 }
 .strip-longer {
   width: 202rem;
@@ -26,10 +26,10 @@
   width: 136rem;
   margin-bottom: 40rem;
 }
-.slider {
+.carrousel {
   position: relative; 
 }
-.slider .slick-arrow {
+.carrousel .slick-arrow {
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -37,7 +37,7 @@
   width: 30px;
   height: 50px;
 }
-.slider .slick-arrow.slick-next {
+.carrousel .slick-arrow.slick-next {
   right: -12rem;
   background: rgba(255, 255, 255, 0.15);
   background: url('../images/arrows/arrowRight.svg') 12px 12px no-repeat;
@@ -50,7 +50,7 @@
   /* left: -24rem; */
 
 }
-.slider .slick-arrow.slick-prev {
+.carrousel .slick-arrow.slick-prev {
   left: -20rem;
   background: rgba(255, 255, 255, 0.15);
   background: url('../images/arrows/arrowLeft.svg') 12px 12px no-repeat;
@@ -63,12 +63,12 @@
   /* right: -24rem; */
 
 }
-.slider-1 {
+.carrousel-1 {
   background: url('../images/hotels/slider1.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
-.slider-2 {
+.carrousel-2 {
   background: url('../images/hotels/slider2.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,21 +76,17 @@
   flex-direction: column;
 }
 
-.slider-2__padding {
-  padding: 23rem;
-}
-
-.slider-3 {
+.carrousel-3 {
   background: url('../images/hotels/slider3.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
-.slider-4 {
+.carrousel-4 {
   background: url('../images/hotels/slider4.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
-.slider__content {
+.carrousel__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -146,7 +142,7 @@
   padding-top: 19rem;
   }
 
-.slider__content__top {
+.carrousel__content__top {
   background: rgba(50, 50, 50, 0.16);
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(18px);
@@ -155,14 +151,14 @@
   padding: 8rem 16rem;
 }
 .strip__length {
-  min-width: 172rem;
-  min-height: 2rem;
+  width: 172rem;
+  height: 2rem;
 }
 
 .slider .slick-arrow.slick-disabled {
   opacity: 0.2;
 }
-.slider__item {
+.carrousel__item {
   filter: drop-shadow(0px 4px 18px rgba(0, 0, 0, 0.15));
   backdrop-filter: blur(18px);
   border-radius: 8px;
@@ -175,18 +171,14 @@
   margin: 0 auto;
 }
 
-.slider__wrapper {
+.carrousel__wrapper {
   width: 1134rem;
   position: absolute;
   left: -35rem;
   top: 122rem;
 }
-.slick-track {
-  display: flex;
-  column-gap: 40rem;
-}
 
-.slider__content__all {
+.carrousel__content__all {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -199,33 +191,51 @@
   padding-bottom: 98rem;
 }
 
-.slider__item:hover .slider__content__all {
+.carrousel__item:hover .carrousel__content__all {
   backdrop-filter: blur(18px);
   background: rgba(255, 255, 255, 0.25);
 }
 
-.slider__item:hover .slider__content__all {
+.carrousel__item:hover .carrousel__content__all {
   height: 65%;
   padding: 23rem;
 }
 
-.slider__item:hover .slider__content__all span {
+.carrousel__item:hover .carrousel__content__all span {
   opacity: 1;
   transition: opacity 0.9s ease;
 }
 
-.slider__content__all span {
+.carrousel__content__all span {
   opacity: 0;
   transition: opacity 0.1s ease;
 }
-.slider__content__bottom-over span {
+.carrousel__content__bottom-over span {
   opacity: 1;
 }
-.slider__content__bottom p {
+.carrousel__content__bottom p {
   opacity: 1;
   transition: opacity 0.1s ease;
 }
 
-.slider__item:hover .slider__content__bottom p {
+.carrousel__item:hover .carrousel__content__bottom p {
   opacity: 0;
 }
+.carrousel .slick-track {
+  gap:40rem
+}
+.carrousel__content__bottom-over {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carrousel__content__bottom p{
+  font-size: 18rem;
+  width: 213rem;
+  height: 38rem;
+  white-space: nowrap;
+}
+/* .strip__length {
+  width: 172rem;
+  height: 2rem;
+} */

@@ -64,11 +64,6 @@
   width: 127rem;
   height: 48rem;
 }
-form {
-  display: flex;
-  flex-direction: column;  
-}
-
 .form-container label {
   margin-bottom: 10rem;
   padding-bottom: 5rem;
@@ -90,22 +85,48 @@ form {
   line-height: 113.5%;
 }
 .form-container textarea {
-  min-width: 307rem;
-  min-height: 96rem;
+  width: 307rem;
+  height: 96rem;
   font-weight: 500;
   font-size: 16rem;
   line-height: 113.5%;
 }
 .form__background {
-  background-image: url('../images/banner-form/girl.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top:-176rem;
-  padding-top:54rem;
-  padding-bottom: 54rem;
   position: relative;
   width: 100%;
   height: 588rem;
+  background-color: rgba(254, 182, 83, 1);
+  background-image: url('../images/map-form.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__gradient-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #FF7A01 7.96%, rgba(255, 154, 29, 0) 50.92%);
+}
+.form__gradient-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(-100deg, #FF7A01 7.96%, rgba(255, 154, 29, 0) 50.92%);
+}
+
+.form__girl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.form__girl img {
+  width: 920rem;
+  height: 100%;
 }
 .form__inscription{
   color: #FFFFFF;
@@ -142,10 +163,17 @@ form {
   transform: rotateY(180deg);
 }
 .airplane {
+  display: none;
+}
+.airplane-decktop {
   position: absolute;
   top: 180rem;
   left: 0;
   z-index: 2;
   width: 555rem;
-
 }
+.form-inner {
+  display: flex;
+  flex-direction: column;
+}
+

@@ -1,15 +1,16 @@
 @media (max-width: 991.99px) {
+  html {
+    font-size: 1px;
+  }
+  body {
+    width: 370rem;
+  }
   .header-slider {
     overflow: visible;
   }
   .slick-list {
     overflow: visible;
-  }
-  .overflow {
-    overflow: hidden;
-  }
-  
-
+  }  
   .container {
     max-width: 100%;
     padding: 0 1.0625rem;
@@ -28,7 +29,7 @@
     z-index: 10;
     position: fixed;
     top: 11rem;
-    display: block;
+    display: none;
     padding-left: 10rem;
     padding-right: 5rem;
     padding-top: 10rem;
@@ -128,18 +129,18 @@
     flex-shrink: 0;
   }
   .strip {
-    height: 2px;
+    height: 2rem;
   }
   .strip-long {
     width: 100%;
-    height: 2px;
+    height: 2rem;
   }
   .dropdown-menu {
     display: none;
     position: absolute;
     top: 30rem;
     left: 0;
-    padding: 10px;
+    padding: 10rem;
   }
   .nav__item:hover .dropdown-menu {
     display: block;
@@ -150,12 +151,6 @@
   .burger-menu__item {
     position: relative;
   }
-  /* .burger-menu__item:not(:first-child) {
-    position: relative;
-    top: 126rem;
-    padding-bottom: 5rem;
-  } */
-  
   .burger-menu__dropdown-menu {
     display: none;
     flex-direction: column;
@@ -184,7 +179,7 @@
     position: relative;
     /* left: -3rem; */
   }
-  
+
   .tel {
     font-size: 16px;
     flex-shrink: 0;
@@ -206,14 +201,467 @@
     flex-shrink: 0;
   }
   .mobile__logo {
-    display: inline;
-    position: absolute;
-    margin: 0 auto;
+    display: block;
     width: 102.35rem;
     height: 65rem;
+
+  }
+
+  .clouds img{
+    width: 300%;
+    position: relative;
+    top: -152rem;
+    left: -40rem;
+    z-index: 0;
+  }
+  .background {
+    width: 278rem;
+    height: 143rem;
+    flex-direction: column;
+    gap: 16rem;
+    padding: 16rem;
+    align-items: center;
+  }
+  .flight-selection__wrapper {
+    flex-wrap: wrap;
+    width: 246rem;
+    overflow: hidden;
+  }
+  .flight-selection__item {
+    width: 20rem;
+    border: 1px solid #E6E6E6;;
+    column-gap: 11rem;
+  }
+  .flight-selection__text-over {
+    font-size: 9.34211rem;
+    font-weight: 400;
+    font-size: 5.33835px;
+    line-height: 11px
+  }
+  .flight-selection__text {
+    font-weight: 400;
+    font-size: 9.34211px;
+    line-height: 17px;
+  }
+  .flight-selection__item__text {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+  .flight-selection__item__icon img{
+    width: 11.01rem;
+    height: 10.68rem;
+  }
+  .special {
+    gap: 20rem;
+  }
+  .flight-selection__wrapper .mobile_padding {
+    padding-right: 135rem;
+  }
+  .flight-selection__wrapper > :nth-child(4) {
+    padding-right: 65rem;
+  }
+  .button__search {
+    width: 114rem;
+    height: 32rem;
+  }
+  .button__search{
+    display: none;
+    padding: 0;
+  }
+  .button {
+    padding-top: 40rem;
+  }
+  .button__search-mobile {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 12rem;
+    line-height: 113.5%;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+  }
+  .button__search-mobile img{
+    width: 13.35rem;
+    height: 13.35rem
+  }
+  .header-slider__title {
+    font-weight: 600;
+    font-size: 44.8204rem;
+    line-height: 82%;
+    padding-top:72rem;
+  }
+  .header-slider__subtitle {
+    font-weight: 600;
+    font-size: 14rem;
+    line-height: 99%;
+  }
+  .button-orange {
+    width: 114rem;
+    height: 32rem;
+    font-size: 12rem;
+    margin-bottom: 94rem;
+  }
+  .container {
+    width: 100%;
+    padding: 10rem;
+  }
+  .slick-list {
+    overflow: hidden;
+    width: 100%;
+  }
+  .container-mobile {
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider-banner .slick-arrow {
+    width: 32rem;
+    height: 32rem;
+  }
+  .slider-banner .slick-next{
+    background-size: 12rem;
+    right: 10rem;
+
+  }
+  .slider-banner .slick-prev{
+    background-size: 12rem;
+    left: 10rem;
+  }
+  .popular-hotels__title {
+    font-weight: 600;
+    font-size: 24rem;
+    line-height: 104.5%;
+  }
+  .strip-longer {
+    width: 122.96rem;
+  }
+  .strip-shorter  {
+    width: 82.78rem;
+  }
+  .flight-selection-all_wrapper {
+    padding-top: 94rem;
+  }
+  .carrousel__slider__item{
+    width: 143.25rem;
+    height: 201rem;
+  }
+  .carrousel__item {
+    width: 143.25rem;
+    height: 201rem;
+  }
+
+  .carrousel .slick-track {
+    gap:22.65rem;
+  }
+  .carrousel .slick-arrow.slick-prev {
+    width: 32rem;
+    height: 32rem;
+    background-position: center;
+    background-size: 15rem;
+    left: -10rem;
+  }
+  .carrousel .slick-arrow.slick-next {
+    width: 32rem;
+    height: 32rem;
+    background-position: center;
+    background-size: 15rem; 
+    right: -10rem;
+    z-index: 999;
+  }
+  .carrousel__content {
+    padding: 15rem 20rem;
+  }
+  .carrousel__content__top  {
+    padding: 5rem 9rem;
+  }
+  .carrousel__content__top span {
+    font-size: 8rem;
+    line-height: 104.5%;
+  }
+  .carrousel__wrapper {
+    width: 310rem;
+    position: absolute;
+    left: -16rem;
+    top: 100rem;
+  }
+  .snake {
+    display: none;
+  }
+  .work-process__title {
+    position: relative;
+    padding-top: 0;
+    top: -100rem;
+  }
+  .work-process__text {
+    font-size: 24rem;
+  }
+  .work-process__text__strip-longer, .work-process__strip-shorter{
+    background-color: rgba(0, 166, 219, 1);
+  }
+  
+  .work-process__content {
+    background-color: #FFFFFF;
+    background-image: url(../images/map.svg),url(../images/snake-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300%, 227rem;
+    height: 500rem;
+    background-position: -555rem 68rem, center;
+    height: 986rem;
+
+  }
+  .popular-hotels {
+    padding-top: 94rem;
+  }
+  .popular-hotels__text {
+    padding-top: 10rem;
+  }
+  .earth {
+    width: 62rem;
+    height: 62rem;
+  }
+  .earth-1 {
+    top: 34rem;
+    left: 283rem;
+  }
+  .earth-2 {
+    top: 710rem;
+    left: 20rem;
+  }
+  .earth-3 {
+    top: 496rem;
+    right: 15rem;
+  }
+  .earth-4 {
+    top: 229rem;
+    left: 20rem;;
+  }
+  .plane-gray {
+    transform: rotate(112deg);
+    top: 990rem;    ;
+  }
+  .dot-1 {
+    position: absolute;
+    left: 84rem;
+    top: 103rem;
+  }
+  .dot-3 {
+    position: absolute;
+    left: 272rem;
+    top: 350rem;
+  }
+  .dot-2 {
+    position: absolute;
+    left: 81rem;
+    top: 561rem;
+  }
+  .dot-4 {
+    position: absolute;
+    left: 274rem;
+    top: 866rem;
+  }
+
+  .inscription__title {
+    font-size: 16rem;
+  }
+  .inscription__text {
+    font-size: 12rem;
+  }
+  .inscription-mark {
+    /* width: 300rem; */
+    flex-direction: column;
+  }
+  .inscription {
+    width: 163rem;
+  }
+  .mark-1 {
+    left: 12rem;
+    top: 15rem;
+  }
+  .mark-1 .inscription{
+    position: relative;
+    left: 122rem;
+  }
+  .mark-2 {
+    left: 207rem;
+    top: 264rem;
+  }
+  .mark-2 .inscription{
+    position: relative;
+    right: 135rem;
+    top: -26rem;
+  }
+  .mark-3 {
+    left: -5rem;
+    top: 473rem;
+  }
+  .mark-3 .inscription{
+    position: relative;
+    left: 127rem;
+    top: 20rem;
+  }
+  .mark-4 {
+    left: 205rem;
+    top: 773rem;
+  }
+  .mark-4 .inscription{
+    position: relative;
+    left: -140rem;
+    top: -54rem;
+  }
+  .form__gradient-left {
+    transform: rotate(90deg);
+    top: -45rem;
+    height: 370rem;
+  }
+  .form__gradient .form__gradient-right {
+    top: 72rem;
+    height: 1177rem;
+    background: linear-gradient(359deg, #FF7A01 7.96%, rgba(255, 154, 29, 0) 110.92%);
+    z-index: 0;
+    width: 368rem;
+  }
+  .form {
+    height: 1249rem;
+    flex-direction: column;
+  }
+  .form__background {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 1250rem;
+    background-color: rgba(254, 182, 83, 1);
+    background-image: url('../images/map-form.png');
+    background-size: 180%;
+    background-repeat: no-repeat;
+    background-position: center 233rem;
+    overflow: hidden;
+  }
+  .form__girl {
+    display: none;
+  }
+  .form__girl-mobile {
+    display: block;
+  }
+  .form__girl-mobile img{
+    width: 100%;
+    position: relative;
+    top: 138rem;
+  }
+  .airplane {
+    transform: rotateY(180deg);
+    left: -125rem;
+    top: -1403rem;
+    position: relative;
+    width: 495rem;
+  }
+  .form__inscription {
+    font-size: 66.4803rem;
+    left: 20rem;
+    width: 10rem;
+  }
+  .cloud-1 {
+    left: 151rem;
+    top: 7rem;
+    z-index: 20;
+  }
+  .cloud-2 {
+    left: -184rem;
+    top: 330rem;
+    z-index: 20;
+  }
+  .cloud-3 {
+    left: 192rem;
+    top: 480rem;
+    z-index: 20;
+    transform: rotate(360deg);
+  }
+  .form-container {
+    width: 278rem;
+    height: 349rem;
+    top: 937rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 100;
+    padding: 16rem;
+  }
+  .form-container input[type="text"], .form-container input[type="email"], .form-container input[type="tel"], .form-container textarea {
+    width: 100%;
+    padding: 8rem;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0rem 2rem 5rem rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(8rem);
+    border-radius: 8rem;
+    margin-bottom: 13rem;
+    border: 2rem solid rgb(147, 176, 228, 0.3);
+    font-size: 9.35849rem;
+  }
+  .form-container textarea {
+    height: 64rem;
+  }
+  .form-container label {
+    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+    color: #525252;
+    font-weight: 500;
+    font-size: 10.6954rem;
+  }
+  .form-container h2{
+    font-size: 16rem;
+  }
+  .form-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-inner button {
+    width: 106.12rem;
+    height: 32.09rem;
+    font-size: 12.0323rem;
+  }
+  .footer  {
+    flex-direction: column;
+    gap: 32rem;
+  }
+  .footer__logo logo {
+    align-items: center;
+  }
+  .block__flex {
+    align-items: center;
+  }
+  .carrousel__content__bottom-over {
+    display: flex;
+    align-items: center;
+  }
+  .popular-hotels__text {
+    row-gap: 8rem;
+  }
+  .airplane-decktop {
+    display: none;
+  }
+  .airplane {
+    display: block;
+  }
+  .hotel-info {
+    font-size: 8rem;
+  }
+  .carrousel__content__all {
+    padding-bottom: 54rem;
+  }
+  .carrousel__content__bottom p{
+    font-weight: 700;
+    font-size: 12.19rem;
+    width: 10px;
+  }
+  .strip__length {
+    width: 100rem;
+    height: 2rem;
+  }
+  /* .popular-hotels {
+    padding-top: 10rem;
+  } */
+  .flight-selection-all_wrapper {
+    padding: 0rem;
   }
 
 

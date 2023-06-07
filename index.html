@@ -201,20 +201,21 @@
 
   </div>
 
-    <div class="slider-banner"> 
-    <section class="header-slider slide-1">
+  <div class="slider-banner"> 
+    <section class="header-slider slide-1 container-mobile">
       <img class="mobile__logo" src="./images/logo.png" alt="logo">
       <h1 class="header-slider__title">Turkey</h1>
       <h2 class="header-slider__subtitle">Time for opportunity</h2>
       <div class="button">
         <button class="button-orange">More detalies</button>
       </div>
-      <div class="flight-selection container">
+
+      <div class="flight-selection">
         <div class="flight-selection-all_wrapper">
           <div class="flight-selection__container margin background">
             <div class="flight-selection__wrapper">
               <div class="flight-selection__item">
-                <div>
+                <div class="flight-selection__item__icon">
                   <img src="./images/icon/where.svg" alt="where">
                 </div>
                 <div class="flight-selection__item__text">
@@ -223,7 +224,7 @@
                 </div>
               </div>
               <div class="flight-selection__item">
-                <div>
+                <div class="flight-selection__item__icon">
                   <img src="./images/icon/plane.svg" alt="plane">
                 </div>
                 <div class="flight-selection__item__text">
@@ -231,8 +232,8 @@
                   <span class="flight-selection__text">Where?</span>
                 </div>
               </div>
-              <div class="flight-selection__item">
-                <div>
+              <div class="flight-selection__item mobile_padding">
+                <div class="flight-selection__item__icon">
                   <img src="./images/icon/calendar.svg" alt="calendar">
                 </div>
                 <div class="flight-selection__item__text">
@@ -245,7 +246,7 @@
                 </div>
               </div>  
               <div class="flight-selection__item">
-                <div>
+                <div class="flight-selection__item__icon">
                   <img src="./images/icon/adults.svg" alt="adults">
                 </div>
                 <div class="flight-selection__item__text">
@@ -254,194 +255,200 @@
                 </div>
               </div>
             </div>
-            <button class="button__search";"><img src="./images/icon/search.svg" alt="search"></button>
+            <button class="button__search";">
+              <img src="./images/icon/search.svg" alt="search">
+            </button>
+            <button class=" button__search button__search-mobile";">
+              <img src="./images/icon/search.svg" alt="search">
+              <span>Search</span>
+            </button>
           </div>
         
-          <div class="side__buttons">
+          <!-- <div class="side__buttons">
             <button class="button__search" style="border-radius: 50%"><img src="./images/icon/search.svg" alt="search"></button>
             <button class="button__whatsapp"><img src="./images/icon/WhatsApp.svg" alt="WhatsApp"></button>
-          </div>
+          </div> -->
         </div>
       </div>
-      <div class="carrousel popular-hotels-turkey container">
+      <div class="popular-hotels popular-hotels-turkey">
         <div class="popular-hotels__container background">
           <div class="popular-hotels__text">
             <div class="popular-hotels__title">Popular Hotels</div>
             <span class="strip-longer strip"></span>
             <span class="strip-shorter strip"></span>  
           </div>
-          <div class="slider__wrapper">
-            <div class="slider overflow">
-              <div class="slider__item slider-1">
-                <div class="slider__content">
-                  <div class="slider__content__top">
-                    <span>Turkey, Konakla</span>
-                  </div>
-                  <div class="slider__content__all slider-2__padding">
-                    <div class="slider__content__bottom">
-                      <div class="slider__content__bottom-over">
-                        <span class="strip strip__length"></span>
-                        <span>5</span>
-                        <img src="./images/icon/star.svg" alt="star">
-                      </div>
-                      <p>Selectum Family Resort Belek</p>
-  
-                      <span>Titanic Hotels & Resort </span>
+          <div class="carrousel__wrapper">
+            <div class="carrousel overflow">
+              <div class="carrousel__item carrousel-1">
+                <div class="carrousel__content">
+                    <div class="carrousel__content__top">
+                      <span>Turkey, Konakla</span>
                     </div>
-                    <div class="hotel-info">
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
-                        </span>
-                        <span>All Inclusive</span>
+                    <div class="carrousel__content__all slider-2__padding">
+                      <div class="carrousel__content__bottom">
+                        <div class="carrousel__content__bottom-over">
+                          <span class="strip strip__length"></span>
+                          <span>5</span>
+                          <img src="./images/icon/star.svg" alt="star">
+                        </div>
+                        <p>Selectum Family Resort Belek</p>
+    
+                        <span>Titanic Hotels & Resort </span>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/calendar.svg" alt="calendar">
-                        </span>
-                        <span>8 night, 06 may</span>
+                      <div class="hotel-info">
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
+                          </span>
+                          <span>All Inclusive</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/calendar.svg" alt="calendar">
+                          </span>
+                          <span>8 night, 06 may</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/adults.svg" alt="adults">
+                          </span>
+                          <span>2 Adults</span>
+                        </div>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/adults.svg" alt="adults">
-                        </span>
-                        <span>2 Adults</span>
+                      <div class="cost">
+                        <span class="price">1 500 $</span>
+                        <span class="currency">USD</span>
                       </div>
                     </div>
-                    <div class="cost">
-                      <span class="price">1 500 $</span>
-                      <span class="currency">USD</span>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="slider__item slider-2">
-                <div class="slider__content slider-2__gap">
-                  <div class="slider__content__top slider-2__top__margin">
-                    <span>Turkey, Konakla</span>
-                  </div>
-                  <div class="slider__content__all slider-2__padding">
-                    <div class="slider__content__bottom">
-                      <div class="slider__content__bottom-over">
-                        <span class="strip strip__length"></span>
-                        <span>5</span>
-                        <img src="./images/icon/star.svg" alt="star">
-                      </div>
-                      <p>Selectum Family Resort Belek</p>
-  
-                      <span>Titanic Hotels & Resort </span>
+              <div class="carrousel__item carrousel-1">
+                <div class="carrousel__content">
+                    <div class="carrousel__content__top">
+                      <span>Turkey, Konakla</span>
                     </div>
-                    <div class="hotel-info">
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
-                        </span>
-                        <span>All Inclusive</span>
+                    <div class="carrousel__content__all slider-2__padding">
+                      <div class="carrousel__content__bottom">
+                        <div class="carrousel__content__bottom-over">
+                          <span class="strip strip__length"></span>
+                          <span>5</span>
+                          <img src="./images/icon/star.svg" alt="star">
+                        </div>
+                        <p>Selectum Family Resort Belek</p>
+    
+                        <span>Titanic Hotels & Resort </span>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/calendar.svg" alt="calendar">
-                        </span>
-                        <span>8 night, 06 may</span>
+                      <div class="hotel-info">
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
+                          </span>
+                          <span>All Inclusive</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/calendar.svg" alt="calendar">
+                          </span>
+                          <span>8 night, 06 may</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/adults.svg" alt="adults">
+                          </span>
+                          <span>2 Adults</span>
+                        </div>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/adults.svg" alt="adults">
-                        </span>
-                        <span>2 Adults</span>
+                      <div class="cost">
+                        <span class="price">1 500 $</span>
+                        <span class="currency">USD</span>
                       </div>
                     </div>
-                    <div class="cost">
-                      <span class="price">1 500 $</span>
-                      <span class="currency">USD</span>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="slider__item slider-3">
-                <div class="slider__content">
-                  <div class="slider__content__top">
-                    <span>Türkiye, BELEK, Ileribas</span>
-                  </div>
-                  <div class="slider__content__all slider-2__padding">
-                    <div class="slider__content__bottom">
-                      <div class="slider__content__bottom-over">
-                        <span class="strip strip__length"></span>
-                        <span>5</span>
-                        <img src="./images/icon/star.svg" alt="star">
-                      </div>
-                      <p>Selectum Family Resort Belek</p>
-  
-                      <span>Titanic Hotels & Resort </span>
+              <div class="carrousel__item carrousel-1">
+                <div class="carrousel__content">
+                    <div class="carrousel__content__top">
+                      <span>Turkey, Konakla</span>
                     </div>
-                    <div class="hotel-info">
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
-                        </span>
-                        <span>All Inclusive</span>
+                    <div class="carrousel__content__all slider-2__padding">
+                      <div class="carrousel__content__bottom">
+                        <div class="carrousel__content__bottom-over">
+                          <span class="strip strip__length"></span>
+                          <span>5</span>
+                          <img src="./images/icon/star.svg" alt="star">
+                        </div>
+                        <p>Selectum Family Resort Belek</p>
+    
+                        <span>Titanic Hotels & Resort </span>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/calendar.svg" alt="calendar">
-                        </span>
-                        <span>8 night, 06 may</span>
+                      <div class="hotel-info">
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
+                          </span>
+                          <span>All Inclusive</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/calendar.svg" alt="calendar">
+                          </span>
+                          <span>8 night, 06 may</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/adults.svg" alt="adults">
+                          </span>
+                          <span>2 Adults</span>
+                        </div>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/adults.svg" alt="adults">
-                        </span>
-                        <span>2 Adults</span>
+                      <div class="cost">
+                        <span class="price">1 500 $</span>
+                        <span class="currency">USD</span>
                       </div>
                     </div>
-                    <div class="cost">
-                      <span class="price">1 500 $</span>
-                      <span class="currency">USD</span>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="slider__item slider-4">
-                <div class="slider__content">
-                  <div class="slider__content__top">
-                    <span>Türkiye, SIDE, Kizilagac</span>
-                  </div>
-                  <div class="slider__content__all slider-2__padding">
-                    <div class="slider__content__bottom">
-                      <div class="slider__content__bottom-over">
-                        <span class="strip strip__length"></span>
-                        <span>5</span>
-                        <img src="./images/icon/star.svg" alt="star">
-                      </div>
-                      <p>Selectum Family Resort Belek</p>
-  
-                      <span>Titanic Hotels & Resort </span>
+              <div class="carrousel__item carrousel-1">
+                <div class="carrousel__content">
+                    <div class="carrousel__content__top">
+                      <span>Turkey, Konakla</span>
                     </div>
-                    <div class="hotel-info">
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
-                        </span>
-                        <span>All Inclusive</span>
+                    <div class="carrousel__content__all slider-2__padding">
+                      <div class="carrousel__content__bottom">
+                        <div class="carrousel__content__bottom-over">
+                          <span class="strip strip__length"></span>
+                          <span>5</span>
+                          <img src="./images/icon/star.svg" alt="star">
+                        </div>
+                        <p>Selectum Family Resort Belek</p>
+    
+                        <span>Titanic Hotels & Resort </span>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/calendar.svg" alt="calendar">
-                        </span>
-                        <span>8 night, 06 may</span>
+                      <div class="hotel-info">
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
+                          </span>
+                          <span>All Inclusive</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/calendar.svg" alt="calendar">
+                          </span>
+                          <span>8 night, 06 may</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/adults.svg" alt="adults">
+                          </span>
+                          <span>2 Adults</span>
+                        </div>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/adults.svg" alt="adults">
-                        </span>
-                        <span>2 Adults</span>
+                      <div class="cost">
+                        <span class="price">1 500 $</span>
+                        <span class="currency">USD</span>
                       </div>
                     </div>
-                    <div class="cost">
-                      <span class="price">1 500 $</span>
-                      <span class="currency">USD</span>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -452,245 +459,254 @@
         <img src="./images/clouds.png" alt="clouds">
       </div>
     </section>
-    <section class="header-slider slide-2">
+
+    <section class="header-slider slide-2 container-mobile">
+      <img class="mobile__logo" src="./images/logo.png" alt="logo">
       <h1 class="header-slider__title">Canada</h1>
       <h2 class="header-slider__subtitle">Time for opportunity</h2>
       <div class="button">
         <button class="button-orange">More detalies</button>
       </div>
-      <div class="flight-selection container">
-        <div class="flight-selection-all_wrapper">
-          <div class="flight-selection__container margin background">
-            <div class="flight-selection__wrapper">
-              <div class="flight-selection__item">
-                <div>
-                  <img src="./images/icon/where.svg" alt="where">
-                </div>
-                <div class="flight-selection__item__text">
-                  <span class="flight-selection__text-over">Departure from</span>
-                  <span class="flight-selection__text">Where?</span>
-                </div>
+      <div class="flight-selection-all_wrapper">
+        <div class="flight-selection__container margin background">
+          <div class="flight-selection__wrapper">
+            <div class="flight-selection__item">
+              <div class="flight-selection__item__icon">
+                <img src="./images/icon/where.svg" alt="where">
               </div>
-              <div class="flight-selection__item">
-                <div>
-                  <img src="./images/icon/plane.svg" alt="plane">
-                </div>
-                <div class="flight-selection__item__text">
-                  <span class="flight-selection__text-over">Country</span>
-                  <span class="flight-selection__text">Where?</span>
-                </div>
-              </div>
-              <div class="flight-selection__item">
-                <div>
-                  <img src="./images/icon/calendar.svg" alt="calendar">
-                </div>
-                <div class="flight-selection__item__text">
-                  <span class="flight-selection__text-over">Departure from - to</span>
-                  <div class="flight-selection__text special">
-                    <span>From</span>
-                    <span>→</span>
-                    <span>Down</span>
-                  </div>
-                </div>
-              </div>  
-              <div class="flight-selection__item">
-                <div>
-                  <img src="./images/icon/adults.svg" alt="adults">
-                </div>
-                <div class="flight-selection__item__text">
-                  <span class="flight-selection__text-over">Participants</span>
-                  <span class="flight-selection__text">Adults</span>
-                </div>
+              <div class="flight-selection__item__text">
+                <span class="flight-selection__text-over">Departure from</span>
+                <span class="flight-selection__text">Where?</span>
               </div>
             </div>
-            <button class="button__search";"><img src="./images/icon/search.svg" alt="search"></button>
+            <div class="flight-selection__item">
+              <div class="flight-selection__item__icon">
+                <img src="./images/icon/plane.svg" alt="plane">
+              </div>
+              <div class="flight-selection__item__text">
+                <span class="flight-selection__text-over">Country</span>
+                <span class="flight-selection__text">Where?</span>
+              </div>
+            </div>
+            <div class="flight-selection__item mobile_padding">
+              <div class="flight-selection__item__icon">
+                <img src="./images/icon/calendar.svg" alt="calendar">
+              </div>
+              <div class="flight-selection__item__text">
+                <span class="flight-selection__text-over">Departure from - to</span>
+                <div class="flight-selection__text special">
+                  <span>From</span>
+                  <span>→</span>
+                  <span>Down</span>
+                </div>
+              </div>
+            </div>  
+            <div class="flight-selection__item">
+              <div class="flight-selection__item__icon">
+                <img src="./images/icon/adults.svg" alt="adults">
+              </div>
+              <div class="flight-selection__item__text">
+                <span class="flight-selection__text-over">Participants</span>
+                <span class="flight-selection__text">Adults</span>
+              </div>
+            </div>
           </div>
-        
-          <div class="side__buttons">
-            <button class="button__search" style="border-radius: 50%"><img src="./images/icon/search.svg" alt="search"></button>
-            <button class="button__whatsapp"><img src="./images/icon/WhatsApp.svg" alt="WhatsApp"></button>
-          </div>
+          <button class="button__search";">
+            <img src="./images/icon/search.svg" alt="search">
+          </button>
+          <button class=" button__search button__search-mobile";">
+            <img src="./images/icon/search.svg" alt="search">
+            <span>Search</span>
+          </button>
+        </div>
+      
+        <div class="side__buttons">
+          <button class="button__search" style="border-radius: 50%"><img src="./images/icon/search.svg" alt="search"></button>
+          <button class="button__whatsapp"><img src="./images/icon/WhatsApp.svg" alt="WhatsApp"></button>
         </div>
       </div>
-      <div class="carrousel popular-hotels-turkey container">
+      <!-- <div class="flight-selection container">
+      </div> -->
+
+      <div class="popular-hotels popular-hotels-turkey">
         <div class="popular-hotels__container background">
           <div class="popular-hotels__text">
             <div class="popular-hotels__title">Popular Hotels</div>
             <span class="strip-longer strip"></span>
             <span class="strip-shorter strip"></span>  
           </div>
-          <div class="slider__wrapper">
-            <div class="slider overflow">
-              <div class="slider__item slider-1">
-                <div class="slider__content">
-                  <div class="slider__content__top">
-                    <span>Turkey, Konakla</span>
-                  </div>
-                  <div class="slider__content__all slider-2__padding">
-                    <div class="slider__content__bottom">
-                      <div class="slider__content__bottom-over">
-                        <span class="strip strip__length"></span>
-                        <span>5</span>
-                        <img src="./images/icon/star.svg" alt="star">
-                      </div>
-                      <p>Selectum Family Resort Belek</p>
-  
-                      <span>Titanic Hotels & Resort </span>
+          <div class="carrousel__wrapper">
+            <div class="carrousel overflow">
+              <div class="carrousel__item carrousel-2">
+                <div class="carrousel__content">
+                    <div class="carrousel__content__top">
+                      <span>Turkey, Konakla</span>
                     </div>
-                    <div class="hotel-info">
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
-                        </span>
-                        <span>All Inclusive</span>
+                    <div class="carrousel__content__all slider-2__padding">
+                      <div class="carrousel__content__bottom">
+                        <div class="carrousel__content__bottom-over">
+                          <span class="strip strip__length"></span>
+                          <span>5</span>
+                          <img src="./images/icon/star.svg" alt="star">
+                        </div>
+                        <p>Selectum Family Resort Belek</p>
+    
+                        <span>Titanic Hotels & Resort </span>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/calendar.svg" alt="calendar">
-                        </span>
-                        <span>8 night, 06 may</span>
+                      <div class="hotel-info">
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
+                          </span>
+                          <span>All Inclusive</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/calendar.svg" alt="calendar">
+                          </span>
+                          <span>8 night, 06 may</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/adults.svg" alt="adults">
+                          </span>
+                          <span>2 Adults</span>
+                        </div>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/adults.svg" alt="adults">
-                        </span>
-                        <span>2 Adults</span>
+                      <div class="cost">
+                        <span class="price">1 500 $</span>
+                        <span class="currency">USD</span>
                       </div>
                     </div>
-                    <div class="cost">
-                      <span class="price">1 500 $</span>
-                      <span class="currency">USD</span>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="slider__item slider-2">
-                <div class="slider__content slider-2__gap">
-                  <div class="slider__content__top slider-2__top__margin">
-                    <span>Turkey, Konakla</span>
-                  </div>
-                  <div class="slider__content__all slider-2__padding">
-                    <div class="slider__content__bottom">
-                      <div class="slider__content__bottom-over">
-                        <span class="strip strip__length"></span>
-                        <span>5</span>
-                        <img src="./images/icon/star.svg" alt="star">
-                      </div>
-                      <p>Selectum Family Resort Belek</p>
-  
-                      <span>Titanic Hotels & Resort </span>
+              <div class="carrousel__item carrousel-2">
+                <div class="carrousel__content">
+                    <div class="carrousel__content__top">
+                      <span>Turkey, Konakla</span>
                     </div>
-                    <div class="hotel-info">
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
-                        </span>
-                        <span>All Inclusive</span>
+                    <div class="carrousel__content__all slider-2__padding">
+                      <div class="carrousel__content__bottom">
+                        <div class="carrousel__content__bottom-over">
+                          <span class="strip strip__length"></span>
+                          <span>5</span>
+                          <img src="./images/icon/star.svg" alt="star">
+                        </div>
+                        <p>Selectum Family Resort Belek</p>
+    
+                        <span>Titanic Hotels & Resort </span>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/calendar.svg" alt="calendar">
-                        </span>
-                        <span>8 night, 06 may</span>
+                      <div class="hotel-info">
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
+                          </span>
+                          <span>All Inclusive</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/calendar.svg" alt="calendar">
+                          </span>
+                          <span>8 night, 06 may</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/adults.svg" alt="adults">
+                          </span>
+                          <span>2 Adults</span>
+                        </div>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/adults.svg" alt="adults">
-                        </span>
-                        <span>2 Adults</span>
+                      <div class="cost">
+                        <span class="price">1 500 $</span>
+                        <span class="currency">USD</span>
                       </div>
                     </div>
-                    <div class="cost">
-                      <span class="price">1 500 $</span>
-                      <span class="currency">USD</span>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="slider__item slider-3">
-                <div class="slider__content">
-                  <div class="slider__content__top">
-                    <span>Türkiye, BELEK, Ileribas</span>
-                  </div>
-                  <div class="slider__content__all slider-2__padding">
-                    <div class="slider__content__bottom">
-                      <div class="slider__content__bottom-over">
-                        <span class="strip strip__length"></span>
-                        <span>5</span>
-                        <img src="./images/icon/star.svg" alt="star">
-                      </div>
-                      <p>Selectum Family Resort Belek</p>
-  
-                      <span>Titanic Hotels & Resort </span>
+              <div class="carrousel__item carrousel-2">
+                <div class="carrousel__content">
+                    <div class="carrousel__content__top">
+                      <span>Turkey, Konakla</span>
                     </div>
-                    <div class="hotel-info">
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
-                        </span>
-                        <span>All Inclusive</span>
+                    <div class="carrousel__content__all slider-2__padding">
+                      <div class="carrousel__content__bottom">
+                        <div class="carrousel__content__bottom-over">
+                          <span class="strip strip__length"></span>
+                          <span>5</span>
+                          <img src="./images/icon/star.svg" alt="star">
+                        </div>
+                        <p>Selectum Family Resort Belek</p>
+    
+                        <span>Titanic Hotels & Resort </span>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/calendar.svg" alt="calendar">
-                        </span>
-                        <span>8 night, 06 may</span>
+                      <div class="hotel-info">
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
+                          </span>
+                          <span>All Inclusive</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/calendar.svg" alt="calendar">
+                          </span>
+                          <span>8 night, 06 may</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/adults.svg" alt="adults">
+                          </span>
+                          <span>2 Adults</span>
+                        </div>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/adults.svg" alt="adults">
-                        </span>
-                        <span>2 Adults</span>
+                      <div class="cost">
+                        <span class="price">1 500 $</span>
+                        <span class="currency">USD</span>
                       </div>
                     </div>
-                    <div class="cost">
-                      <span class="price">1 500 $</span>
-                      <span class="currency">USD</span>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="slider__item slider-4">
-                <div class="slider__content">
-                  <div class="slider__content__top">
-                    <span>Türkiye, SIDE, Kizilagac</span>
-                  </div>
-                  <div class="slider__content__all slider-2__padding">
-                    <div class="slider__content__bottom">
-                      <div class="slider__content__bottom-over">
-                        <span class="strip strip__length"></span>
-                        <span>5</span>
-                        <img src="./images/icon/star.svg" alt="star">
-                      </div>
-                      <p>Selectum Family Resort Belek</p>
-  
-                      <span>Titanic Hotels & Resort </span>
+              <div class="carrousel__item carrousel-2">
+                <div class="carrousel__content">
+                    <div class="carrousel__content__top">
+                      <span>Turkey, Konakla</span>
                     </div>
-                    <div class="hotel-info">
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
-                        </span>
-                        <span>All Inclusive</span>
+                    <div class="carrousel__content__all slider-2__padding">
+                      <div class="carrousel__content__bottom">
+                        <div class="carrousel__content__bottom-over">
+                          <span class="strip strip__length"></span>
+                          <span>5</span>
+                          <img src="./images/icon/star.svg" alt="star">
+                        </div>
+                        <p>Selectum Family Resort Belek</p>
+    
+                        <span>Titanic Hotels & Resort </span>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/calendar.svg" alt="calendar">
-                        </span>
-                        <span>8 night, 06 may</span>
+                      <div class="hotel-info">
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
+                          </span>
+                          <span>All Inclusive</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/calendar.svg" alt="calendar">
+                          </span>
+                          <span>8 night, 06 may</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/adults.svg" alt="adults">
+                          </span>
+                          <span>2 Adults</span>
+                        </div>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/adults.svg" alt="adults">
-                        </span>
-                        <span>2 Adults</span>
+                      <div class="cost">
+                        <span class="price">1 500 $</span>
+                        <span class="currency">USD</span>
                       </div>
                     </div>
-                    <div class="cost">
-                      <span class="price">1 500 $</span>
-                      <span class="currency">USD</span>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -701,245 +717,308 @@
         <img src="./images/clouds.png" alt="clouds">
       </div>
     </section>
-    <section class="header-slider slide-3">
+    <!-- <div class="flight-selection container">
+      <div class="flight-selection-all_wrapper">
+        <div class="flight-selection__container margin background">
+          <div class="flight-selection__wrapper">
+            <div class="flight-selection__item">
+              <div>
+                <img src="./images/icon/where.svg" alt="where">
+              </div>
+              <div class="flight-selection__item__text">
+                <span class="flight-selection__text-over">Departure from</span>
+                <span class="flight-selection__text">Where?</span>
+              </div>
+            </div>
+            <div class="flight-selection__item">
+              <div>
+                <img src="./images/icon/plane.svg" alt="plane">
+              </div>
+              <div class="flight-selection__item__text">
+                <span class="flight-selection__text-over">Country</span>
+                <span class="flight-selection__text">Where?</span>
+              </div>
+            </div>
+            <div class="flight-selection__item">
+              <div>
+                <img src="./images/icon/calendar.svg" alt="calendar">
+              </div>
+              <div class="flight-selection__item__text">
+                <span class="flight-selection__text-over">Departure from - to</span>
+                <div class="flight-selection__text special">
+                  <span>From</span>
+                  <span>→</span>
+                  <span>Down</span>
+                </div>
+              </div>
+            </div>  
+            <div class="flight-selection__item">
+              <div>
+                <img src="./images/icon/adults.svg" alt="adults">
+              </div>
+              <div class="flight-selection__item__text">
+                <span class="flight-selection__text-over">Participants</span>
+                <span class="flight-selection__text">Adults</span>
+              </div>
+            </div>
+          </div>
+          <button class="button__search";"><img src="./images/icon/search.svg" alt="search"></button>
+        </div>
+      
+        <div class="side__buttons">
+          <button class="button__search" style="border-radius: 50%"><img src="./images/icon/search.svg" alt="search"></button>
+          <button class="button__whatsapp"><img src="./images/icon/WhatsApp.svg" alt="WhatsApp"></button>
+        </div>
+      </div>
+    </div> -->
+
+    <section class="header-slider slide-3 container-mobile">
+      <img class="mobile__logo" src="./images/logo.png" alt="logo">
       <h1 class="header-slider__title">Georgia</h1>
       <h2 class="header-slider__subtitle">Time for opportunity</h2>
       <div class="button">
         <button class="button-orange">More detalies</button>
       </div>
-      <div class="flight-selection container">
-        <div class="flight-selection-all_wrapper">
-          <div class="flight-selection__container margin background">
-            <div class="flight-selection__wrapper">
-              <div class="flight-selection__item">
-                <div>
-                  <img src="./images/icon/where.svg" alt="where">
-                </div>
-                <div class="flight-selection__item__text">
-                  <span class="flight-selection__text-over">Departure from</span>
-                  <span class="flight-selection__text">Where?</span>
-                </div>
+      <div class="flight-selection-all_wrapper">
+        <div class="flight-selection__container margin background">
+          <div class="flight-selection__wrapper">
+            <div class="flight-selection__item">
+              <div class="flight-selection__item__icon">
+                <img src="./images/icon/where.svg" alt="where">
               </div>
-              <div class="flight-selection__item">
-                <div>
-                  <img src="./images/icon/plane.svg" alt="plane">
-                </div>
-                <div class="flight-selection__item__text">
-                  <span class="flight-selection__text-over">Country</span>
-                  <span class="flight-selection__text">Where?</span>
-                </div>
-              </div>
-              <div class="flight-selection__item">
-                <div>
-                  <img src="./images/icon/calendar.svg" alt="calendar">
-                </div>
-                <div class="flight-selection__item__text">
-                  <span class="flight-selection__text-over">Departure from - to</span>
-                  <div class="flight-selection__text special">
-                    <span>From</span>
-                    <span>→</span>
-                    <span>Down</span>
-                  </div>
-                </div>
-              </div>  
-              <div class="flight-selection__item">
-                <div>
-                  <img src="./images/icon/adults.svg" alt="adults">
-                </div>
-                <div class="flight-selection__item__text">
-                  <span class="flight-selection__text-over">Participants</span>
-                  <span class="flight-selection__text">Adults</span>
-                </div>
+              <div class="flight-selection__item__text">
+                <span class="flight-selection__text-over">Departure from</span>
+                <span class="flight-selection__text">Where?</span>
               </div>
             </div>
-            <button class="button__search";"><img src="./images/icon/search.svg" alt="search"></button>
+            <div class="flight-selection__item">
+              <div class="flight-selection__item__icon">
+                <img src="./images/icon/plane.svg" alt="plane">
+              </div>
+              <div class="flight-selection__item__text">
+                <span class="flight-selection__text-over">Country</span>
+                <span class="flight-selection__text">Where?</span>
+              </div>
+            </div>
+            <div class="flight-selection__item mobile_padding">
+              <div class="flight-selection__item__icon">
+                <img src="./images/icon/calendar.svg" alt="calendar">
+              </div>
+              <div class="flight-selection__item__text">
+                <span class="flight-selection__text-over">Departure from - to</span>
+                <div class="flight-selection__text special">
+                  <span>From</span>
+                  <span>→</span>
+                  <span>Down</span>
+                </div>
+              </div>
+            </div>  
+            <div class="flight-selection__item">
+              <div class="flight-selection__item__icon">
+                <img src="./images/icon/adults.svg" alt="adults">
+              </div>
+              <div class="flight-selection__item__text">
+                <span class="flight-selection__text-over">Participants</span>
+                <span class="flight-selection__text">Adults</span>
+              </div>
+            </div>
           </div>
-        
-          <div class="side__buttons">
-            <button class="button__search" style="border-radius: 50%"><img src="./images/icon/search.svg" alt="search"></button>
-            <button class="button__whatsapp"><img src="./images/icon/WhatsApp.svg" alt="WhatsApp"></button>
-          </div>
+          <button class="button__search";">
+            <img src="./images/icon/search.svg" alt="search">
+          </button>
+          <button class=" button__search button__search-mobile";">
+            <img src="./images/icon/search.svg" alt="search">
+            <span>Search</span>
+          </button>
+        </div>
+      
+        <div class="side__buttons">
+          <button class="button__search" style="border-radius: 50%"><img src="./images/icon/search.svg" alt="search"></button>
+          <button class="button__whatsapp"><img src="./images/icon/WhatsApp.svg" alt="WhatsApp"></button>
         </div>
       </div>
-      <div class="carrousel popular-hotels-turkey container">
+      <!-- <div class="flight-selection container">
+      </div> -->
+
+      <div class="popular-hotels popular-hotels-turkey">
         <div class="popular-hotels__container background">
           <div class="popular-hotels__text">
             <div class="popular-hotels__title">Popular Hotels</div>
             <span class="strip-longer strip"></span>
             <span class="strip-shorter strip"></span>  
           </div>
-          <div class="slider__wrapper">
-            <div class="slider overflow">
-              <div class="slider__item slider-1">
-                <div class="slider__content">
-                  <div class="slider__content__top">
-                    <span>Turkey, Konakla</span>
-                  </div>
-                  <div class="slider__content__all slider-2__padding">
-                    <div class="slider__content__bottom">
-                      <div class="slider__content__bottom-over">
-                        <span class="strip strip__length"></span>
-                        <span>5</span>
-                        <img src="./images/icon/star.svg" alt="star">
-                      </div>
-                      <p>Selectum Family Resort Belek</p>
-  
-                      <span>Titanic Hotels & Resort </span>
+          <div class="carrousel__wrapper">
+            <div class="carrousel overflow">
+              <div class="carrousel__item carrousel-3">
+                <div class="carrousel__content">
+                    <div class="carrousel__content__top">
+                      <span>Turkey, Konakla</span>
                     </div>
-                    <div class="hotel-info">
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
-                        </span>
-                        <span>All Inclusive</span>
+                    <div class="carrousel__content__all slider-2__padding">
+                      <div class="carrousel__content__bottom">
+                        <div class="carrousel__content__bottom-over">
+                          <span class="strip strip__length"></span>
+                          <span>5</span>
+                          <img src="./images/icon/star.svg" alt="star">
+                        </div>
+                        <p>Selectum Family Resort Belek</p>
+    
+                        <span>Titanic Hotels & Resort </span>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/calendar.svg" alt="calendar">
-                        </span>
-                        <span>8 night, 06 may</span>
+                      <div class="hotel-info">
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
+                          </span>
+                          <span>All Inclusive</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/calendar.svg" alt="calendar">
+                          </span>
+                          <span>8 night, 06 may</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/adults.svg" alt="adults">
+                          </span>
+                          <span>2 Adults</span>
+                        </div>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/adults.svg" alt="adults">
-                        </span>
-                        <span>2 Adults</span>
+                      <div class="cost">
+                        <span class="price">1 500 $</span>
+                        <span class="currency">USD</span>
                       </div>
                     </div>
-                    <div class="cost">
-                      <span class="price">1 500 $</span>
-                      <span class="currency">USD</span>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="slider__item slider-2">
-                <div class="slider__content slider-2__gap">
-                  <div class="slider__content__top slider-2__top__margin">
-                    <span>Turkey, Konakla</span>
-                  </div>
-                  <div class="slider__content__all slider-2__padding">
-                    <div class="slider__content__bottom">
-                      <div class="slider__content__bottom-over">
-                        <span class="strip strip__length"></span>
-                        <span>5</span>
-                        <img src="./images/icon/star.svg" alt="star">
-                      </div>
-                      <p>Selectum Family Resort Belek</p>
-  
-                      <span>Titanic Hotels & Resort </span>
+              <div class="carrousel__item carrousel-4">
+                <div class="carrousel__content">
+                    <div class="carrousel__content__top">
+                      <span>Turkey, Konakla</span>
                     </div>
-                    <div class="hotel-info">
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
-                        </span>
-                        <span>All Inclusive</span>
+                    <div class="carrousel__content__all slider-2__padding">
+                      <div class="carrousel__content__bottom">
+                        <div class="carrousel__content__bottom-over">
+                          <span class="strip strip__length"></span>
+                          <span>5</span>
+                          <img src="./images/icon/star.svg" alt="star">
+                        </div>
+                        <p>Selectum Family Resort Belek</p>
+    
+                        <span>Titanic Hotels & Resort </span>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/calendar.svg" alt="calendar">
-                        </span>
-                        <span>8 night, 06 may</span>
+                      <div class="hotel-info">
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
+                          </span>
+                          <span>All Inclusive</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/calendar.svg" alt="calendar">
+                          </span>
+                          <span>8 night, 06 may</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/adults.svg" alt="adults">
+                          </span>
+                          <span>2 Adults</span>
+                        </div>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/adults.svg" alt="adults">
-                        </span>
-                        <span>2 Adults</span>
+                      <div class="cost">
+                        <span class="price">1 500 $</span>
+                        <span class="currency">USD</span>
                       </div>
                     </div>
-                    <div class="cost">
-                      <span class="price">1 500 $</span>
-                      <span class="currency">USD</span>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="slider__item slider-3">
-                <div class="slider__content">
-                  <div class="slider__content__top">
-                    <span>Türkiye, BELEK, Ileribas</span>
-                  </div>
-                  <div class="slider__content__all slider-2__padding">
-                    <div class="slider__content__bottom">
-                      <div class="slider__content__bottom-over">
-                        <span class="strip strip__length"></span>
-                        <span>5</span>
-                        <img src="./images/icon/star.svg" alt="star">
-                      </div>
-                      <p>Selectum Family Resort Belek</p>
-  
-                      <span>Titanic Hotels & Resort </span>
+              <div class="carrousel__item carrousel-3">
+                <div class="carrousel__content">
+                    <div class="carrousel__content__top">
+                      <span>Turkey, Konakla</span>
                     </div>
-                    <div class="hotel-info">
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
-                        </span>
-                        <span>All Inclusive</span>
+                    <div class="carrousel__content__all slider-2__padding">
+                      <div class="carrousel__content__bottom">
+                        <div class="carrousel__content__bottom-over">
+                          <span class="strip strip__length"></span>
+                          <span>5</span>
+                          <img src="./images/icon/star.svg" alt="star">
+                        </div>
+                        <p>Selectum Family Resort Belek</p>
+    
+                        <span>Titanic Hotels & Resort </span>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/calendar.svg" alt="calendar">
-                        </span>
-                        <span>8 night, 06 may</span>
+                      <div class="hotel-info">
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
+                          </span>
+                          <span>All Inclusive</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/calendar.svg" alt="calendar">
+                          </span>
+                          <span>8 night, 06 may</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/adults.svg" alt="adults">
+                          </span>
+                          <span>2 Adults</span>
+                        </div>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/adults.svg" alt="adults">
-                        </span>
-                        <span>2 Adults</span>
+                      <div class="cost">
+                        <span class="price">1 500 $</span>
+                        <span class="currency">USD</span>
                       </div>
                     </div>
-                    <div class="cost">
-                      <span class="price">1 500 $</span>
-                      <span class="currency">USD</span>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="slider__item slider-4">
-                <div class="slider__content">
-                  <div class="slider__content__top">
-                    <span>Türkiye, SIDE, Kizilagac</span>
-                  </div>
-                  <div class="slider__content__all slider-2__padding">
-                    <div class="slider__content__bottom">
-                      <div class="slider__content__bottom-over">
-                        <span class="strip strip__length"></span>
-                        <span>5</span>
-                        <img src="./images/icon/star.svg" alt="star">
-                      </div>
-                      <p>Selectum Family Resort Belek</p>
-  
-                      <span>Titanic Hotels & Resort </span>
+              <div class="carrousel__item carrousel-4">
+                <div class="carrousel__content">
+                    <div class="carrousel__content__top">
+                      <span>Turkey, Konakla</span>
                     </div>
-                    <div class="hotel-info">
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
-                        </span>
-                        <span>All Inclusive</span>
+                    <div class="carrousel__content__all slider-2__padding">
+                      <div class="carrousel__content__bottom">
+                        <div class="carrousel__content__bottom-over">
+                          <span class="strip strip__length"></span>
+                          <span>5</span>
+                          <img src="./images/icon/star.svg" alt="star">
+                        </div>
+                        <p>Selectum Family Resort Belek</p>
+    
+                        <span>Titanic Hotels & Resort </span>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/calendar.svg" alt="calendar">
-                        </span>
-                        <span>8 night, 06 may</span>
+                      <div class="hotel-info">
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/all-inclusive.svg" alt="all-inclusive">
+                          </span>
+                          <span>All Inclusive</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/calendar.svg" alt="calendar">
+                          </span>
+                          <span>8 night, 06 may</span>
+                        </div>
+                        <div class="hotel-info__content">
+                          <span class="hotel-info__icon">
+                            <img src="./images/hotels/icon/adults.svg" alt="adults">
+                          </span>
+                          <span>2 Adults</span>
+                        </div>
                       </div>
-                      <div class="hotel-info__content">
-                        <span class="hotel-info__icon">
-                          <img src="./images/hotels/icon/adults.svg" alt="adults">
-                        </span>
-                        <span>2 Adults</span>
+                      <div class="cost">
+                        <span class="price">1 500 $</span>
+                        <span class="currency">USD</span>
                       </div>
                     </div>
-                    <div class="cost">
-                      <span class="price">1 500 $</span>
-                      <span class="currency">USD</span>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -952,12 +1031,12 @@
     </section>
   </div>
 
-  <section class="work-process container">
+  <section class="work-process">
     <div class="work-process__content">
       <div class="work-process__title">
         <h2 class="work-process__text">How we work?</h2>
-        <span class="strip-longer strip"></span>
-        <span class="strip-shorter strip"></span>
+        <span class="strip-longer strip work-process__text__strip-longer"></span>
+        <span class="strip-shorter strip work-process__strip-shorter"></span>
       </div>
       <img class="snake" src="./images/snake.svg" alt="snake">
       <img class="earth-1 earth" src="./images/icon/Earth.svg" alt="Earth">
@@ -983,7 +1062,7 @@
           <span style="color: #FF7102;">02</span>
         </div>
         <div class="inscription">
-          <h2 class="inscription__title">Passport And Visa</h2>
+          <h2 class="inscription__title">Payment</h2>
           <p class="inscription__text">What it is - the winter tourist season 2022-23, how generators save domestic tourism, how Join UP! </p>
         </div>
       </div>
@@ -992,7 +1071,7 @@
           <span>03</span>
         </div>
         <div class="inscription">
-          <h2 class="inscription__title">Payment</h2>
+          <h2 class="inscription__title">Passport And Visa</h2>
           <p class="inscription__text">What it is - the winter tourist season 2022-23, how generators save domestic tourism, how Join UP! </p>
         </div>
       </div>
@@ -1005,18 +1084,63 @@
           <p class="inscription__text">What it is - the winter tourist season 2022-23, how generators save domestic tourism, how Join UP! </p>
         </div>
       </div>
-
-
-
-
-
     </div>
-
   </section>
 
   <section class="form">
     <h1 class="form__inscription">any questions left?</h1>
     <div class="form__background">
+      <div class="form__gradient">
+        <div class="form__gradient-left"></div>
+        <div class="form__gradient-right"></div>
+      </div>
+
+
+      <div class="form__girl">
+        <img src="./images/girl-over.png" alt="">
+      </div>
+      <div class="form__girl-mobile">
+        <img src="./images/girl-m.png" alt="">
+      </div>
+
+      <div class="form-container">
+        <h2>Questions Form</h2>
+        <form class="form-inner">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter Name">
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter Email">
+      
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" placeholder="Enter Phone">
+      
+          <label for="message">Message:</label>
+          <textarea id="message" placeholder="Enter Message"></textarea>
+      
+          <button type="submit">Send</button>
+        </form>
+      </div> 
+
+      <img class="airplane-decktop" src="./images/banner-form/airplane.png" alt="airplane">
+      <img class="cloud cloud-1" src="./images/banner-form/cloud.png" alt="cloud">
+      <img class="cloud cloud-2" src="./images/banner-form/cloud.png" alt="cloud">
+      <img class="cloud cloud-3" src="./images/banner-form/cloud.png" alt="cloud"> 
+    </div>
+    <img class="airplane" src="./images/banner-form/airplane.png" alt="airplane">
+
+
+  </section>
+
+  <!-- <section class="form-mibile">
+    <h1 class="form__inscription">any questions left?</h1>
+    <div class="form__background">
+      <div class="form__gradient-left"></div>
+      <div class="form__gradient-right"></div>
+      <div class="form__girl">
+        <img src="./images/girl-over.png" alt="">
+      </div>
+
       <div class="form-container">
         <h2>Questions Form</h2>
         <form>
@@ -1034,14 +1158,14 @@
       
           <button type="submit">Send</button>
         </form>
-      </div>
+      </div> 
       <img class="airplane" src="./images/banner-form/airplane.png" alt="airplane">
       <img class="cloud cloud-1" src="./images/banner-form/cloud.png" alt="cloud">
       <img class="cloud cloud-2" src="./images/banner-form/cloud.png" alt="cloud">
-      <img class="cloud cloud-3" src="./images/banner-form/cloud.png" alt="cloud">
+      <img class="cloud cloud-3" src="./images/banner-form/cloud.png" alt="cloud"> 
     </div>
 
-  </section>
+  </section> -->
 
   <footer class="footer container">
     <div class="footer__block block__flex">
@@ -1112,12 +1236,14 @@
     <div class="footer__block">
       <img src="./images/location.png" alt="location" style="padding: 23.5rem 52rem 52rem 52rem;">
     </div>
-  </footer>
+  </footer> 
   <div class="copyright">
     <p>&copy; 2023 Your Company. All rights reserved.</p>
-  </div>
+  </div> 
 
   <script src="js/slick.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
+
+

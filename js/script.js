@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.slider').slick({
+  $('.carrousel').slick({
     arrows:true,
     dots:false,
     speed:500,
@@ -7,7 +7,16 @@ $(document).ready(function(){
     slidesToScroll: 1,
     infinite: true,
     waitForAnimate:true,
-    variableWidth: true,  
+    variableWidth: true,
+    responsive:[
+      {
+        breakpoint:992,
+        settings:{
+          sliderToShow: 2,
+
+        }
+      }
+    ]
   });
 });
 $(document).ready(function(){
@@ -16,12 +25,13 @@ $(document).ready(function(){
     dots:false,
     speed:500,
     sliderToShow: 1,
-    variableWidth: true,  
+    variableWidth: false,  
     infinite: true,
     slidesToScroll: 1,
     speed: 1000,
     // autoplay: true,
     autoplaySpeed: 2000,
+    fade: true,
 
   });
 });
