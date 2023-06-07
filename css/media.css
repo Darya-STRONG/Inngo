@@ -4,6 +4,7 @@
   }
   body {
     width: 370rem;
+    line-height: 1;
   }
   .header-slider {
     overflow: visible;
@@ -652,6 +653,13 @@
     font-weight: 700;
     font-size: 12.19rem;
     width: 10px;
+    height: 0;
+  }
+  .carrousel__content__bottom span{
+    font-size: 12.19rem;
+  }
+  .carrousel__content__bottom-over{
+    gap: 5rem;
   }
   .strip__length {
     width: 100rem;
@@ -662,6 +670,28 @@
   } */
   .flight-selection-all_wrapper {
     padding: 0rem;
+  }
+  .carrousel__item:hover .carrousel__content__all {
+    height: 65%;
+    padding:0rem 11rem 11rem 11rem;
+  }
+  .hotel-info {
+    gap: 0;
+    padding-bottom: 5rem;
+    padding-top: 7rem;
+  }
+  .hotel-info__content {
+    align-items: center;
+  }
+  .currency{
+    font-size: 12rem;
+  }
+  .price {
+    font-size: 16rem;
+  }
+  .hotel-info__icon {
+    width: 10rem;
+    height: 10rem;
   }
 
 
