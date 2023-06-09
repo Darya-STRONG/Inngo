@@ -43,15 +43,38 @@ a{
   color: inherit;
   display: inline-block;
 }
+.nav__link:hover {
+  color: #FF7A00;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+svg {
+  max-width: 100%;
+  height: auto;
+}
+input {
+  all: unset;
+}
+.nav__right img:hover {
+  background: none;
 
-.container{
-  /* width: 1440rem; */
-  width: 100%;
-  margin: 0rem auto;
-  padding: 0px 82rem;
-  padding-top: 28.5rem;
+}
+.header__nav_sticky-bottom img:hover{
+  background: none;
+
 }
 
+.container{
+  width: 1440rem;
+  margin: 0rem auto;
+  padding: 0px 82rem;
+  padding-top: 56.5rem;
+}
 .wrapper {
   background-image: url('../images/banner.png');
   background-repeat: no-repeat;
@@ -60,9 +83,60 @@ a{
 
 .side__buttons {
   position: fixed;
-  top: calc(50% + 253.625rem);
   right: 5%;
+  top:450rem;
   z-index: 9999;
 }
 
+.side__buttons button {
+  position: relative;
+  border-radius: 50%;
+}
+.side__button-search {
+  color:  #0065C1;
+}
+.side__button-search:hover {
+  color:  #D65A00;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.pulse a{
+  color: #D65A00;
+}
 
+.pulse a:hover {
+  color: #0065C1;
+}
+
+
+.pulse::before {
+  content: "";
+  position: absolute;
+  left: -12rem;
+  right: -12rem;
+  top: -11rem;
+  bottom: -10rem;
+  border-radius: 50%;
+  background: linear-gradient(148.22deg, #FF7A00 27.03%, #FF7A00 27.03%, #D65A00 93.23%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  animation: pulse 1s linear infinite;
+}
+
+.pulse:hover::before {
+  background: linear-gradient(179.64deg, #00A6DB 19.91%, #0065C1 99.92%);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+}

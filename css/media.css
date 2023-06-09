@@ -693,6 +693,15 @@
     width: 10rem;
     height: 10rem;
   }
+  .slide-1 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%), url('../images/slider-banner/turkey.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850rem;
+    background-position:top;
 
-
+  }
+  .flight-selection-all_wrapper {
+    display: none;
+  }
 }

@@ -235,7 +235,7 @@
   height: 38rem;
   white-space: nowrap;
 }
-/* .strip__length {
-  width: 172rem;
-  height: 2rem;
-} */
+.popular-hotels {
+  position: relative;
+  top: 321rem;
+}

@@ -56,15 +56,6 @@ if ($(window).width() >= 992) {
   });
 };
 
-// document.addEventListener("click", function(event) {
-//   const target = event.target;
-//   if (!target.closest(".nav__item")) {
-//     const dropdownMenus = document.querySelectorAll(".dropdown-menu");
-//     dropdownMenus.forEach(function(menu) {
-//       menu.style.display = "none";
-//     });
-//   }
-// });
 
 
 const burgerMenu = document.querySelector('.burger-menu');
@@ -83,6 +74,8 @@ closeButton.addEventListener('click', function() {
   closeButton.style.display = 'none';
 });
 
+
+
 // код для закриття меню при натисканні на інше місце на сторінці
 document.addEventListener('click', function(event) {
   const target = event.target;
@@ -96,4 +89,88 @@ document.addEventListener('click', function(event) {
     menuButton.style.display = 'block';
     closeButton.style.display = 'none';
   }
+});
+
+
+
+// Замена хедера на хедер фиксирований при скролле страницы
+const header = document.querySelector('.header');
+const headerFixed = document.querySelector('.header-fixed');
+
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset > header.offsetTop) {
+    header.style.display = 'none';
+    headerFixed.style.display = 'block';
+  } else {
+    header.style.display = 'block';
+    headerFixed.style.display = 'none';
+  }
+});
+
+
+
+// Получаем ссылки на все элементы выпадающих меню
+const dropdowns = document.querySelectorAll('.header-dropdown');
+const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+const dropdownMenus = document.querySelectorAll('.dropdown-menu');
+
+// Добавляем обработчики событий для каждого выпадающего меню
+dropdownToggles.forEach((dropdownToggle, index) => {
+  dropdownToggle.addEventListener('click', function(event) {
+    event.preventDefault(); // Предотвращаем переход по ссылке
+    dropdowns[index].classList.toggle('open');
+  });
+});
+
+// Обрабатываем событие клика вне выпадающего меню для каждого меню
+document.addEventListener('click', function(event) {
+  dropdowns.forEach((dropdown) => {
+    const target = event.target;
+    if (!dropdown.contains(target)) {
+      dropdown.classList.remove('open');
+    }
+  });
+});
+
+
+
+//Фильтрация стран при вводе текста в инпут
+function filterCountries() {
+  let input, filter, dropdown, countries, a, i;
+  input = document.getElementById("countryInput");
+  filter = input.value.toUpperCase();
+  dropdown = document.getElementById("countryDropdown");
+  countries = dropdown.getElementsByTagName("a");
+  
+  for (i = 0; i < countries.length; i++) {
+    a = countries[i];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      a.style.display = "";
+    } else {
+      a.style.display = "none";
+    }
+  }
+}
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var travelerItems = document.querySelectorAll('.item__traveler a');
+
+  travelerItems.forEach(function(item) {
+    item.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      // Удаляем класс 'active' у всех элементов
+      travelerItems.forEach(function(item) {
+        item.classList.remove('active');
+      });
+
+      // Добавляем класс 'active' к выбранному элементу
+      this.classList.add('active');
+    });
+  });
 });
