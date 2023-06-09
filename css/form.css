@@ -1,6 +1,10 @@
+.form {
+  position: relative;
+  top: -813rem;
+}
 .form-container {
-  width: 371rem;
-  height:505rem ;
+  width: 401rem;
+  height: 526rem;
   background: rgba(255, 255, 255, 0.6);
   border: 1.4rem solid #FFFFFF;
   box-shadow: 0rem 4rem 18rem rgba(0, 0, 0, 0.15);
@@ -37,19 +41,23 @@
 .form-container input[type="email"],
 .form-container input[type="tel"],
 .form-container textarea {
-  width: 100%;
+  width: 307rem;
   padding: 16rem 12rem 16rem 12rem;
   background: rgba(255, 255, 255, 0.75);
   box-shadow: 0rem 2rem 5rem rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(8rem);
   border-radius: 8rem;
   margin-bottom: 19rem;
+  margin-top: 5rem;
   border: 2rem solid rgb(147, 176, 228, 0.3);
   font-size: 16rem;
 }
+.form-container textarea {
+  width: 307rem;
+  height: 48rem;
+}
 
 .form-container button {
-  width: 50%;
   padding: 10rem;
   background: #FFFFFF;
   border: 1rem solid rgba(255, 255, 255, 1);
@@ -63,10 +71,14 @@
   color: #FFFFFF;
   width: 127rem;
   height: 48rem;
+  margin-left: 104rem;
+  
+
+}
+.form-container button:hover {
+  background: linear-gradient(148.22deg, #FF7A00 27.03%, #FF7A00 27.03%, #D65A00 93.23%);
 }
 .form-container label {
-  margin-bottom: 10rem;
-  padding-bottom: 5rem;
   color: #525252;
   font-weight: 500;
   font-size: 16rem;
@@ -85,7 +97,7 @@
   line-height: 113.5%;
 }
 .form-container textarea {
-  width: 307rem;
+  width: 337rem;
   height: 96rem;
   font-weight: 500;
   font-size: 16rem;
@@ -94,7 +106,7 @@
 .form__background {
   position: relative;
   width: 100%;
-  height: 588rem;
+  height: 612rem;
   background-color: rgba(254, 182, 83, 1);
   background-image: url('../images/map-form.png');
   background-repeat: no-repeat;
@@ -171,9 +183,5 @@
   left: 0;
   z-index: 2;
   width: 555rem;
-}
-.form-inner {
-  display: flex;
-  flex-direction: column;
 }
 

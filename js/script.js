@@ -57,7 +57,6 @@ if ($(window).width() >= 992) {
 };
 
 
-
 const burgerMenu = document.querySelector('.burger-menu');
 const menuButton = document.querySelector('.burger-menu__button');
 const closeButton = document.querySelector('.burger-menu__close');
@@ -90,6 +89,7 @@ document.addEventListener('click', function(event) {
     closeButton.style.display = 'none';
   }
 });
+
 
 
 
@@ -153,12 +153,9 @@ function filterCountries() {
 }
 
 
-
-
-
-
+//Навешивание класа active на вибраную цифру в инпуте aduits
 document.addEventListener('DOMContentLoaded', function() {
-  var travelerItems = document.querySelectorAll('.item__traveler a');
+  let travelerItems = document.querySelectorAll('.item__traveler a');
 
   travelerItems.forEach(function(item) {
     item.addEventListener('click', function(event) {
@@ -174,3 +171,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+

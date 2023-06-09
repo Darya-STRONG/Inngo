@@ -1,4 +1,4 @@
-@media (max-width: 991.99px) {
+@media (max-width: 991px) {
   html {
     font-size: 1px;
   }
@@ -16,9 +16,6 @@
     max-width: 100%;
     padding: 0 1.0625rem;
     width: 100%;
-  }
-  .header {
-    display: none;
   }
   .burger-menu {
     width: 307px;
@@ -703,5 +700,11 @@
   }
   .flight-selection-all_wrapper {
     display: none;
+  }
+  .header {
+    display: none !important;
+  }
+  .header-fixed {
+    display: none !important;
   }
 }

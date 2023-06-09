@@ -1,3 +1,6 @@
+body {
+  height: 1200rem;
+}
 .background{
   max-width: 1064rem;
   height: 96rem;
@@ -90,14 +93,10 @@
 }
 .flight-selection {
   position: relative;
+  bottom: 1557rem;
+  left: 0;
+  z-index: 1;
 }
-.flight-selection__container{
-  flex-grow: 1;
-}
-
-/* .flight-selection__wrapper > :nth-child(4) {
-  padding-right: 50rem;
-} */
 .flight-selection-all_wrapper{
   justify-content: center;
   display: flex;
@@ -170,10 +169,7 @@
 }
 .work-process {
   position: relative;
-  top: -133rem;
-  top: -167rem;
-  z-index: 1;
-  background-color: #fff;
+  top: -838rem;
 }
 .clouds img{
   width: 100%;
@@ -315,8 +311,8 @@
 
 .drop span {
   position: absolute;
-  top: 50%;
-  left: 30%;
+  top: 20rem;
+  left: 16rem;
   transform: translate(-50%, -50%);
   color:  #0065C1;
   font-size: 20rem;
@@ -331,15 +327,15 @@
   background: linear-gradient(253.26deg, #00A6DB 13.62%, #0065C1 92.82%);
 }
 .mark-1 {
-  left: 273rem;
+  left: 255rem;
   top: 163rem;
 }
 .mark-2 {
-  left: 535rem;
+  left: 520rem;
   top: 340rem;
 }
 .mark-3 {
-  left: 758rem;
+  left: 737rem;
   top: 184rem;
 }
 .mark-4 {
@@ -463,9 +459,8 @@
   border: 1px solid #0065C1;
 
 }
-
 .item__traveler a.active {
-  background-color: orange;
+  background: linear-gradient(206.39deg, #FF7A00 18.43%, #FF7A00 18.44%, #FF7102 85.35%);
   color: #FFFFFF;
 }
 .title__traveler {

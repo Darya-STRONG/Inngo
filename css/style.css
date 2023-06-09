@@ -36,6 +36,8 @@ body {
   font-size: 14rem;
   font-weight: 400;
   color: #FFFFFF;
+  overflow-x: hidden;
+
 }
 
 a{
@@ -91,6 +93,9 @@ input {
 .side__buttons button {
   position: relative;
   border-radius: 50%;
+}
+.pulse {
+  all: unset;
 }
 .side__button-search {
   color:  #0065C1;

@@ -8,6 +8,22 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  top: -813rem;
+}
+.footer__navigation li a:hover {
+  background: linear-gradient(148.22deg, #FF7A00 27.03%, #FF7A00 27.03%, #D65A00 93.23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.location__item  a:hover{
+  background: linear-gradient(148.22deg, #FF7A00 27.03%, #FF7A00 27.03%, #D65A00 93.23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .block__flex p{
   width:300rem;
@@ -64,9 +80,14 @@
   font-weight: 500;
   font-size: 14rem;
   line-height: 106%;
+  position: relative;
+  top: -815rem;
 }
 .nav__bottom {
   display: flex;
   align-items: center;
   gap: 16rem;
+}
+.social {
+  list-style-type: none;
 }
