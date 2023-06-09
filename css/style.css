@@ -59,7 +59,8 @@ svg {
   max-width: 100%;
   height: auto;
 }
-input {
+
+.dropdown input {
   all: unset;
 }
 .nav__right img:hover {

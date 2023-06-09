@@ -111,6 +111,7 @@
   row-gap: 10rem;
   padding-top:16.5rem;
   padding-bottom: 16rem;
+  padding-left: 20rem;
   gap: 10rem;
 }
 
@@ -197,7 +198,6 @@
 
 .carrousel__item:hover .carrousel__content__all {
   height: 65%;
-  padding: 23rem;
 }
 
 .carrousel__item:hover .carrousel__content__all span {
@@ -217,22 +217,22 @@
   transition: opacity 0.1s ease;
 }
 
-.carrousel__item:hover .carrousel__content__bottom p {
-  opacity: 0;
-}
 .carrousel .slick-track {
   gap:40rem
 }
 .carrousel__content__bottom-over {
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+.carrousel__content__bottom {
+  padding-left: 20rem;
+  padding-top: 16rem;
+
 }
 .carrousel__content__bottom p{
   font-size: 18rem;
-  width: 213rem;
+  width: 201rem;
   height: 38rem;
-  white-space: nowrap;
 }
 .popular-hotels {
   position: relative;
@@ -241,4 +241,23 @@
 .clouds {
   position: relative;
   top: -529rem;
+}
+.five {
+  font-weight: 700;
+  font-size: 21.4074rem;
+  line-height: 104.5%;
+  padding-left: 5rem;
+}
+.text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 104.5%;
+}
+.cost {
+  padding-left: 20rem;
+}
+.currency {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 104.5%;
 }
