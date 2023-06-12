@@ -119,6 +119,7 @@ body {
 }
 .flight-selection__items {
   display: flex;
+  border-radius: 0 30% 30% 30%;
 }
 .flight-selection__item{
   display: flex;
@@ -133,10 +134,10 @@ body {
   line-height: 16rem;
   position: absolute;
   top: 7rem;
-  padding-left:41rem;
+  padding-left:34rem;
 }
 .flight-selectio-over-padding {
-  padding-left: 35rem;
+  padding-left: 29rem;
 }
 .flight-selection__text {
   display: block;
@@ -404,7 +405,7 @@ body {
   display: inline-block;
 }
 .padding {
-  padding-left: 43rem;
+  padding-left: 36rem;
 }
 .special-size {
   width:225rem;

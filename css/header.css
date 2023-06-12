@@ -48,8 +48,8 @@
 }
 .header-wrap {
   display: flex;
-  gap: 36rem;
-  justify-content: space-between;
+  gap: 85rem;
+  justify-content: center;
 }
 
 .header__nav {
