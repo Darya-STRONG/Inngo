@@ -184,3 +184,41 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
+
+
+// Отримуємо всі необхідні елементи з DOM
+const departureDateInput = document.querySelector('#departure-date');
+const returnDateInput = document.querySelector('#return-date');
+const calendarContainers = document.querySelectorAll('.calendar-container');
+const calendars = document.querySelectorAll('.calendar');
+
+// Логіка відображення/приховування календаря для кожного вхідного поля
+departureDateInput.addEventListener('click', () => {
+  calendarContainers[0].classList.toggle('show');
+  calendarContainers[1].classList.remove('show');
+});
+
+returnDateInput.addEventListener('click', () => {
+  calendarContainers[1].classList.toggle('show');
+  calendarContainers[0].classList.remove('show');
+});
+
+// Функція для створення календаря
+function createCalendar(container, dateInput) {
+  const calendar = container.querySelector('.calendar');
+  const year = dateInput.date.getFullYear();
+  const month = dateInput.date.getMonth();
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const firstDayOfMonth = new Date(year, month, 1).getDay();
+
+  // Створюємо заголовок календаря
+  const header = document.createElement('div');
+  header.classList.add('calendar-header');
+  header.textContent = `${dateInput.date.toLocaleString('default', { month: 'long' })} ${year}`;
+  calendar.innerHTML = '';
+  calendar.appendChild(header);
+
+  // Створюємо сітку днів календаря
+  const grid = document.createElement('div');
+}

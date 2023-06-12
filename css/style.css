@@ -37,13 +37,46 @@ body {
   font-weight: 400;
   color: #FFFFFF;
   overflow-x: hidden;
-
 }
 
+.date-range-picker {
+  position: relative;
+  display: inline-block;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.label {
+  display: block;
+}
+
+.date-input {
+  width: 150px;
+  padding: 10px;
+}
+
+.calendar-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  display: flex;
+}
+
+.calendar {
+  width: 200px;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin-right: 10px;
+}
 a{
   text-decoration: none;
   color: inherit;
   display: inline-block;
+  filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.32));
 }
 .nav__link:hover {
   color: #FF7A00;
@@ -78,8 +111,8 @@ svg {
 
 .side__buttons {
   position: fixed;
-  right: 5%;
-  top:534rem;
+  right: 52rem;
+  top:575rem;
   z-index: 9999;
 }
 .side__buttons button {

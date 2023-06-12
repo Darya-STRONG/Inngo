@@ -36,7 +36,6 @@
   display: flex;
   justify-content: space-between;
 }
-
 .slider-header-btn {
   background: rgba(255, 255, 255, 0.15);
   border: 1.4px solid #FFFFFF;
@@ -48,7 +47,6 @@
   border-radius: 50%;
   margin: 0 auto;
 }
-
 .header-slider__title {
   font-style: normal;
   font-weight: 600;
@@ -63,7 +61,7 @@
   background-clip: text;
   text-fill-color: transparent;
   text-shadow: 0px 4.94172px 40.89px rgba(0, 0, 0, 0.24);
-  padding-top: 5rem;
+  padding-top: 28rem;
 }
 .header-slider__title-canada {
   font-style: normal;
@@ -97,7 +95,7 @@
 }
 .slider-banner .slick-arrow {
   position: absolute;
-  top: 25%;
+  top: 26%;
   z-index: 9999;
   font-size: 0;
   width: 48px;
@@ -112,11 +110,11 @@
   background-color: rgba(94, 94, 94, 0.2);
 }
 .slider-banner .slick-prev {
-  left: 65rem;
+  left: 58rem;
   background: url('../images/arrows/arrowLeft.svg') center no-repeat;
 }
 .slider-banner .slick-next {
-  right: 75rem;
+  right: 56rem;
   background: url('../images/arrows/arrowRight.svg') center no-repeat;
 }
 .slick-slider {
