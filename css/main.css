@@ -43,6 +43,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+.side__button-call {
+  width: 64rem;
+}
+.side__button-call-size {
+  width: 43rem;
+  position: absolute;
+  right: 16%;
+  top: 15%;
+}
 .button-orange {
   width: 171rem;
   height: 48rem;

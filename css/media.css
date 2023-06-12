@@ -416,6 +416,13 @@
     width: 13.35rem;
     height: 13.35rem
   }
+  .side__button-call-size {
+    width: 16rem;
+    height: 16rem;
+    position: absolute;
+    right: 23.5%;
+    top: 22%;
+  }
   .header-slider__title {
     font-weight: 600;
     font-size: 44.8204rem;
