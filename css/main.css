@@ -410,6 +410,8 @@ body {
 .special-size {
   width:225rem;
   padding-left:55rem; 
+  border-radius: 0 5% 5% 0;
+
 }
 .dropdown-content {
   display: none;
