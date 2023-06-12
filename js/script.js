@@ -161,12 +161,24 @@ document.addEventListener('DOMContentLoaded', function() {
     item.addEventListener('click', function(event) {
       event.preventDefault();
 
-      // Удаляем класс 'active' у всех элементов
-      travelerItems.forEach(function(item) {
+      // Знаходимо батьківський контейнер
+      let parentContainer = this.closest('.wrap__traveler');
+
+      // Знаходимо всі елементи в поточній категорії
+      let categoryItems = parentContainer.querySelectorAll('.item__traveler a');
+
+      // Перевіряємо, чи вже вибраний номерок в поточній категорії
+      if (this.classList.contains('active')) {
+        // Не змінюємо стан, якщо вже вибраний
+        return;
+      }
+
+      // Відключаємо активний клас у всіх елементах поточної категорії
+      categoryItems.forEach(function(item) {
         item.classList.remove('active');
       });
 
-      // Добавляем класс 'active' к выбранному элементу
+      // Додаємо активний клас до поточного елемента
       this.classList.add('active');
     });
   });

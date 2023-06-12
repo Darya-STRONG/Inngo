@@ -57,8 +57,21 @@
                     </div>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__link">Hotele</a>
-                    <div class="triangle"></div>
+                    <div class="header-dropdown">
+                      <a href="#" class="nav__link dropdown-toggle">Hotele</a>
+                      <div class="triangle"></div>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Maldives</a></li>
+                        <li><a href="#">Egypt</a></li>
+                        <li><a href="#">France</a></li>
+                        <li><a href="#">Indonesia</a></li>
+                        <li><a href="#">Greece</a></li>
+                        <li><a href="#">Montenegro</a></li>
+                        <li><a href="#">Spain</a></li>
+                        <li><a href="#">Thailand</a></li>
+                        <li><a href="#">Italy</a></li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="nav__item">
                     <a href="#" class="nav__link">Katalog</a>
@@ -93,8 +106,14 @@
                     <a class="nav__link" href="mailto:info@viq.com">info@viq.com</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__link">USD</a>
-                    <div class="triangle"></div>
+                    <div class="header-dropdown">
+                      <a href="#" class="nav__link dropdown-toggle">USD</a>
+                      <div class="triangle"></div>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">EUR</a></li>
+                        <li><a href="#">UAH</a></li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="nav__item">
                     <a style="padding-top: 5rem;" class="nav__icon" href="#"  aria-label="Ссылка на Login">
@@ -173,8 +192,21 @@
                     </div>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="header-fixed__nav-link">Hotele</a>
-                    <div class="triangle" style="border-bottom: 6px solid #00A6DB;"></div>
+                    <div class="header-dropdown">
+                      <a href="#" class="dropdown-toggle header-fixed__nav-link">Hotele</a>
+                      <div class="triangle" style="border-bottom: 6px solid #00A6DB;"></div>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Maldives</a></li>
+                        <li><a href="#">Egypt</a></li>
+                        <li><a href="#">France</a></li>
+                        <li><a href="#">Indonesia</a></li>
+                        <li><a href="#">Greece</a></li>
+                        <li><a href="#">Montenegro</a></li>
+                        <li><a href="#">Spain</a></li>
+                        <li><a href="#">Thailand</a></li>
+                        <li><a href="#">Italy</a></li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="nav__item">
                     <a href="#" class="header-fixed__nav-link">Katalog</a>
@@ -211,6 +243,10 @@
                   <li class="nav__item">
                     <a href="#" class="header-fixed__nav-link nav__link">USD</a>
                     <div class="triangle" style="border-bottom: 6px solid #00A6DB;"></div>
+                    <ul class="dropdown-menu" style="top: 37rem">
+                      <li><a href="#">EUR</a></li>
+                      <li><a href="#">UAH</a></li>
+                    </ul>
                   </li>
                   <li class="nav__item">
                     <a style="padding-top: 5rem;" class="header-fixed__nav-icon" href="#"  aria-label="Ссылка на Login">
@@ -238,9 +274,15 @@
     <nav class="burger-menu__header">
       <ul class="burger-menu__header__list">
         <img src="./images/smallLogo.png" alt="logo">
-        <li class="burger-menu__header__item">
-          <a class="burger-menu__header__link" href="#">USD</a>
-          <span>▾</span>
+        <li class="nav__item burger-menu__header__item">
+          <div class="header-dropdown">
+            <a href="#" class="dropdown-toggle burger-menu__header__link">USD</a>
+            <div class="triangle"></div>
+            <ul class="dropdown-menu">
+              <li><a href="#">EUR</a></li>
+              <li><a href="#">UAH</a></li>
+            </ul>
+          </div>
         </li>
         <li class="burger-menu__header__item">
           <img src="./images/icon/login.svg" alt="user">
@@ -251,18 +293,32 @@
         <span></span>
         <span></span>
       </div>
-      <div class="header__nav_sticky-bottom">
+      <div class="burger-menu__bottom">
         <span>Folov US</span>
         <span class="strip"></span>
-        <ul class="nav__list">
-          <li  class="nav__item" class="email">
-            <img src="./images/icon/facebook.svg" alt=facebook"">
+        <ul class="social">
+          <li  class="social__item">
+            <a href="#" class="social__link" aria-label="Ссілка на facebook">
+              <svg width="26" height="25" viewbox="0 0 26 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.3665 1.00908L6.64635 1C5.19332 0.998964 4.01012 2.18048 4.00908 3.63351L4 16.3537C3.99896 17.8067 5.18048 18.9899 6.63351 18.9909L11.9394 18.9947L11.944 12.6346L9.83565 12.6331L9.83791 9.47066L11.9462 9.47217L11.9478 7.32872C11.949 5.58483 13.3686 4.16727 15.1125 4.16851L18.3101 4.17079L18.3078 7.33326L15.1102 7.33098L15.1087 9.47443L18.3063 9.47671L17.777 12.6388L15.1064 12.6369L15.1019 18.997L19.3537 19C20.8067 19.001 21.9899 17.8195 21.9909 16.3665L22 3.64635C22.001 2.19332 20.8195 1.01012 19.3665 1.00908Z" />
+              </svg>                                         
+            </a>
           </li>
-          <li class="nav__item">
-            <img src="./images/icon/facebook.svg" alt=facebook"">
+          <li  class="social__item">
+            <a href="#" class="social__link" aria-label="Ссілка на facebook">
+              <svg width="26" height="25" viewbox="0 0 26 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.3665 1.00908L6.64635 1C5.19332 0.998964 4.01012 2.18048 4.00908 3.63351L4 16.3537C3.99896 17.8067 5.18048 18.9899 6.63351 18.9909L11.9394 18.9947L11.944 12.6346L9.83565 12.6331L9.83791 9.47066L11.9462 9.47217L11.9478 7.32872C11.949 5.58483 13.3686 4.16727 15.1125 4.16851L18.3101 4.17079L18.3078 7.33326L15.1102 7.33098L15.1087 9.47443L18.3063 9.47671L17.777 12.6388L15.1064 12.6369L15.1019 18.997L19.3537 19C20.8067 19.001 21.9899 17.8195 21.9909 16.3665L22 3.64635C22.001 2.19332 20.8195 1.01012 19.3665 1.00908Z"/>
+              </svg>                                         
+            </a>
           </li>
-          <li class="nav__item">
-            <img src="./images/icon/Instagram.svg" alt="Instagram">
+          <li  class="social__item">
+            <a href="#" class="social__link" aria-label="Ссілка на Instagram ">
+              <svg width="26" height="25" viewbox="0 0 26 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.3633 1H6.63672C5.18295 1 4 2.18295 4 3.63672V16.3633C4 17.817 5.18295 19 6.63672 19H19.3633C20.817 19 22 17.817 22 16.3633V3.63672C22 2.18295 20.817 1 19.3633 1ZM13.0352 14.7109C10.4181 14.7109 8.28906 12.5819 8.28906 9.96484C8.28906 7.34776 10.4181 5.21875 13.0352 5.21875C15.6522 5.21875 17.7812 7.34776 17.7812 9.96484C17.7812 12.5819 15.6522 14.7109 13.0352 14.7109ZM18.3086 6.27344C17.4363 6.27344 16.7266 5.56372 16.7266 4.69141C16.7266 3.81909 17.4363 3.10938 18.3086 3.10938C19.1809 3.10938 19.8906 3.81909 19.8906 4.69141C19.8906 5.56372 19.1809 6.27344 18.3086 6.27344Z"/>
+                <path d="M18.3086 4.16406C18.0176 4.16406 17.7812 4.40041 17.7812 4.69141C17.7812 4.98241 18.0176 5.21875 18.3086 5.21875C18.5996 5.21875 18.8359 4.98241 18.8359 4.69141C18.8359 4.40041 18.5996 4.16406 18.3086 4.16406Z"/>
+                <path d="M13.0352 7.15234C11.4845 7.15234 10.2227 8.4142 10.2227 9.96484C10.2227 11.5155 11.4845 12.7773 13.0352 12.7773C14.5858 12.7773 15.8477 11.5155 15.8477 9.96484C15.8477 8.4142 14.5858 7.15234 13.0352 7.15234Z"/>
+              </svg>                                       
+            </a>
           </li>
         </ul>
       </div>
@@ -297,6 +353,9 @@
         <li class="burger-menu__item">
           <a href="#" class="burger-menu__link">Gdzie kupić?</a>
         </li>
+        <span class="strip strip-long" style="width: 257rem;"></span>
+
+        <div>
           <li class="burger-menu__item phone">
             <img src="./images/icon/WhatsApp.svg" alt="WhatsApp">
             <span class="burger-menu__point"></span>
@@ -307,16 +366,18 @@
             <span class="burger-menu__point"></span>
             <a href="mailto:info@viq.com">info@viq.com</a>
           </li>
+        </div>
+
       </ul>
       <span class="strip strip-long"></span>
     </nav>
 
   </div>
   <div class="side__buttons">
-    <button class="side__button-search button__search">
+    <button class="side__button-search button__search display">
       <img src="./images/icon/search.svg" alt="search">
     </button>
-    <div>
+    <div class="pulse-size">
       <button class="pulse">
         <a href="#" aria-label="Ссылка на Viber">
           <svg class="side__button-call" width="64" height="64" viewBox="0 0 64 64" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -331,14 +392,13 @@
             <stop offset="1" stop-color="#D8D5D0"/>
             </linearGradient>
           </svg>
-          <svg style="position: absolute; top:10rem; left:10rem" width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg style="position: absolute; top:10px; left:10px" width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M32.7026 10.3933C29.8744 7.56173 26.1131 6.00166 22.106 6C13.849 6 7.12898 12.7198 7.12565 20.979C7.12455 23.6193 7.81426 26.1965 9.12523 28.4683L7 36.2308L14.9413 34.1476C17.1295 35.3412 19.5929 35.9703 22.0999 35.971H22.1062C30.3623 35.971 37.083 29.2506 37.0861 20.991C37.0878 16.9882 35.531 13.2246 32.7026 10.3933ZM22.106 33.4411H22.1008C19.8667 33.4402 17.6756 32.8398 15.7637 31.7056L15.3092 31.4356L10.5967 32.6719L11.8546 28.0773L11.5584 27.6062C10.312 25.6238 9.65387 23.3325 9.65497 20.98C9.65756 14.1151 15.2432 8.53006 22.111 8.53006C25.4366 8.53116 28.5629 9.82793 30.9136 12.1814C33.2643 14.5349 34.5581 17.6631 34.557 20.9901C34.554 27.8555 28.9688 33.4411 22.106 33.4411ZM28.9356 24.116C28.5614 23.9285 26.7211 23.0233 26.3779 22.8982C26.035 22.7733 25.7852 22.7111 25.5359 23.0856C25.2863 23.4602 24.5691 24.3034 24.3506 24.5531C24.1321 24.8029 23.914 24.8343 23.5397 24.6468C23.1653 24.4595 21.9593 24.0641 20.5295 22.7889C19.4169 21.7964 18.6657 20.5707 18.4473 20.1961C18.2292 19.8212 18.4454 19.6382 18.6115 19.4323C19.0167 18.9291 19.4224 18.4016 19.5471 18.1519C19.6721 17.9021 19.6095 17.6834 19.5158 17.4962C19.4224 17.3089 18.6738 15.4665 18.362 14.7168C18.0579 13.9872 17.7496 14.0858 17.5197 14.0743C17.3016 14.0635 17.052 14.0612 16.8023 14.0612C16.5528 14.0612 16.1473 14.1548 15.8041 14.5297C15.4611 14.9045 14.4942 15.8099 14.4942 17.6522C14.4942 19.4946 15.8355 21.2744 16.0226 21.5243C16.2097 21.7741 18.662 25.5548 22.4167 27.1759C23.3098 27.5619 24.0068 27.792 24.5506 27.9646C25.4474 28.2494 26.2631 28.2092 26.9081 28.1129C27.6274 28.0053 29.1225 27.2073 29.4347 26.3331C29.7465 25.4587 29.7465 24.7094 29.6528 24.5531C29.5594 24.397 29.3098 24.3034 28.9356 24.116Z" fill="white"/>
           </svg>
         </a>
       </button>
     </div>
   </div>
-
   <div class="slider-banner"> 
     <section class="header-slider slide-1 container-mobile">
       <img class="mobile__logo" src="./images/logo.png" alt="logo">
@@ -386,7 +446,7 @@
                     <div class="carrousel__content__bottom-over">
                       <span class="strip strip__length"></span>
                       <span class="five">5</span>
-                      <img src="./images/icon/star.svg" alt="star">
+                      <img class="star" src="./images/icon/star.svg" alt="star">
                     </div>
                     <p class="text">Green Beach Resort</p>
                   </div>
@@ -427,7 +487,7 @@
                     <div class="carrousel__content__bottom-over">
                       <span class="strip strip__length"></span>
                       <span class="five">5</span>
-                      <img src="./images/icon/star.svg" alt="star">
+                      <img class="star" src="./images/icon/star.svg" alt="star">
                     </div>
                     <p class="text">Titanic Hotels & Resort</p>
                   </div>
@@ -468,7 +528,7 @@
                     <div class="carrousel__content__bottom-over">
                       <span class="strip strip__length"></span>
                       <span class="five">5</span>
-                      <img src="./images/icon/star.svg" alt="star">
+                      <img class="star" src="./images/icon/star.svg" alt="star">
                     </div>
                     <p class="text">Selectum Family Resort Belek</p>
                   </div>
@@ -509,7 +569,7 @@
                     <div class="carrousel__content__bottom-over">
                       <span class="strip strip__length"></span>
                       <span class="five">5</span>
-                      <img src="./images/icon/star.svg" alt="star">
+                      <img class="star" src="./images/icon/star.svg" alt="star">
                     </div>
                     <p class="text">Selectum Family Comfort Side</p>
                   </div>
@@ -547,91 +607,99 @@
   <div class="clouds"> 
     <img src="./images/clouds.png" alt="clouds">
   </div>
+  <div class="clouds-mobile"> 
+    <img src="./images/mobile-cloud.png" alt="clouds">
+  </div>
   <div class="flight-selection">
     <div class="flight-selection-all_wrapper">
       <div class="flight-selection__container margin background">
         <div class="flight-selection__wrapper">
-          <div class="flight-selection__item">
-            <div class="flight-selection__item__icon">
-              <img src="./images/icon/where.svg" alt="where">
+          <div class="flight-selection__items">
+            <div class="flight-selection__item">
+              <div class="flight-selection__item__icon">
+                <img src="./images/icon/where.svg" alt="where">
+              </div>
+              <span class="flight-selection__text-over flight-selectio-over-padding">Departure from</span>
+              <div class="dropdown">
+                <input type="text" placeholder="Where?" id="countryInput" oninput="filterCountries()">
+                <div class="dropdown-content" id="countryDropdown">
+                  <a href="#">Maldives</a>
+                  <a href="#">Egypt</a>
+                  <a href="#">France</a>
+                  <a href="#">Indonesia</a>
+                  <a href="#">Greece</a>
+                </div>
+              </div>
             </div>
-            <span class="flight-selection__text-over">Departure from</span>
-            <div class="dropdown">
-              <input type="text" placeholder="Where?" id="countryInput" oninput="filterCountries()">
-              <div class="dropdown-content" id="countryDropdown">
-                <a href="#">Maldives</a>
-                <a href="#">Egypt</a>
-                <a href="#">France</a>
-                <a href="#">Indonesia</a>
-                <a href="#">Greece</a>
+            <div class="flight-selection__item">
+              <div class="flight-selection__item__icon">
+                <img src="./images/icon/plane.svg" alt="plane">
+              </div>
+              <span class="flight-selection__text-over">Country</span>
+              <div class="dropdown">
+                <input type="text" placeholder="Where?" id="countryInput" oninput="filterCountries()">
+                <div class="dropdown-content dropdown-content-country dropdown-content-width" id="countryDropdown">
+                  <a href="#">Maldives</a>
+                  <a href="#">Egypt</a>
+                  <a href="#">France</a>
+                  <a href="#">Indonesia</a>
+                  <a href="#">Greece</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="flight-selection__item">
-            <div class="flight-selection__item__icon">
-              <img src="./images/icon/plane.svg" alt="plane">
+          <div class="flight-selection__items">
+            <div class="flight-selection__item flight-selection__item__width">
+              <div class="flight-selection__item__icon">
+                <img src="./images/icon/calendar.svg" alt="plane">
+              </div>
+              <span class="flight-selection__text-over">Departure from - to</span>
+              <div class="dropdown">
+                <input type="text" placeholder="From           →            Down" id="countryInput" oninput="filterCountries()">
+                <div class="dropdown-content dropdown-content-country dropdown-content-country-size" id="countryDropdown">
+                </div>
+              </div>
             </div>
-            <span class="flight-selection__text-over">Country</span>
-            <div class="dropdown">
-              <input type="text" placeholder="Where?" id="countryInput" oninput="filterCountries()">
-              <div class="dropdown-content dropdown-content-country" id="countryDropdown">
-                <a href="#">Maldives</a>
-                <a href="#">Egypt</a>
-                <a href="#">France</a>
-                <a href="#">Indonesia</a>
-                <a href="#">Greece</a>
+            <div class="flight-selection__item special-size">
+              <div class="flight-selection__item__icon">
+                <img src="./images/icon/adults.svg" alt="adults">
+              </div>
+              <span class="flight-selection__text-over padding">Participants</span>
+              <div class="dropdown">
+                <input type="text" placeholder="Adults" id="countryInput" oninput="filterCountries()">
+                <div class="dropdown-content-traveler" id="countryDropdown">
+                  <div class="wrap__traveler">
+                    <div class="title__traveler">
+                      <img src="./images/icon/adults.svg" alt="adults">
+                      <span>Traveler</span>
+                    </div>
+                    <div class="item__traveler">
+                      <a href="#">1</a>
+                      <a href="#" class="active">2</a>
+                      <a href="#">3</a>
+                      <a href="#">4</a>
+                      <a href="#">5</a>
+                    </div>
+                  </div>
+                  <div class="wrap__traveler">
+                    <div class="title__traveler">
+                      <img src="./images/icon/adults.svg" alt="adults">
+                      <span>Child</span>
+                    </div>
+                    <div class="item__traveler">
+                      <a href="#" class="active">0</a>
+                      <a href="#">1</a>
+                      <a href="#">2</a>
+                      <a href="#">3</a>
+                      <a href="#">4</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="flight-selection__item">
-            <div class="flight-selection__item__icon">
-              <img src="./images/icon/plane.svg" alt="plane">
-            </div>
-            <span class="flight-selection__text-over">Departure from - to</span>
-            <div class="dropdown">
-              <input type="text" placeholder="From           →            Down" id="countryInput" oninput="filterCountries()">
-              <div class="dropdown-content dropdown-content-country" id="countryDropdown">
 
-              </div>
-            </div>
-          </div>
-          <div class="flight-selection__item">
-            <div class="flight-selection__item__icon">
-              <img src="./images/icon/adults.svg" alt="adults">
-            </div>
-            <span class="flight-selection__text-over">Participants</span>
-            <div class="dropdown">
-              <input type="text" placeholder="Adults" id="countryInput" oninput="filterCountries()">
-              <div class="dropdown-content-traveler" id="countryDropdown">
-                <div class="wrap__traveler">
-                  <div class="title__traveler">
-                    <img src="./images/icon/adults.svg" alt="adults">
-                    <span>Traveler</span>
-                  </div>
-                  <div class="item__traveler">
-                    <a href="#">1</a>
-                    <a href="#" class="active">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                  </div>
-                </div>
-                <div class="wrap__traveler">
-                  <div class="title__traveler">
-                    <img src="./images/icon/adults.svg" alt="adults">
-                    <span>Child</span>
-                  </div>
-                  <div class="item__traveler">
-                    <a href="#" class="active">0</a>
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
 
         </div>
         <button class="button__search";">
@@ -848,12 +916,12 @@
           <li class="location__item">
             <img src="./images/icon/circle.svg" alt="circle">
             <span class="point"></span>
-            <a href="https://www.google.com.ua/maps/search/Mikolaya+kopernika+11,+20-345,+Warsaw/@52.2349626,21.0179646,17z/data=!3m1!4b1?hl=ru&entry=ttu/">Mikolaya kopernika 11,<br> 20-345, Warsaw</a>
+            <a class="center" href="https://www.google.com.ua/maps/search/Mikolaya+kopernika+11,+20-345,+Warsaw/@52.2349626,21.0179646,17z/data=!3m1!4b1?hl=ru&entry=ttu/">Mikolaya kopernika 11,<br> 20-345, Warsaw</a>
           </li>
           <li class="location__item">
             <img src="./images/icon/circle.svg" alt="circle">
             <span class="point"></span>
-            <span>Mon - Fri | 10:00 - 18:00
+            <span class="center">Mon - Fri | 10:00 - 18:00
               <br>
               Sat | 10:00 - 15:00</span>
           </li>
@@ -862,7 +930,7 @@
       </nav>
     </div>
     <div class="footer__block">
-      <img src="./images/location.png" alt="location" style="padding: 23.5rem 52rem 52rem 52rem;">
+      <img class="location-img" src="./images/location.png" alt="location">
     </div>
   </footer> 
   <div class="copyright">

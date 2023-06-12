@@ -52,7 +52,6 @@ a{
   transition-timing-function: ease-in-out;
 }
 img {
-  max-width: 100%;
   height: auto;
 }
 svg {
@@ -70,13 +69,6 @@ svg {
 .header__nav_sticky-bottom img:hover{
   background: none;
 
-}
-
-.container{
-  width: 1440rem;
-  margin: 0rem auto;
-  padding: 0px 82rem;
-  padding-top: 56.5rem;
 }
 .wrapper {
   background-image: url('../images/banner.png');

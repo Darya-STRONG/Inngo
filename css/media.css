@@ -9,18 +9,29 @@
   .header-slider {
     overflow: visible;
   }
+  .header-slider__title {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 50.88) 90.88%, rgba(255, 255, 255, 0) 97.91%);
+    -webkit-background-clip: text;
+  }
+  .header-slider__title-canada {
+    font-weight: 600;
+    font-size: 44.8204rem;
+    line-height: 82%;
+    padding-top: 72rem;
+  }
+
   .slick-list {
     overflow: visible;
   }  
   .container {
-    max-width: 100%;
-    padding: 0 1.0625rem;
+    padding: 32rem 1.0625rem;
+    width: 100%;
     width: 100%;
   }
   .burger-menu {
-    width: 307px;
-    height: 706px;
-    background: rgba(199, 34, 34, 0.2);
+    width: 307rem;
+    height: 706rem;
+    background: rgba(94, 94, 94, 0.2);
     box-shadow: 0px 2.66917px 12.0113px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(27.34px);
     border-radius: 4.67105px;
@@ -28,15 +39,13 @@
     position: fixed;
     top: 11rem;
     display: none;
-    padding-left: 10rem;
-    padding-right: 5rem;
-    padding-top: 10rem;
+    padding: 25rem 19rem 10rem 30rem;
   }
   .burger-menu__button {
-    width: 30.19px;
-    height: 22.5px;
-    left: 31px;
-    top: 31px;
+    width: 30.19rem;
+    height: 22.5rem;
+    left: 31rem;
+    top: 31rem;
     background: transparent;
     position: absolute;
     z-index: 11;
@@ -44,9 +53,9 @@
   .burger-menu__button span {
     display: block;
     width: 100%;
-    height: 2px;
+    height: 2rem;
     background: #FFFFFF;
-    margin-bottom: 10px;
+    margin-bottom: 10rem;
   }
   .burger-menu__button .stick-shortest {
     width: 70%;
@@ -55,20 +64,24 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
-    padding-top: 40rem;
-    width: 65px;
-    height: 22px;
+    gap: 10rem;
+    padding-top: 24rem;
+    width: 65rem;
+  }
+  .burger-menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 19rem;
   }
   .open {
     display: block;
   }
   .burger-menu__close {
-    width: 32px;
-    height: 32px;
+    width: 32rem;
+    height: 32rem;
     position: absolute;
-    top: 50px;
-    right: 11px;
+    top: 38rem;
+    right: 11rem;
     cursor: pointer;
     display: none;
   }
@@ -76,7 +89,7 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 2rem;
     background: #FFFFFF;
     transform-origin: center;
     transition: transform 0.3s ease;
@@ -87,37 +100,58 @@
   .burger-menu__close span:last-child {
     transform: rotate(-45deg);
   }
-  .burger-menu__list {
-    /* Стилі для списку пунктів меню */
-  }
   .burger-menu__item {
     /* Стилі для окремого пункту меню */
     font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 18rem;
+    line-height: 22rem;
     color: #FFFFFF;
   }
   .burger-menu__link {
     font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 18rem;
+    line-height: 22rem;
   }
   .burger-menu__header {
     font-size: 16px;
     font-weight: 600;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 19rem;
   }
-  .burger-menu__header ul{
+  .burger-menu__header__list{
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 16rem;
+    font-weight: 600;
+    font-size: 16rem;
+    line-height: 19rem;
+  }
+  .burger-menu__header__list img{
+    width: 68rem;
+    height: 43.19rem;
   }
   .burger-menu__header__item {
     display: flex;
     align-items: center;
     gap: 1rem;
+  }
+  .burger-menu__bottom {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+  }
+  .burger-menu__bottom span{
+    font-weight: 600;
+    font-size: 16rem;
+    line-height: 113.5%;
+  }
+  .burger-menu__header__item img{
+    width: 24rem;
+    height: 24rem;
+  }
+  .display {
+    display: block;
   }
   .header__nav_sticky-bottom {
     gap: 5rem;
@@ -140,11 +174,35 @@
     left: 0;
     padding: 10rem;
   }
+  .dropdown-content  {
+    width: 124rem;
+    left: -43.6rem;
+    top: 20rem;
+  }
+  .dropdown-content-traveler {
+    top: 20rem;
+    left: -36.8rem;
+    width: 81rem;
+    padding: 2rem 9rem 5rem 15rem;
+  }
+  .dropdown-content-country-size {
+    width: 245rem;
+  }
+  .dropdown-content a:first-child {
+    padding-top: 0rem;
+  }
+  .dropdown-content a {
+    font-size: 100%;
+    padding-left: 43rem;
+  }
+  .title__traveler {
+    gap: 5rem;
+  }
   .nav__item:hover .dropdown-menu {
     display: block;
   }
   .nav__item:hover ~ .burger-menu__item {
-    margin-top: 20px;
+    margin-top: 20rem;
   }
   .burger-menu__item {
     position: relative;
@@ -155,8 +213,10 @@
     list-style: disc;
     position: absolute;
     position: relative;
-    top: 100%;
-    left: 12rem
+    top: 10rem;
+    left: 31rem;
+    gap: 8rem;
+
   }
   .burger-menu__item:hover .burger-menu__dropdown-menu {
     display: flex;
@@ -168,7 +228,7 @@
   .burger-menu__dropdown-menu li{
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 18rem;
   }
   .phone {
     display: flex;
@@ -177,22 +237,35 @@
     position: relative;
     /* left: -3rem; */
   }
-
   .tel {
-    font-size: 16px;
+    font-size: 16rem;
     flex-shrink: 0;
+  }
+  .location {
+    align-items: center;
+  }
+  .location img, .social__link svg{
+    height: 18rem;
+    width: 18rem;
+  }
+  .location-img {
+    width: 265rem;
+    height: 184rem;
+  }
+  .center {
+    text-align: center;
   }
   .email {
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 16rem;
     flex-shrink: 0;
     gap: 3rem;
     padding-bottom: 10rem;
   }
   .burger-menu__point {
-    width: 5px;
-    height: 5px;
+    width: 5rem;
+    height: 5rem;
     background: linear-gradient(206.39deg, #FF7A00 18.43%, #FF7A00 18.44%, #FF7102 85.35%);
     box-shadow: 0px 1.5px 1px rgba(0, 0, 0, 0.32);
     border-radius: 1.6px;
@@ -202,16 +275,27 @@
     display: block;
     width: 102.35rem;
     height: 65rem;
-
   }
-
-  .clouds img{
-    width: 300%;
+  .clouds {
+    display: none;
+  }
+  .clouds-mobile {
+    width: 100%;
+    top: 200rem;
     position: relative;
-    top: -152rem;
-    left: -40rem;
-    z-index: 0;
+    background-color: white;
+    top: -941rem;
   }
+  .clouds-mobile img{
+    background-image: url('../images/cloud-mobile-litle.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    width: 100%;
+    top: -75rem;
+    position: relative;
+    background-position: 190rem 34rem;
+  }
+
   .background {
     width: 278rem;
     height: 143rem;
@@ -220,26 +304,43 @@
     padding: 16rem;
     align-items: center;
   }
+
   .flight-selection__wrapper {
     flex-wrap: wrap;
     width: 246rem;
-    overflow: hidden;
+    height: 63rem;
   }
   .flight-selection__item {
-    width: 20rem;
+    width: 121.9rem;
     border: 1px solid #E6E6E6;;
     column-gap: 11rem;
+    font-weight: 400;
+    font-size: 9.34211rem;
+    line-height: 17rem;
+    padding-top: 7.3rem;
+  }
+  .wrap__traveler {
+    padding-bottom: 0rem;
+  }
+  .flight-selection__item__icon {
+    padding-bottom: 2rem;
   }
   .flight-selection__text-over {
     font-size: 9.34211rem;
     font-weight: 400;
-    font-size: 5.33835px;
-    line-height: 11px
+    font-size: 5.33835rem;
+    line-height: 11rem;
+    top: unset;
+    padding-bottom: 20rem;
+    padding-left: 22rem;
+  }
+  .flight-selectio-over-padding {
+    padding-left: 22rem;
   }
   .flight-selection__text {
     font-weight: 400;
-    font-size: 9.34211px;
-    line-height: 17px;
+    font-size: 9.34211rem;
+    line-height: 17rem;
   }
   .flight-selection__item__text {
     display: flex;
@@ -250,15 +351,32 @@
     width: 11.01rem;
     height: 10.68rem;
   }
+  .flight-selection__item__width {
+    width: 162rem;
+    border-radius: 0 0 0 9%;
+  }
+  .special-size {
+    padding-left: 14rem;
+    border-radius: 0 0 15% 0;
+    width: 82rem;
+  }
   .special {
     gap: 20rem;
   }
+
   .flight-selection__wrapper .mobile_padding {
     padding-right: 135rem;
   }
   .flight-selection__wrapper > :nth-child(4) {
-    padding-right: 65rem;
+    padding-right: 28rem;
   }
+  .item__traveler a {
+    font-size: 6rem;
+    line-height: 7rem;
+    height: auto;
+    margin: 2rem;
+  }
+
   .button__search {
     width: 114rem;
     height: 32rem;
@@ -267,8 +385,23 @@
     display: none;
     padding: 0;
   }
+  .display {
+    display: block;
+  }
   .button {
     padding-top: 40rem;
+  }
+  .side__buttons {
+    top: 100rem;
+    align-items: stretch;
+  }
+  .side__button-search {
+    width: 25rem;
+    height: 25rem;
+  }
+  .side__button-search img{
+    width: 12rem;
+    height: 12rem;
   }
   .button__search-mobile {
     display: flex;
@@ -293,16 +426,13 @@
     font-weight: 600;
     font-size: 14rem;
     line-height: 99%;
+    padding-top: 10rem;
   }
   .button-orange {
     width: 114rem;
     height: 32rem;
     font-size: 12rem;
     margin-bottom: 94rem;
-  }
-  .container {
-    width: 100%;
-    padding: 10rem;
   }
   .slick-list {
     overflow: hidden;
@@ -318,6 +448,7 @@
   .slider-banner .slick-arrow {
     width: 32rem;
     height: 32rem;
+    top: 213rem;
   }
   .slider-banner .slick-next{
     background-size: 12rem;
@@ -341,6 +472,11 @@
   }
   .flight-selection-all_wrapper {
     padding-top: 94rem;
+    overflow: hidden;
+  }
+  .flight-selection {
+    left: 48rem;
+    top: 382rem;
   }
   .carrousel__slider__item{
     width: 143.25rem;
@@ -350,7 +486,6 @@
     width: 143.25rem;
     height: 201rem;
   }
-
   .carrousel .slick-track {
     gap:22.65rem;
   }
@@ -359,25 +494,34 @@
     height: 32rem;
     background-position: center;
     background-size: 15rem;
-    left: -10rem;
+    left: -15rem;
+    top: 86rem;
+    position: absolute;
+  }
+  .carrousel .slick-arrow.slick-prev:hover {
+    background-color: rgba(94, 94, 94, 0.2);
   }
   .carrousel .slick-arrow.slick-next {
+    position: absolute;
     width: 32rem;
     height: 32rem;
     background-position: center;
     background-size: 15rem; 
-    right: -10rem;
-    z-index: 999;
+    right: -14rem;
+    top: 86rem;
+  }
+  .carrousel .slick-arrow.slick-next:hover {
+    background-color: rgba(94, 94, 94, 0.2);
   }
   .carrousel__content {
     padding: 15rem 20rem;
   }
   .carrousel__content__top  {
-    padding: 5rem 9rem;
+    padding: 1rem 9rem;
   }
   .carrousel__content__top span {
     font-size: 8rem;
-    line-height: 104.5%;
+    line-height: 2;
   }
   .carrousel__wrapper {
     width: 310rem;
@@ -412,6 +556,14 @@
   }
   .popular-hotels {
     padding-top: 94rem;
+    bottom: 826rem;
+  }
+  .popular-hotels__container {
+    bottom: 0;
+    top: 200rem;
+  }
+  .work-process {
+    top: -1000rem;
   }
   .popular-hotels__text {
     padding-top: 10rem;
@@ -522,8 +674,9 @@
     width: 368rem;
   }
   .form {
-    height: 1249rem;
+    height: 1190rem;
     flex-direction: column;
+    top: -863rem;
   }
   .form__background {
     overflow: hidden;
@@ -591,9 +744,13 @@
     box-shadow: 0rem 2rem 5rem rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(8rem);
     border-radius: 8rem;
-    margin-bottom: 13rem;
+    margin-bottom: 5rem;
     border: 2rem solid rgb(147, 176, 228, 0.3);
     font-size: 9.35849rem;
+  }
+  .form-container button {
+    margin-left: 74rem;
+    margin-top: 8rem;
   }
   .form-container textarea {
     height: 64rem;
@@ -608,18 +765,22 @@
   .form-container h2{
     font-size: 16rem;
   }
-  .form-inner {
-    display: flex;
-    flex-direction: column;
-  }
+
   .form-inner button {
     width: 106.12rem;
     height: 32.09rem;
     font-size: 12.0323rem;
   }
+  .form-container form {
+    margin: 0;
+  }
   .footer  {
     flex-direction: column;
     gap: 32rem;
+    top: -872rem;
+  }
+  .copyright {
+    top: -873rem;
   }
   .footer__logo logo {
     align-items: center;
@@ -630,6 +791,14 @@
   .carrousel__content__bottom-over {
     display: flex;
     align-items: center;
+  }
+  .carrousel__content__bottom {
+    padding-left: 10rem;
+    padding-top: 8rem;
+  }
+  .star {
+    width: 11.41rem;
+    height: 11.41rem;
   }
   .popular-hotels__text {
     row-gap: 8rem;
@@ -644,41 +813,38 @@
     font-size: 8rem;
   }
   .carrousel__content__all {
-    padding-bottom: 54rem;
+    padding-bottom: 74rem;
   }
   .carrousel__content__bottom p{
     font-weight: 700;
     font-size: 12.19rem;
-    width: 10px;
+    width: 103rem;
     height: 0;
+    word-wrap: break-word;
   }
   .carrousel__content__bottom span{
     font-size: 12.19rem;
   }
-  .carrousel__content__bottom-over{
-    gap: 5rem;
-  }
   .strip__length {
     width: 100rem;
-    height: 2rem;
+    height: 1rem;
   }
-  /* .popular-hotels {
-    padding-top: 10rem;
-  } */
   .flight-selection-all_wrapper {
     padding: 0rem;
   }
   .carrousel__item:hover .carrousel__content__all {
     height: 65%;
-    padding:0rem 11rem 11rem 11rem;
   }
   .hotel-info {
-    gap: 0;
-    padding-bottom: 5rem;
-    padding-top: 7rem;
+    gap: 5rem;
+    padding: 33rem 0rem 5rem 9rem;
   }
   .hotel-info__content {
     align-items: center;
+  }
+  .cost {
+    padding-left: 8rem;
+    padding-top: 5rem;
   }
   .currency{
     font-size: 12rem;
@@ -691,20 +857,20 @@
     height: 10rem;
   }
   .slide-1 {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%), url('../images/slider-banner/turkey.png');
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 10%), url('../images/slider-banner/mobile-turkey.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 850rem;
+    height: 1128rem;
     background-position:top;
-
-  }
-  .flight-selection-all_wrapper {
-    display: none;
   }
   .header {
     display: none !important;
   }
   .header-fixed {
     display: none !important;
+  }
+  .pulse-size {
+    width: 32rem;
+    height: 32rem;
   }
 }

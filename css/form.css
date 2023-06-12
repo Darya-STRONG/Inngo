@@ -3,7 +3,7 @@
   top: -813rem;
 }
 .form-container {
-  width: 401rem;
+  width: 371rem;
   height: 526rem;
   background: rgba(255, 255, 255, 0.6);
   border: 1.4rem solid #FFFFFF;
@@ -53,10 +53,6 @@
   font-size: 16rem;
 
 }
-.form-container textarea {
-  width: 307rem;
-  height: 48rem;
-}
 
 .form-container button {
   padding: 10rem;
@@ -98,7 +94,6 @@
   line-height: 113.5%;
 }
 .form-container textarea {
-  width: 337rem;
   height: 96rem;
   font-weight: 500;
   font-size: 16rem;

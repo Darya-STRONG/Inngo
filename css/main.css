@@ -1,8 +1,12 @@
 body {
   height: 1200rem;
 }
+.container{
+  width: 1440rem;
+  margin: 0rem auto;
+  padding: 68px 82rem;
+}
 .background{
-  max-width: 1064rem;
   height: 96rem;
   padding: 24rem;
 
@@ -92,10 +96,10 @@ body {
   height: 48rem;
 }
 .flight-selection {
-  position: relative;
-  bottom: 1557rem;
-  left: 0;
+  position: absolute;
+  left: 190rem;
   z-index: 1;
+  top: 583rem;
 }
 .flight-selection-all_wrapper{
   justify-content: center;
@@ -103,6 +107,9 @@ body {
   gap: 48rem;
   justify-content: flex-end;
   padding-bottom: 67rem;
+}
+.flight-selection__items {
+  display: flex;
 }
 .flight-selection__item{
   display: flex;
@@ -117,8 +124,10 @@ body {
   line-height: 16rem;
   position: absolute;
   top: 7rem;
-  padding-left: 29rem;
-
+  padding-left:41rem;
+}
+.flight-selectio-over-padding {
+  padding-left: 35rem;
 }
 .flight-selection__text {
   display: block;
@@ -381,7 +390,13 @@ body {
   position: relative;
   display: inline-block;
 }
-
+.padding {
+  padding-left: 43rem;
+}
+.special-size {
+  width:225rem;
+  padding-left:55rem; 
+}
 .dropdown-content {
   display: none;
   position: absolute;
@@ -395,7 +410,7 @@ body {
   overflow-y: auto;
   height: 100rem;
   top: 26rem;
-  left: -48.9rem;
+  left: -49.9rem;
 }
 .dropdown-content-traveler {
   display: none;
@@ -408,9 +423,13 @@ body {
   border-radius: 0px 0px 4.67105px 4.67105px;
   text-align: left;
   top: 26rem;
-  left: -54.9rem;
+  left: -90.8rem;
   padding: 15rem 15rem 15rem 20rem;
-  width: 240rem;
+  width: 226rem;
+}
+.dropdown-content-width {
+  width: 238.5rem;
+  left: -53.9;
 }
 
 .dropdown-content a {
@@ -428,11 +447,9 @@ body {
 }
 .dropdown:hover .dropdown-content {
   display: block;
-  border-top: none;
 }
 .dropdown:hover .dropdown-content-traveler {
   display: block;
-  border-top: none;
 }
 
 .wrap__traveler {
@@ -445,14 +462,14 @@ body {
 
 .item__traveler a {
   display: inline-block;
-  width: 18px;
-  height: 18px;
+  width: 18rem;
+  height: 18rem;
   border-radius: 50%;
   text-align: center;
   font-weight: 400;
-  font-size: 11px;
-  line-height: 13px;
-  margin: 5px;
+  font-size: 11rem;
+  line-height: 13rem;
+  margin: 5rem;
   background: #FFFFFF;
   color: #7B7B7B;
   text-decoration: none;
