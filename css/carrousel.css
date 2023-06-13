@@ -38,6 +38,7 @@
   height: 50px;
 }
 .carrousel .slick-arrow.slick-next {
+  top: 163rem;
   right: -12rem;
   background: rgba(255, 255, 255, 0.15);
   background: url('../images/arrows/arrowRight.svg') 12px 12px no-repeat;
@@ -47,10 +48,9 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  /* left: -24rem; */
-
 }
 .carrousel .slick-arrow.slick-prev {
+  top: 163rem;
   left: -20rem;
   background: rgba(255, 255, 255, 0.15);
   background: url('../images/arrows/arrowLeft.svg') 12px 12px no-repeat;

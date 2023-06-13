@@ -6,10 +6,10 @@
   line-height: 106%;
   color: #FFFFFF;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: relative;
-  top: -813rem;
+  top: -875rem;
 }
 .footer__navigation li a:hover {
   background: linear-gradient(148.22deg, #FF7A00 27.03%, #FF7A00 27.03%, #D65A00 93.23%);
@@ -38,8 +38,8 @@
   gap: 16rem;
 }
 .footer__logo img{
-  width: 159rem;
-  height: 100.98rem;
+  width: 166rem;
+  height: 107.98rem;
 }
 .nav__list {
   gap: 19rem;
@@ -83,7 +83,7 @@
   font-size: 14rem;
   line-height: 106%;
   position: relative;
-  top: -815rem;
+  top: -876rem;
 }
 .nav__bottom {
   display: flex;

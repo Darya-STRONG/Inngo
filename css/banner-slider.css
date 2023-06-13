@@ -85,6 +85,8 @@
   font-size: 32rem;
   font-weight: 400;
   line-height: 70rem;
+  top: -10rem;
+  position: relative;
 }
 
 .arrows {

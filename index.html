@@ -401,7 +401,7 @@
       <h1 class="header-slider__title">Turkey</h1>
       <h2 class="header-slider__subtitle">Time for opportunity</h2>
       <div class="button">
-        <button class="button-orange">More detalies</button>
+        <button class="button-orange">More Detalies</button>
       </div>
     </section>
     <section class="header-slider slide-2 container-mobile">
@@ -409,7 +409,7 @@
       <h1 class="header-slider__title-canada">Canada</h1>
       <h2 class="header-slider__subtitle">Time for opportunity</h2>
       <div class="button">
-        <button class="button-orange">More detalies</button>
+        <button class="button-orange">More Detalies</button>
       </div>
     </section>
     <section class="header-slider slide-3 container-mobile">
@@ -420,6 +420,18 @@
         <button class="button-orange">More detalies</button>
       </div>
     </section>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-indicator-line"></div>
+    <div class="scroll-indicator-arrow">
+      <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.7" d="M11.398 1.87504L6.22656 7.6886L1.00048 1.81356" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>        
+      <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="1" d="M11.398 1.87504L6.22656 7.6886L1.00048 1.81356" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </svg>        
+    </div>
+    <div class="scroll-indicator-line"></div>
   </div>
   <div class="popular-hotels">
     <div class="popular-hotels__container background">
@@ -609,35 +621,39 @@
       <div class="flight-selection__container margin background">
         <div class="flight-selection__wrapper">
           <div class="flight-selection__items">
-            <div class="flight-selection__item">
+            <div class="flight-selection__item flight-selection__item-weight">
               <div class="flight-selection__item__icon">
                 <img src="./images/icon/where.svg" alt="where">
               </div>
-              <span class="flight-selection__text-over flight-selectio-over-padding">Departure from</span>
-              <div class="dropdown">
-                <input type="text" placeholder="Where?" id="countryInput" oninput="filterCountries()">
-                <div class="dropdown-content" id="countryDropdown">
-                  <a href="#">Maldives</a>
-                  <a href="#">Egypt</a>
-                  <a href="#">France</a>
-                  <a href="#">Indonesia</a>
-                  <a href="#">Greece</a>
+              <div>
+                <span class="flight-selection__text-over flight-selectio-over-padding">Departure from</span>
+                <div class="dropdown">
+                  <input type="text" placeholder="Where?" id="countryInput" oninput="filterCountries()">
+                  <div class="dropdown-content" id="countryDropdown">
+                    <a href="#">Maldives</a>
+                    <a href="#">Egypt</a>
+                    <a href="#">France</a>
+                    <a href="#">Indonesia</a>
+                    <a href="#">Greece</a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="flight-selection__item">
+            <div class="flight-selection__item flight-selection__item-size">
               <div class="flight-selection__item__icon">
                 <img src="./images/icon/plane.svg" alt="plane">
               </div>
-              <span class="flight-selection__text-over">Country</span>
-              <div class="dropdown">
-                <input type="text" placeholder="Where?" id="countryInput" oninput="filterCountries()">
-                <div class="dropdown-content dropdown-content-country dropdown-content-width" id="countryDropdown">
-                  <a href="#">Maldives</a>
-                  <a href="#">Egypt</a>
-                  <a href="#">France</a>
-                  <a href="#">Indonesia</a>
-                  <a href="#">Greece</a>
+              <div>
+                <span class="flight-selection__text-over">Country</span>
+                <div class="dropdown">
+                  <input type="text" placeholder="Where?" id="countryInput" oninput="filterCountries()">
+                  <div class="dropdown-content dropdown-content-country dropdown-content-width" id="countryDropdown">
+                    <a href="#">Maldives</a>
+                    <a href="#">Egypt</a>
+                    <a href="#">France</a>
+                    <a href="#">Indonesia</a>
+                    <a href="#">Greece</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -647,10 +663,12 @@
               <div class="flight-selection__item__icon">
                 <img src="./images/icon/calendar.svg" alt="plane">
               </div>
-              <span class="flight-selection__text-over">Departure from - to</span>
-              <div class="dropdown">
-                <input type="text" placeholder="From           →            Down" id="countryInput" oninput="filterCountries()">
-                <div class="dropdown-content dropdown-content-country dropdown-content-country-size" id="countryDropdown">
+              <div>
+                <span class="flight-selection__text-over">Departure from - to</span>
+                <div class="dropdown">
+                  <input type="text" placeholder="From → Down" style="text-align: justify;" id="countryInput" oninput="filterCountries()">
+                  <div class="dropdown-content dropdown-content-country dropdown-content-country-size" id="countryDropdown">
+                  </div>
                 </div>
               </div>
             </div>
@@ -658,38 +676,41 @@
               <div class="flight-selection__item__icon">
                 <img src="./images/icon/adults.svg" alt="adults">
               </div>
-              <span class="flight-selection__text-over padding">Participants</span>
-              <div class="dropdown">
-                <input type="text" placeholder="Adults" id="countryInput" oninput="filterCountries()">
-                <div class="dropdown-content-traveler" id="countryDropdown">
-                  <div class="wrap__traveler">
-                    <div class="title__traveler">
-                      <img src="./images/icon/adults.svg" alt="adults">
-                      <span>Traveler</span>
+              <div>
+                <span class="flight-selection__text-over padding">Participants</span>
+                <div class="dropdown">
+                  <input type="text" placeholder="Adults" id="countryInput" oninput="filterCountries()">
+                  <div class="dropdown-content-traveler" id="countryDropdown">
+                    <div class="wrap__traveler">
+                      <div class="title__traveler">
+                        <img src="./images/icon/adults.svg" alt="adults">
+                        <span>Traveler</span>
+                      </div>
+                      <div class="item__traveler">
+                        <a href="#">1</a>
+                        <a href="#" class="active">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                      </div>
                     </div>
-                    <div class="item__traveler">
-                      <a href="#">1</a>
-                      <a href="#" class="active">2</a>
-                      <a href="#">3</a>
-                      <a href="#">4</a>
-                      <a href="#">5</a>
-                    </div>
-                  </div>
-                  <div class="wrap__traveler">
-                    <div class="title__traveler">
-                      <img src="./images/icon/adults.svg" alt="adults">
-                      <span>Child</span>
-                    </div>
-                    <div class="item__traveler">
-                      <a href="#" class="active">0</a>
-                      <a href="#">1</a>
-                      <a href="#">2</a>
-                      <a href="#">3</a>
-                      <a href="#">4</a>
+                    <div class="wrap__traveler">
+                      <div class="title__traveler">
+                        <img src="./images/icon/adults.svg" alt="adults">
+                        <span>Child</span>
+                      </div>
+                      <div class="item__traveler">
+                        <a href="#" class="active">0</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>

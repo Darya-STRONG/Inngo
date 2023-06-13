@@ -76,7 +76,6 @@ a{
   text-decoration: none;
   color: inherit;
   display: inline-block;
-  filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.32));
 }
 .nav__link:hover {
   color: #FF7A00;
@@ -88,7 +87,6 @@ img {
   height: auto;
 }
 svg {
-  max-width: 100%;
   height: auto;
 }
 
@@ -108,52 +106,6 @@ svg {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.side__buttons {
-  position: fixed;
-  right: 52rem;
-  top:575rem;
-  z-index: 9999;
-}
-.side__buttons button {
-  position: relative;
-  border-radius: 50%;
-}
-.pulse {
-  all: unset;
-}
-.side__button-search {
-  color:  #0065C1;
-}
-.side__button-search:hover {
-  color:  #D65A00;
-  transition-property: color;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-}
-.pulse a{
-  color: #D65A00;
-}
-
-.pulse a:hover {
-  color: #0065C1;
-}
-.pulse::before {
-  content: "";
-  position: absolute;
-  left: -12rem;
-  right: -12rem;
-  top: -11rem;
-  bottom: -10rem;
-  border-radius: 50%;
-  background: linear-gradient(148.22deg, #FF7A00 27.03%, #FF7A00 27.03%, #D65A00 93.23%);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
-  animation: pulse 1s linear infinite;
-}
-.pulse:hover::before {
-  background: linear-gradient(179.64deg, #00A6DB 19.91%, #0065C1 99.92%);
-}
-
 @keyframes pulse {
   0% {
     transform: scale(0.7);

@@ -6,6 +6,9 @@
     width: 370rem;
     line-height: 1;
   }
+  .scroll-indicator {
+    display: none;
+  }
   .header-slider {
     overflow: visible;
   }
@@ -19,7 +22,10 @@
     line-height: 82%;
     padding-top: 72rem;
   }
-
+  .side__button-call {
+    width: 35rem;
+    height: 35rem;   
+  }
   .slick-list {
     overflow: visible;
   }  
@@ -167,6 +173,10 @@
     width: 100%;
     height: 2rem;
   }
+  .dropdown-content-traveler::before {
+    margin-bottom: 10rem;
+  }
+
   .dropdown-menu {
     display: none;
     position: absolute;
@@ -175,15 +185,11 @@
     padding: 10rem;
   }
   .dropdown-content  {
-    width: 124rem;
-    left: -43.6rem;
-    top: 20rem;
+    transform: translateY(15%);
   }
   .dropdown-content-traveler {
-    top: 20rem;
-    left: -36.8rem;
-    width: 81rem;
     padding: 2rem 9rem 5rem 15rem;
+    transform: translateY(32%);
   }
   .dropdown-content-country-size {
     width: 245rem;
@@ -197,6 +203,10 @@
   }
   .title__traveler {
     gap: 5rem;
+  }
+  .title__traveler img{
+    width: 19rem;
+    height: 10rem;
   }
   .nav__item:hover .dropdown-menu {
     display: block;
@@ -273,8 +283,8 @@
   }
   .mobile__logo {
     display: block;
-    width: 68rem;
-    height: 43.19rem;
+    width: 102.35rem;
+    height: 65rem;
   }
   .clouds {
     display: none;
@@ -284,7 +294,7 @@
     top: 200rem;
     position: relative;
     background-color: white;
-    top: -941rem;
+    top: -955rem;
   }
   .clouds-mobile img{
     background-image: url('../images/cloud-mobile-litle.png');
@@ -318,6 +328,8 @@
     font-size: 9.34211rem;
     line-height: 17rem;
     padding-top: 7.3rem;
+    padding: 0 16rem;
+    align-items: end;
   }
   .wrap__traveler {
     padding-bottom: 0rem;
@@ -329,13 +341,7 @@
     font-size: 9.34211rem;
     font-weight: 400;
     font-size: 5.33835rem;
-    line-height: 11rem;
-    top: unset;
-    padding-bottom: 20rem;
-    padding-left: 22rem;
-  }
-  .flight-selectio-over-padding {
-    padding-left: 22rem;
+    line-height:12rem;
   }
   .flight-selection__text {
     font-weight: 400;
@@ -352,13 +358,14 @@
     height: 10.68rem;
   }
   .flight-selection__item__width {
-    width: 162rem;
+    width: 154rem;
     border-radius: 0 0 0 9%;
+    padding: 0 18rem;
   }
   .special-size {
-    padding-left: 14rem;
+    padding-left: 19rem;
     border-radius: 0 0 15% 0;
-    width: 82rem;
+    width: 91rem;
   }
   .special {
     gap: 20rem;
@@ -372,9 +379,11 @@
   }
   .item__traveler a {
     font-size: 6rem;
-    line-height: 7rem;
+    line-height: 8rem;
     height: auto;
     margin: 2rem;
+    filter: none;
+
   }
 
   .button__search {
@@ -392,16 +401,19 @@
     padding-top: 40rem;
   }
   .side__buttons {
-    top: 100rem;
-    align-items: stretch;
+    position: fixed;
+    right: 17rem;
+    top:418rem;
+    z-index: 9999;
+    gap: 17rem;
   }
   .side__button-search {
-    width: 25rem;
-    height: 25rem;
+    width: 32rem;
+    height: 32rem;
   }
   .side__button-search img{
-    width: 12rem;
-    height: 12rem;
+    width: 20rem;
+    height: 20rem;
   }
   .button__search-mobile {
     display: flex;
@@ -417,11 +429,10 @@
     height: 13.35rem
   }
   .side__button-call-size {
-    width: 16rem;
-    height: 16rem;
-    position: absolute;
-    right: 23.5%;
-    top: 22%;
+    transform: translateX(-120%);
+    width: 25rem;
+    padding-top: 0;
+    top: 5rem;
   }
   .header-slider__title {
     font-weight: 600;
@@ -479,11 +490,10 @@
   }
   .flight-selection-all_wrapper {
     padding-top: 94rem;
-    overflow: hidden;
   }
   .flight-selection {
-    left: 48rem;
-    top: 382rem;
+    left: 44rem;
+    top: 374rem;
   }
   .carrousel__slider__item{
     width: 143.25rem;
@@ -501,8 +511,8 @@
     height: 32rem;
     background-position: center;
     background-size: 15rem;
-    left: -15rem;
-    top: 86rem;
+    left: -20rem;
+    top: 72rem;
     position: absolute;
   }
   .carrousel .slick-arrow.slick-prev:hover {
@@ -515,7 +525,7 @@
     background-position: center;
     background-size: 15rem; 
     right: -14rem;
-    top: 86rem;
+    top: 73rem;
   }
   .carrousel .slick-arrow.slick-next:hover {
     background-color: rgba(94, 94, 94, 0.2);
@@ -542,7 +552,7 @@
   .work-process__title {
     position: relative;
     padding-top: 0;
-    top: -100rem;
+    top: -74rem;
   }
   .work-process__text {
     font-size: 24rem;
@@ -567,7 +577,7 @@
   }
   .popular-hotels__container {
     bottom: 0;
-    top: 200rem;
+    top: 189rem;
   }
   .work-process {
     top: -1000rem;
