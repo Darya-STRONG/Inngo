@@ -22,6 +22,12 @@
 .strip-longer {
   width: 202rem;
 }
+.work-process__text__strip-longer {
+  background: linear-gradient(179.64deg, #00A6DB 19.91%, #0065C1 99.92%);
+}
+.work-process__strip-shorter {
+  background: linear-gradient(179.64deg, #00A6DB 19.91%, #0065C1 99.92%);
+}
 .strip-shorter {
   width: 136rem;
   margin-bottom: 40rem;

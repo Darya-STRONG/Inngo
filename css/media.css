@@ -167,7 +167,7 @@
     flex-shrink: 0;
   }
   .strip {
-    height: 2rem;
+    height: 1rem;
   }
   .strip-long {
     width: 100%;
@@ -254,9 +254,15 @@
   .location {
     align-items: center;
   }
-  .location img, .social__link svg{
-    height: 18rem;
-    width: 18rem;
+  .footer__nav_bottom {
+    align-items: center;
+    display: flex;
+    gap: 20rem;
+  }
+  .footer__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 113.5%;
   }
   .location-img {
     width: 265rem;
@@ -398,7 +404,7 @@
     display: block;
   }
   .button {
-    padding-top: 40rem;
+    padding-top: 31rem;
   }
   .side__buttons {
     position: fixed;
@@ -444,7 +450,7 @@
     font-weight: 600;
     font-size: 14rem;
     line-height: 99%;
-    padding-top: 10rem;
+    padding-top: 21rem;
   }
   .button-orange {
     width: 114rem;
@@ -512,7 +518,7 @@
     background-position: center;
     background-size: 15rem;
     left: -20rem;
-    top: 72rem;
+    top: 86rem;
     position: absolute;
   }
   .carrousel .slick-arrow.slick-prev:hover {
@@ -525,7 +531,7 @@
     background-position: center;
     background-size: 15rem; 
     right: -14rem;
-    top: 73rem;
+    top: 86rem;
   }
   .carrousel .slick-arrow.slick-next:hover {
     background-color: rgba(94, 94, 94, 0.2);
@@ -544,7 +550,7 @@
     width: 310rem;
     position: absolute;
     left: -16rem;
-    top: 100rem;
+    top: 83rem;
   }
   .snake {
     display: none;
@@ -557,18 +563,15 @@
   .work-process__text {
     font-size: 24rem;
   }
-  .work-process__text__strip-longer, .work-process__strip-shorter{
-    background-color: rgba(0, 166, 219, 1);
-  }
-  
+
   .work-process__content {
     background-color: #FFFFFF;
     background-image: url(../images/map.svg),url(../images/snake-mobile.svg);
     background-repeat: no-repeat, no-repeat;
-    background-size: 300%, 227rem;
+    background-size: 300%, 202rem;
     height: 500rem;
     background-position: -555rem 68rem, center;
-    height: 986rem;
+    height: 866rem;
 
   }
   .popular-hotels {
@@ -584,30 +587,35 @@
   }
   .popular-hotels__text {
     padding-top: 10rem;
+    row-gap: 6rem;
   }
   .earth {
     width: 62rem;
     height: 62rem;
   }
   .earth-1 {
-    top: 34rem;
-    left: 283rem;
+    top: 13rem;
+    left: 291rem;
   }
   .earth-2 {
-    top: 710rem;
-    left: 20rem;
+    top: 623rem;
+    left: 52rem;
   }
   .earth-3 {
-    top: 496rem;
-    right: 15rem;
+    top: 416rem;
+    right: 5rem;
   }
   .earth-4 {
-    top: 229rem;
-    left: 20rem;;
+    top: 215rem;
+    left: 48rem;
   }
   .plane-gray {
-    transform: rotate(112deg);
-    top: 990rem;    ;
+    transform: rotate(120deg);
+    top: 863rem;
+    height: 50rem;
+    width: 50rem;
+    right: 168rem;
+
   }
   .dot-1 {
     position: absolute;
@@ -616,18 +624,18 @@
   }
   .dot-3 {
     position: absolute;
-    left: 272rem;
-    top: 350rem;
+    left: 268rem;
+    top: 309rem;
   }
   .dot-2 {
     position: absolute;
-    left: 81rem;
-    top: 561rem;
+    left: 100rem;
+    top: 474rem;
   }
   .dot-4 {
     position: absolute;
-    left: 274rem;
-    top: 866rem;
+    left: 262rem;
+    top: 712rem;
   }
 
   .inscription__title {
@@ -649,11 +657,11 @@
   }
   .mark-1 .inscription{
     position: relative;
-    left: 122rem;
+    left: 147rem;
   }
   .mark-2 {
-    left: 207rem;
-    top: 264rem;
+    left: 188rem;
+    top: 235rem;
   }
   .mark-2 .inscription{
     position: relative;
@@ -661,8 +669,8 @@
     top: -26rem;
   }
   .mark-3 {
-    left: -5rem;
-    top: 473rem;
+    left: 26rem;
+    top: 389rem;
   }
   .mark-3 .inscription{
     position: relative;
@@ -670,13 +678,12 @@
     top: 20rem;
   }
   .mark-4 {
-    left: 205rem;
-    top: 773rem;
+    left: 190rem;
+    top: 613rem;
   }
   .mark-4 .inscription{
     position: relative;
     left: -140rem;
-    top: -54rem;
   }
   .form__gradient-left {
     transform: rotate(90deg);
@@ -693,7 +700,7 @@
   .form {
     height: 1190rem;
     flex-direction: column;
-    top: -863rem;
+    top: -956rem;
   }
   .form__background {
     overflow: hidden;
@@ -716,23 +723,26 @@
   .form__girl-mobile img{
     width: 100%;
     position: relative;
-    top: 138rem;
+    top: 144rem;
+    width: 354rem;
+
   }
   .airplane {
     transform: rotateY(180deg);
-    left: -125rem;
-    top: -1403rem;
+    left: -96rem;
+    top: -1394rem;
     position: relative;
     width: 495rem;
   }
   .form__inscription {
     font-size: 66.4803rem;
-    left: 20rem;
+    left: 25rem;
     width: 10rem;
+    top: 17rem;
   }
   .cloud-1 {
-    left: 151rem;
-    top: 7rem;
+    left: 195rem;
+    top: 40rem;
     z-index: 20;
   }
   .cloud-2 {
@@ -749,7 +759,7 @@
   .form-container {
     width: 278rem;
     height: 349rem;
-    top: 937rem;
+    top: 899rem;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 16rem;
@@ -794,10 +804,17 @@
   .footer  {
     flex-direction: column;
     gap: 32rem;
-    top: -872rem;
+    top: -1011rem;
+  }
+  .social__footer {
+    gap: 15rem;
+  }
+  .strip-footer {
+    width: 84rem;
   }
   .copyright {
-    top: -873rem;
+    top: -1013rem;
+    padding: 20rem;
   }
   .footer__logo logo {
     align-items: center;
@@ -816,9 +833,6 @@
   .star {
     width: 11.41rem;
     height: 11.41rem;
-  }
-  .popular-hotels__text {
-    row-gap: 8rem;
   }
   .airplane-decktop {
     display: none;
