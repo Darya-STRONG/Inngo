@@ -613,3 +613,9 @@ input[type="text"]::placeholder {
   gap: 25rem;
   align-items: center
 }
+.form__triangle {
+  position: absolute;
+  bottom: 10rem;
+  left: 50%;
+  transform: translate(-50%);
+}
