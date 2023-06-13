@@ -275,8 +275,11 @@
   }
   .footer__text {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 16rem;
     line-height: 113.5%;
+  }
+  .location__item  img{
+    width: 18rem;
   }
   .location-img {
     width: 265rem;

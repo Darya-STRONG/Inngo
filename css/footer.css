@@ -18,6 +18,9 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+.footer__navigation li a {
+  filter: none;
+}
 .location__item  a:hover{
   background: linear-gradient(148.22deg, #FF7A00 27.03%, #FF7A00 27.03%, #D65A00 93.23%);
   -webkit-background-clip: text;
@@ -70,6 +73,9 @@
   display: flex;
   column-gap: 8rem;
   align-items: center;
+}
+.location__item a{
+  filter: none;
 }
 .footer__block {
   flex-shrink: 0;
