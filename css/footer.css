@@ -40,6 +40,13 @@
   align-items: flex-start;
   gap: 16rem;
 }
+.social__footer .social__item a{
+  filter: none;
+}
+.strip-footer {
+  filter: none;
+  box-shadow: none;
+}
 .footer__logo img{
   width: 166rem;
   height: 107.98rem;

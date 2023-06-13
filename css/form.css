@@ -104,7 +104,7 @@
 .form__background {
   position: relative;
   width: 100%;
-  height: 587rem;
+  height: 612rem;
   background-color: rgba(254, 182, 83, 1);
   background-image: url('../images/map-form.png');
   background-repeat: no-repeat;
@@ -177,9 +177,9 @@
 }
 .airplane-decktop {
   position: absolute;
-  top: 180rem;
+  top: 172rem;
   left: 0;
   z-index: 2;
-  width: 555rem;
+  width: 622rem;
 }
 
