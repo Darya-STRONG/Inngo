@@ -597,3 +597,19 @@ input[type="text"]::placeholder {
   display: flex;
   gap: 15rem;
 }
+.copyright-mobile {
+  display: none;
+}
+.footer__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 113.5%;
+}
+.strip-footer {
+  width: 84rem;
+}
+.footer__nav_bottom {
+  display: flex;
+  gap: 25rem;
+  align-items: center
+}

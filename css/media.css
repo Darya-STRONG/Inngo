@@ -816,6 +816,12 @@
     top: -1013rem;
     padding: 20rem;
   }
+  .copyright-desktop {
+    display: none;
+  }
+  .copyright-mobile{
+    display: block;
+  }
   .footer__logo logo {
     align-items: center;
   }
