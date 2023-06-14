@@ -208,11 +208,14 @@
     padding: 2rem 9rem 5rem 15rem;
   }
   .dropdown-content a:first-child {
-    padding-top: 0rem;
+    padding-top: 6rem;
   }
   .dropdown-content a {
     font-size: 100%;
-    padding-left: 43rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-60%);
+    line-height: 15rem;
   }
   .title__traveler {
     gap: 5rem;
