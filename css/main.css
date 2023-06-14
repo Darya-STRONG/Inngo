@@ -495,9 +495,11 @@ input[type="text"]::placeholder {
   content: "";
   display: block;
   width: 80%;
-  height: 1px;
+  height: 1rem;
   background-color: #E6E6E6;
-  margin: 5px auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 .special-size {
   width:187rem;
@@ -506,6 +508,7 @@ input[type="text"]::placeholder {
   border-right: 0;
 
 }
+ 
 .dropdown-content {
   display: none;
   position: absolute;
@@ -516,11 +519,17 @@ input[type="text"]::placeholder {
   border-radius: 0rem 0rem 4.67105rem 4.67105rem;
   text-align: left;
   overflow-y: auto;
-  height: 155rem;
-  top: 0;
+  height: auto;
   left: 0;
-  transform: translateY(25%);
+  bottom: 0;
+  transform: translateY(97%);
   border-bottom: 1.4rem solid #E6E6E6;
+}
+.dropdown-content::before {
+  margin-top: 4rem;
+}
+.dropdown-content-country-size {
+  height: 300%;
 }
 .dropdown-content-traveler {
   display: none;
@@ -531,9 +540,9 @@ input[type="text"]::placeholder {
   backdrop-filter: blur(27.34px);
   border-radius: 0rem 0rem 4.67105rem 4.67105rem;
   text-align: left;
-  top:0;
+  bottom:0;
   left:0;
-  transform: translateY(25%);
+  transform: translateY(95%);
   padding: 6rem 15rem 15rem 42rem;
   width: 100%;
 }
@@ -541,9 +550,9 @@ input[type="text"]::placeholder {
   content: "";
   display: block;
   width: 120%;
-  height: 1px;
+  height: 1rem;
   background-color: #E6E6E6;
-  margin: 1px auto;
+  margin: 1rem auto;
   margin-left: -27rem;
 }
 
