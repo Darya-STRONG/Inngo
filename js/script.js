@@ -185,8 +185,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
 // Отримуємо всі необхідні елементи з DOM
 const departureDateInput = document.querySelector('#departure-date');
 const returnDateInput = document.querySelector('#return-date');
@@ -221,4 +219,56 @@ function createCalendar(container, dateInput) {
 
   // Створюємо сітку днів календаря
   const grid = document.createElement('div');
+}
+
+Календарь 
+$(function() {
+  $('#daterange').daterangepicker({
+    opens: 'center',
+    startDate: moment().startOf('day'),
+    endDate: moment().endOf('day'),
+    locale: {
+      format: 'DD MMMM',
+      daysOfWeek: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+      monthNames: [
+        'January', 'February', 'March', 'April', 'May', 'June', 'July',
+        'August', 'September', 'October', 'November', 'December'
+      ]
+    },
+    autoApply:true,
+    showCustomRangeLabel: function(start, end, label) {
+      const month = start.format('MMMM');
+      return month;
+    }
+  });
+
+});
+
+
+// Валідність форми
+function validateForm() {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var phone = document.getElementById('phone').value;
+  var message = document.getElementById('message').value;
+
+  if (name.trim() === '') {
+    alert('Please enter your name.');
+    return false;
+  }
+
+  if (email.trim() === '') {
+    alert('Please enter your email.');
+    return false;
+  }
+
+  if (phone.trim() === '') {
+    alert('Please enter your phone number.');
+    return false;
+  }
+
+  // Додаткова логіка, якщо форма валідна
+  // Наприклад, ви можете виконати відправку даних через AJAX або перенаправити користувача на іншу сторінку.
+
+  return true;
 }

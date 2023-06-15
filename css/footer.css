@@ -11,6 +11,11 @@
   position: relative;
   top: -875rem;
 }
+.footer-container {
+  padding-left: 129.5rem;
+  padding-right: 129.5rem;
+  padding: 35rem 130rem 50rem 130rem;
+}
 .footer__navigation li a:hover {
   background: linear-gradient(148.22deg, #FF7A00 27.03%, #FF7A00 27.03%, #D65A00 93.23%);
   -webkit-background-clip: text;
@@ -105,4 +110,8 @@
 }
 .social {
   list-style-type: none;
+}
+.gap {
+  position: relative;
+  left: -5rem;
 }

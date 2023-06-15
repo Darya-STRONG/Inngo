@@ -17,7 +17,7 @@
 .popular-hotels__title {
   font-weight: 600;
   font-size: 40rem;
-  /* padding-bottom: 20rem; */
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.32);
 }
 .strip-longer {
   width: 202rem;
@@ -46,28 +46,32 @@
 .carrousel .slick-arrow.slick-next {
   top: 163rem;
   right: -12rem;
-  background: rgba(255, 255, 255, 0.15);
-  background: url('../images/arrows/arrowRight.svg') 12px 12px no-repeat;
-  border: 1.4px solid #FFFFFF;
+  background: url('../images/arrows/arrowRight.svg') 12rem 12rem no-repeat, rgba(255, 255, 255, 0.15);
+  background-position: center;
+  border: 1.4rem solid #FFFFFF;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(18px);
-  width: 48px;
-  height: 48px;
+  backdrop-filter: blur(18rem);
+  width: 48rem;
+  height: 48rem;
   border-radius: 50%;
+}
+.carrousel .slick-arrow.slick-next:hover {
+  background-color: rgba(94, 94, 94, 0.2);
 }
 .carrousel .slick-arrow.slick-prev {
   top: 163rem;
   left: -20rem;
-  background: rgba(255, 255, 255, 0.15);
-  background: url('../images/arrows/arrowLeft.svg') 12px 12px no-repeat;
-  border: 1.4px solid #FFFFFF;
+  background: url('../images/arrows/arrowLeft.svg') 12rem 12rem no-repeat, rgba(255, 255, 255, 0.15);
+  background-position: center;
+  border: 1.4rem solid #FFFFFF;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(18px);
-  width: 48px;
-  height: 48px;
+  backdrop-filter: blur(18rem);
+  width: 48rem;
+  height: 48rem;
   border-radius: 50%;
-  /* right: -24rem; */
-
+}
+.carrousel .slick-arrow.slick-prev {
+  background-color: rgba(94, 94, 94, 0.2);
 }
 .carrousel-1 {
   background: url('../images/hotels/slider1.png');
@@ -152,7 +156,7 @@
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(18px);
   border-radius: 6px;
-  border: 1px solid #FFFFFF;
+  border: 1rem solid #FFFFFF;
   padding: 8rem 16rem;
 }
 .carrousel__content__top span{

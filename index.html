@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VigTour</title>
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-  <script>
-    function standartWidth(width) {
-      $('html').css('font-size', `${1 * $(window).width() / width}px`);
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VigTour</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <script>
+      function standartWidth(width) {
+        $('html').css('font-size', `${1 * $(window).width() / width}px`);
+      }
+      
+      if ($(window).width() >= 992) {
+        standartWidth(1440);
+      } else {
+        standartWidth(360);
+      }
+      
+      $(function() {
+        $('#daterange').daterangepicker({
+          opens: 'center',
+          startDate: moment().startOf('day'),
+          endDate: moment().endOf('day'),
+          locale: {
+            format: 'YYYY-MM-DD',
+            daysOfWeek: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+            monthNames: [
+              'January', 'February', 'March', 'April', 'May', 'June', 'July',
+              'August', 'September', 'October', 'November', 'December'
+            ]
+          }
+        });
+      });
+    </script>
     
-    if ($(window).width() >= 992) {
-      standartWidth(1440);
-    } else {
-      standartWidth(360);
-    }
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 <body>
   <header class="header" id="header">
     <div class="container">
@@ -162,7 +185,7 @@
   <header class="header-fixed">
       <div class="header-wrap header-wrap-fixed">
         <div class="logo logo-header">
-          <a class="logo" href="#">
+          <a class="logo logo-fixed" href="#">
             <img src="images/logo-fixed.png" alt="logo">
           </a>
         </div>
@@ -666,9 +689,8 @@
               <div>
                 <span class="flight-selection__text-over">Departure from - to</span>
                 <div class="dropdown">
-                  <input type="text" placeholder="From → Down" style="text-align: justify;" id="countryInput" oninput="filterCountries()">
-                  <div class="dropdown-content dropdown-content-country dropdown-content-country-size" id="countryDropdown">
-                  </div>
+                  <input type="text" placeholder="From → Down" style="text-align: justify;">
+                  <input type="text" id="daterange" />
                 </div>
               </div>
             </div>
@@ -786,38 +808,28 @@
         <div class="form__gradient-left"></div>
         <div class="form__gradient-right"></div>
       </div>
-
-
-      <div class="form__girl">
-        <img src="./images/girl-over.png" alt="">
-      </div>
-      <div class="form__triangle">
-        <svg width="57" height="15" viewBox="0 0 57 15" fill="red" xmlns="http://www.w3.org/2000/svg">
-          <path d="M32.0007 14.5L-0.00102836 0.00011067L57.0005 0.000710879L32.0007 14.5Z" fill="#D9D9D9"/>
-        </svg>          
-      </div>
       <div class="form__girl-mobile">
         <img src="./images/girl-m.png" alt="">
       </div>
 
       <div class="form-container">
         <h2>Questions Form</h2>
-        <form class="form-inner">
+        <form class="form-inner" onsubmit="return validateForm()">
           <label for="name">Name:</label>
-          <input type="text" id="name" placeholder="Enter Name">
+          <input type="text" id="name" placeholder="Enter Name" required>
       
           <label for="email">Email:</label>
-          <input type="email" id="email" placeholder="Enter Email">
+          <input type="email" id="email" placeholder="Enter Email" required>
       
           <label for="phone">Phone:</label>
-          <input type="tel" id="phone" placeholder="Enter Phone">
+          <input type="tel" id="phone" placeholder="Enter Phone" required>
       
           <label for="message">Message:</label>
           <textarea id="message" placeholder="Enter Message"></textarea>
       
           <button type="submit">Send</button>
         </form>
-      </div> 
+      </div>
 
       <img class="airplane-decktop" src="./images/banner-form/airplane.png" alt="airplane">
       <img class="cloud cloud-1" src="./images/banner-form/cloud.png" alt="cloud">
@@ -829,10 +841,10 @@
 
   </section>
 
-  <footer class="footer container">
+  <footer class="footer footer-container">
     <div class="footer__block block__flex">
       <a class="footer__logo logo" href="#">
-        <img class="logo__img" src="images/footer-logo.svg" alt="logo">
+        <img class="logo__img" src="images/logo-footer.svg" alt="logo">
       </a>
       <div class="footer__nav_bottom">
         <span class="footer__text">Folov US</span>
@@ -883,7 +895,7 @@
     <div class="footer__block">
       <nav>
         <ul class="location">
-          <li class="location__item">
+          <li class="location__item gap">
             <img src="./images/icon/WhatsApp.svg" alt="WhatsApp">
             <span class="point"></span>
             <a class="tel" href="tel:+38 (044) 303 9 303">+38 (044) 303 9 303</a>
@@ -919,8 +931,7 @@
   <div class="copyright copyright-mobile">
     <p>&copy;  viq Tour - All Rights Reserved.</p>
   </div> 
-  
-  <script src="js/slick.min.js"></script>
+
   <script src="js/script.js"></script>
 </body>
 </html>
