@@ -108,30 +108,24 @@ window.addEventListener('scroll', function() {
 });
 
 
-
-// Получаем ссылки на все элементы выпадающих меню
+// Отримуємо посилання на всі елементи випадаючих меню
 const dropdowns = document.querySelectorAll('.header-dropdown');
 const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 const dropdownMenus = document.querySelectorAll('.dropdown-menu');
 
-// Добавляем обработчики событий для каждого выпадающего меню
+// Додаємо обробники подій для кожного випадаючого меню
 dropdownToggles.forEach((dropdownToggle, index) => {
-  dropdownToggle.addEventListener('click', function(event) {
-    event.preventDefault(); // Предотвращаем переход по ссылке
-    dropdowns[index].classList.toggle('open');
+  dropdownToggle.addEventListener('mouseover', function(event) {
+    event.preventDefault(); // Попереджаємо перехід за посиланням
+    dropdowns[index].classList.add('open');
   });
 });
 
-// Обрабатываем событие клика вне выпадающего меню для каждого меню
-document.addEventListener('click', function(event) {
-  dropdowns.forEach((dropdown) => {
-    const target = event.target;
-    if (!dropdown.contains(target)) {
-      dropdown.classList.remove('open');
-    }
+dropdownMenus.forEach((dropdownMenu) => {
+  dropdownMenu.addEventListener('mouseleave', function(event) {
+    dropdownMenu.closest('.header-dropdown').classList.remove('open');
   });
 });
-
 
 
 //Фильтрация стран при вводе текста в инпут
@@ -245,30 +239,55 @@ $(function() {
 });
 
 
-// Валідність форми
-function validateForm() {
+
+
+function validateForm(event) {
+  event.preventDefault(); // Предотвращаем перезагрузку страницы при отправке формы
+
   var name = document.getElementById('name').value;
   var email = document.getElementById('email').value;
   var phone = document.getElementById('phone').value;
   var message = document.getElementById('message').value;
 
+  var nameError = document.getElementById('nameError');
+  var emailError = document.getElementById('emailError');
+  var phoneError = document.getElementById('phoneError');
+  var status = document.getElementById('status');
+  var sendButton = document.getElementById('submitButton');
+
+  var hasEmptyFields = false; // Флаг для проверки пустых полей
+
   if (name.trim() === '') {
-    alert('Please enter your name.');
-    return false;
+    nameError.textContent = 'The field is required.';
+    hasEmptyFields = true; // Устанавливаем флаг, если поле не заполнено
+  } else {
+    nameError.textContent = '';
   }
 
   if (email.trim() === '') {
-    alert('Please enter your email.');
-    return false;
+    emailError.textContent = 'The field is required.';
+    hasEmptyFields = true; // Устанавливаем флаг, если поле не заполнено
+  } else {
+    emailError.textContent = '';
   }
 
   if (phone.trim() === '') {
-    alert('Please enter your phone number.');
-    return false;
+    phoneError.textContent = 'The field is required.';
+    hasEmptyFields = true; // Устанавливаем флаг, если поле не заполнено
+  } else {
+    phoneError.textContent = '';
   }
 
-  // Додаткова логіка, якщо форма валідна
-  // Наприклад, ви можете виконати відправку даних через AJAX або перенаправити користувача на іншу сторінку.
+  // Дополнительная логика, если форма валидна
+  // ...
 
-  return true;
+  if (hasEmptyFields) {
+    sendButton.textContent = 'Error';
+    status.style.visibility = 'visible';
+    status.textContent = 'Error';
+  } else {
+    sendButton.textContent = 'Send'; // Восстанавливаем текст кнопки после отправки
+    status.style.visibility = 'visible';
+    status.textContent = 'Sent'; // Устанавливаем текст "Sent" для элемента status
+  }
 }

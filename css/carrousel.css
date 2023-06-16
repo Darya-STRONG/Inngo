@@ -132,12 +132,12 @@
 }
 .hotel-info__icon {
   border: 1.4px solid #FFFFFF;
-  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.32));
   border-radius: 18.5625px;
   display: flex;
   width: 18rem;
   height: 18rem;
   border-radius: 50%;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.32);
 }
 .price {
   background: linear-gradient(148.22deg, #FFB800 80.03%, #F56700 105.23%);
@@ -148,8 +148,7 @@
   font-size: 24rem;
   line-height: 104.5%;
   padding-top: 19rem;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-  }
+}
 
 .carrousel__content__top {
   background: rgba(50, 50, 50, 0.16);
@@ -245,9 +244,6 @@
   position: relative;
   bottom: 538rem;
 }
-.hotel-info__icon img{
-  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.32));
-}
 .hotel-info__text {
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.32);
 }
@@ -271,7 +267,6 @@
 }
 .cost {
   padding-left: 20rem;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.32);
 }
 .currency {
   font-weight: 700;
@@ -279,3 +274,5 @@
   line-height: 104.5%;
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.32);
 }
+
+

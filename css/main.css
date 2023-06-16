@@ -1,7 +1,7 @@
 body {
   height: 1200rem;
 }
-a {
+.nav__link {
   filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.32));
 }
 .container{
@@ -59,7 +59,6 @@ a {
 }
 .pulse {
   all: unset;
-
 }
 .side__button-search {
   border: none;
@@ -186,6 +185,9 @@ a {
 }
 .flight-selection__item-weight {
   width: 207rem;
+}
+.padding-top {
+  padding-top: 10rem;
 }
 .flight-selection__item-size {
   width: 234rem;
@@ -527,6 +529,17 @@ input[type="text"]::placeholder {
   transform: translateY(97%);
   border-bottom: 1.4rem solid #E6E6E6;
 }
+.dropdown-content-country {
+  padding-left: 24rem;
+}
+.dropdown-content-country a{
+  filter: none;
+}
+.where {
+  width: 100.2%;
+  left: -0.9rem;
+  bottom: 2rem;
+}
 .dropdown-content::before {
   margin-top: 4rem;
 }
@@ -546,7 +559,9 @@ input[type="text"]::placeholder {
   left:0;
   transform: translateY(95%);
   padding: 6rem 15rem 2rem 42rem;
-  width: 100%;
+  width: 100.3%;
+  right: -0.9rem;
+  bottom: 1rem;
 }
 .dropdown-content-traveler::before {
   content: "";

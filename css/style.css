@@ -77,12 +77,6 @@ a{
   color: inherit;
   display: inline-block;
 }
-.nav__link:hover {
-  color: #FF7A00;
-  transition-property: color;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-}
 img {
   height: auto;
 }
@@ -118,6 +112,16 @@ td.active.start-date.available {
   background-image: url('../images/banner.png');
   background-repeat: no-repeat;
   background-size: cover;
+}
+.error {
+  color: red;
+}
+
+.status {
+  display: inline-block;
+  border-radius: 10%;
+  background-color: green;
+  visibility: hidden;
 }
 @keyframes pulse {
   0% {

@@ -33,8 +33,14 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+.location__item  img{
+  box-shadow: none;
+}
 .block__flex p{
   width:300rem;
+}
+.location__item .point-foote {
+  box-shadow: none;
 }
 .block__flex p::first-letter{
   margin-left: 5rem;
@@ -85,6 +91,8 @@
   display: flex;
   column-gap: 8rem;
   align-items: center;
+  font-weight: 600;
+  font-size: 16px;
 }
 .location__item a{
   filter: none;
@@ -113,5 +121,11 @@
 }
 .gap {
   position: relative;
-  left: -5rem;
+  left: -7rem;
 }
+.gap img {
+  position: relative;
+  left: 3rem;
+  top: 2rem;
+}
+
