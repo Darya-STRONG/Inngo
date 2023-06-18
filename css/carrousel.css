@@ -139,17 +139,32 @@
   border-radius: 50%;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.32);
 }
+.star {
+  position: relative;
+  top: 1rem;
+}
+.hotel-info__icon img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 1rem;
+}
+.placeholder__arrow {
+  
+}
 .price {
-  background: linear-gradient(148.22deg, #FFB800 80.03%, #F56700 105.23%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  position: relative;
   font-weight: 700;
   font-size: 24rem;
   line-height: 104.5%;
   padding-top: 19rem;
+  background: linear-gradient(148.22deg, #FFB800 80.03%, #F56700 105.23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0rem 2.5rem 2rem rgba(0, 0, 0, 0.32));
 }
-
 .carrousel__content__top {
   background: rgba(50, 50, 50, 0.16);
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);

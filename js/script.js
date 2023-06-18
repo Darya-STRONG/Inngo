@@ -130,7 +130,7 @@ dropdownMenus.forEach((dropdownMenu) => {
 
 //Фильтрация стран при вводе текста в инпут
 function filterCountries() {
-  let input, filter, dropdown, countries, a, i;
+  var input, filter, dropdown, countries, a, i;
   input = document.getElementById("countryInput");
   filter = input.value.toUpperCase();
   dropdown = document.getElementById("countryDropdown");
@@ -149,17 +149,17 @@ function filterCountries() {
 
 //Навешивание класа active на вибраную цифру в инпуте aduits
 document.addEventListener('DOMContentLoaded', function() {
-  let travelerItems = document.querySelectorAll('.item__traveler a');
+  var travelerItems = document.querySelectorAll('.item__traveler a');
 
   travelerItems.forEach(function(item) {
     item.addEventListener('click', function(event) {
       event.preventDefault();
 
       // Знаходимо батьківський контейнер
-      let parentContainer = this.closest('.wrap__traveler');
+      var parentContainer = this.closest('.wrap__traveler');
 
       // Знаходимо всі елементи в поточній категорії
-      let categoryItems = parentContainer.querySelectorAll('.item__traveler a');
+      var categoryItems = parentContainer.querySelectorAll('.item__traveler a');
 
       // Перевіряємо, чи вже вибраний номерок в поточній категорії
       if (this.classList.contains('active')) {
@@ -239,55 +239,62 @@ $(function() {
 });
 
 
-
-
 function validateForm(event) {
   event.preventDefault(); // Предотвращаем перезагрузку страницы при отправке формы
 
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var phone = document.getElementById('phone').value;
-  var message = document.getElementById('message').value;
+  let name = document.getElementById('name').value;
+  let email = document.getElementById('email').value;
+  let phone = document.getElementById('phone').value;
+  let message = document.getElementById('message').value;
 
-  var nameError = document.getElementById('nameError');
-  var emailError = document.getElementById('emailError');
-  var phoneError = document.getElementById('phoneError');
-  var status = document.getElementById('status');
-  var sendButton = document.getElementById('submitButton');
+  let nameError = document.getElementById('nameError');
+  let emailError = document.getElementById('emailError');
+  let phoneError = document.getElementById('phoneError');
+  let status = document.getElementById('status');
+  let sendButton = document.getElementById('submitButton');
+  let sendError = document.getElementById('sendError');
 
-  var hasEmptyFields = false; // Флаг для проверки пустых полей
+  let hasEmptyFields = false; // Флаг для проверки пустых полей
 
   if (name.trim() === '') {
     nameError.textContent = 'The field is required.';
-    hasEmptyFields = true; // Устанавливаем флаг, если поле не заполнено
+    hasEmptyFields = true;
   } else {
     nameError.textContent = '';
   }
 
   if (email.trim() === '') {
     emailError.textContent = 'The field is required.';
-    hasEmptyFields = true; // Устанавливаем флаг, если поле не заполнено
+    hasEmptyFields = true;
   } else {
     emailError.textContent = '';
   }
 
   if (phone.trim() === '') {
     phoneError.textContent = 'The field is required.';
-    hasEmptyFields = true; // Устанавливаем флаг, если поле не заполнено
+    hasEmptyFields = true;
   } else {
     phoneError.textContent = '';
   }
 
-  // Дополнительная логика, если форма валидна
-  // ...
-
   if (hasEmptyFields) {
-    sendButton.textContent = 'Error';
+    sendButton.textContent = 'Send';
+    status.style.visibility = 'visible';
+    status.textContent = 'Sent';
+  } else {
+    sendButton.textContent = 'Send';
     status.style.visibility = 'visible';
     status.textContent = 'Error';
-  } else {
-    sendButton.textContent = 'Send'; // Восстанавливаем текст кнопки после отправки
-    status.style.visibility = 'visible';
-    status.textContent = 'Sent'; // Устанавливаем текст "Sent" для элемента status
+    // Сброс значений инпутов и поля сообщения
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('phone').value = '';
+    document.getElementById('message').value = '';
+
+    // Сброс статуса через некоторое время
+    setTimeout(function() {
+      status.textContent = '';
+      status.style.visibility = 'hidden';
+    }, 3000);
   }
 }

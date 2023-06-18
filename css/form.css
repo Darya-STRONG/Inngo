@@ -16,6 +16,38 @@
   right: 131rem;
   z-index: 1;
 }
+#sendError {
+  color: red;
+  /* Дополнительные стили для выделения ошибки */
+}
+.status {
+  display: inline-block;
+  border-radius: 10%;
+  color: #46b450;
+  visibility: hidden;
+  border: 1.4rem solid #46b450;
+  padding: 14rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(92rem, -50%);
+  font-size: 16rem;
+}
+input:focus, textarea:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.form__send {
+  position: relative;
+}
+.status.sent {
+  color: green;
+  visibility: visible;
+}
+.status.error {
+  visibility: visible;
+  color: red;
+}
 
 .form-container h2 {
   font-weight: 600;
@@ -50,9 +82,7 @@
   margin-top: 6rem;
   border: 2rem solid rgb(147, 176, 228, 0.3);
   font-size: 16rem;
-
 }
-
 .form-container button {
   padding: 10rem;
   background: #FFFFFF;

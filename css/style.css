@@ -72,11 +72,6 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   margin-right: 10px;
 }
-a{
-  text-decoration: none;
-  color: inherit;
-  display: inline-block;
-}
 img {
   height: auto;
 }
@@ -112,16 +107,6 @@ td.active.start-date.available {
   background-image: url('../images/banner.png');
   background-repeat: no-repeat;
   background-size: cover;
-}
-.error {
-  color: red;
-}
-
-.status {
-  display: inline-block;
-  border-radius: 10%;
-  background-color: green;
-  visibility: hidden;
 }
 @keyframes pulse {
   0% {
