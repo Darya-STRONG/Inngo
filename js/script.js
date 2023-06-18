@@ -284,7 +284,7 @@ function validateForm(event) {
   } else {
     sendButton.textContent = 'Send';
     status.style.visibility = 'visible';
-    status.textContent = 'Error';
+    status.textContent = 'Sent';
     // Сброс значений инпутов и поля сообщения
     document.getElementById('name').value = '';
     document.getElementById('email').value = '';
