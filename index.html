@@ -21,19 +21,6 @@
       } else {
         standartWidth(360);
       }
-    
-    document.addEventListener('DOMContentLoaded', function() {
-      let daterange = document.getElementById('daterange');
-      let flightSelectionItem = document.querySelector('.flight-selection__item.special-size');
-      let flightSelectionItemWidth = document.querySelector('.flight-selection__item__width');
-
-      daterange.addEventListener('click', function() {
-        flightSelectionItem.style.display = 'none';
-        flightSelectionItemWidth.style.width = '502rem';
-      });
-    });
-
-
 
     $(document).ready(function() {
       let dateInput = $('#daterange');
@@ -50,11 +37,30 @@
           ]
         }
       });
-      dateInput.val('From           →               Down');
+      dateInput.val('From           →              Down');
+      dateInput.style.color = 'black';
+      dateInput.style.fontSize = '100px';
     });
-   
 
+    document.addEventListener('DOMContentLoaded', function() {
+        let daterange = document.getElementById('daterange');
+        let flightSelectionItem = document.querySelector('.flight-selection__item.special-size');
+        let flightSelectionItemWidth = document.querySelector('.flight-selection__item__width');
 
+        function hideFlightSelectionItem() {
+          flightSelectionItem.style.visibility = 'hidden';
+          flightSelectionItemWidth.style.borderRight = 'none';
+          flightSelectionItemWidth.style.minWidth = '';
+        }
+        function showFlightSelectionItem() {
+          flightSelectionItem.style.display = 'flex';
+          flightSelectionItemWidth.style.width = '';
+        }
+
+        daterange.addEventListener('input', showFlightSelectionItem);
+        daterange.addEventListener('click', hideFlightSelectionItem);
+
+      });
     </script>
     
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
