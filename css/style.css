@@ -56,7 +56,8 @@ body {
   width: 150px;
   padding: 10px;
 }
-
+.daterangepicker  {
+}
 .calendar-container {
   position: absolute;
   top: 100%;

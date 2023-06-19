@@ -15,28 +15,46 @@
       function standartWidth(width) {
         $('html').css('font-size', `${1 * $(window).width() / width}px`);
       }
-      
+    
       if ($(window).width() >= 992) {
         standartWidth(1440);
       } else {
         standartWidth(360);
       }
-      
-      $(function() {
-        $('#daterange').daterangepicker({
-          opens: 'center',
-          startDate: moment().startOf('day'),
-          endDate: moment().endOf('day'),
-          locale: {
-            format: 'YYYY-MM-DD',
-            daysOfWeek: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
-            monthNames: [
-              'January', 'February', 'March', 'April', 'May', 'June', 'July',
-              'August', 'September', 'October', 'November', 'December'
-            ]
-          }
-        });
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      let daterange = document.getElementById('daterange');
+      let flightSelectionItem = document.querySelector('.flight-selection__item.special-size');
+      let flightSelectionItemWidth = document.querySelector('.flight-selection__item__width');
+
+      daterange.addEventListener('click', function() {
+        flightSelectionItem.style.display = 'none';
+        flightSelectionItemWidth.style.width = '502rem';
       });
+    });
+
+
+
+    $(document).ready(function() {
+      let dateInput = $('#daterange');
+      dateInput.daterangepicker({
+        opens: 'center',
+        autoApply: true,
+        locale: {
+          format: 'DD MMMM',
+          separator: '            →            ', 
+          daysOfWeek: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+          monthNames: [
+            'January', 'February', 'March', 'April', 'May', 'June', 'July',
+            'August', 'September', 'October', 'November', 'December'
+          ]
+        }
+      });
+      dateInput.val('From           →               Down');
+    });
+   
+
+
     </script>
     
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -704,8 +722,7 @@
               <div class="padding-top">
                 <span class="flight-selection__text-over">Departure from - to</span>
                 <div class="dropdown">
-                  <input type="text" placeholder="From &#8594 Down" style="text-align: justify;">
-                  <input  class="text" style="display: none;" id="daterange" />
+                  <input class="text" id="daterange" />
                 </div>
               </div>
             </div>
@@ -747,7 +764,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
